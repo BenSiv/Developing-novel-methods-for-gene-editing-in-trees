@@ -97,7 +97,7 @@ library(latex2exp)
 # Abstract
 
 Global environmental change undermines food security. In comparison to most crops, trees are resilient to temperature fluctuations and
-consequently offer vital insurance against famine. Crop improvement with available methods reaches a glass ceiling and genetic modification can contribute substantially to break through the barrier. Tissue culture is a required step in most genetic modification methods. Yet, tissue culture has its issues and the process is far from routine in most laboratories. In trees, because of long generation time, tissue culture issues become much more pronounced. In this work we are attempting to implement a novel gene editing method that doesn't require tissue culture such as de-novo meristem induction and transformation, on trees.  
+consequently offer vital insurance against famine. Crop improvement with available methods reaches a glass ceiling and genetic modification can contribute substantially to break through the barrier. Tissue culture is a required step in most genetic modification methods. Yet, tissue culture has its issues and the process is far from routine in most laboratories. In trees, because of long generation time, tissue culture issues become much more pronounced. In this work we are attempting to implement a novel gene editing method that doesn't require tissue culture such as de-novo meristem induction and transformation, on trees. In this work We have shown that over expression of the gene combination _WUS2-STM_ and _WOX11-STM_ were successful in invoking de-novo shoot regeneration in a young apple plants, in planta.
 
 # Introduction
 
