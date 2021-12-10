@@ -344,10 +344,18 @@ Tissue specific transcriptomes of the hybrid *Populus Alba-Tremula* (PopAT) were
 All the analysis code is available on GitHub in [https://github.com/BenSiv/PopAT-expression-analysis](https://github.com/BenSiv/PopAT-expression-analysis).
 
 ### Validation of the RNA-seq analysis with real-time quantitive PCR (RT-qPCR)
-For the validation of the RNA-seq analysis, RNA is exctarcted from the same tissues as the RNA-seq data (excluding callus). Then RT-qPCR is preformed on the cDNA with specific primers for the gene that was identified as the most shoot-tip specific by the RNA-seq analysis.
+For the validation of the RNA-seq analysis, RNA is exctarcted from the same tissues as the RNA-seq data (excluding callus). Then RT-qPCR is preformed on the complementary DNA (cDNA) with specific primers for the gene that was identified as the most shoot-tip specific by the RNA-seq analysis.
 
 # Results
 ## Implementing De-novo maristem induction and transformation.
+
+### _WOX1_ gene isolation from PopAT shoot tip
+For the assembly of plasmids with the gene _WOX1_ as a DR for shoot regeneration, DNA was extracted and purified from PopAT's shoot tip tissue. Then the gene was amplified using PCR reaction. The PCR product was analyzed using agarose gel electrophoresis and was found to be about 300 bp longer than expected, although it does not know to include introns. Consequently, we decide to try and isolate the gene from cDNA to see if the length would be as expected and we can deduce that in PopAT there is the presence of intron, or parhapse somthing else went wrong and the sequence we amplified wasent the target. After extraction and purification of RNA from the tissue, cDNA was prepared, and _WOX1_ was amplified. The band observed in the agarose gel was at the expected length, so it could be cleaned and be used in further assembly.
+
+```{r wox1 isolation, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "h", fig.cap="Isolation of the _WOX1_ gene from PopAT shoot tip"}
+include_graphics("WOX1_isolation.png") 
+```
+
 ### Infection methods experiment
 Assessment of infection method for the infiltration and infection of apple plants by agrobacterium, is preformed with 3 methods (Figure \ref{fig:Agro-infection methods}). In infection methods A and B, no phenotype was observed. In contrast, 2 newly formed shoots was observed from the stem cut site in plants that was infected with the constructs that included the genes *WOX11*-*STM* and *WUS2*-*STM* (Figure \ref{fig:wox-stm transformant}). In 1 of the cases, Cotyledon like emerged from the cut before the shoot.
 
@@ -432,7 +440,7 @@ To further attempt and increase the frequency of de-novo shoot formation, we pur
 
 With strong corelation to our results of regeneration with the combination of genes _WOX11_-_STM_ and _WUS2_-_STM_, It has been shown that in the regulation of SAM, STM and WUS act in parallel, and they are necessary for the normal expression of each other [@Tvorogova2021]. This insight can also explain the non-deformed shoot formation we observe in contrast to Maher et al's.[@Maher2020] findings. 
 
-*WOX11* known primarily as regulators of callus formation and development of adventitious roots, although it has been shown to be involved in other types of regeneration, such as shoot regeneration and somatic embryogenesis. For example, the positive effect of PtWOX11 on shoot regeneration in _Populus alba x glandulosa_ has been shown [@Liu2018a].  
+_WOX11_ known primarily as regulators of callus formation and development of adventitious roots, although it has been shown to be involved in other types of regeneration, such as shoot regeneration and somatic embryogenesis. For example, the positive effect of PtWOX11 on shoot regeneration in _Populus alba x glandulosa_ has been shown [@Liu2018a].  
 
 To validate our RNA-seq analisys, we extracted total RNA from similar tissues as the DOE's dataset (excluding callus, since it does not acure in natural growth). Then we run RT-qPCR analisys on the expression of _WOX1_ with varius normalizer genes. Since the expression profile of the different tissues vary massivly, it has been hard to find an appropriate normalizer gene whose expression remains homogeneousness between the tissues. Despite that, we can still see the over all trend in which it does seems that as the coefficient of variation (CV) get smaller, the results of the RT-qPCR become more similar to the RNA-seq results (Figure \ref{fig:qPCR}).
 
