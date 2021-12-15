@@ -217,148 +217,39 @@ By infecting young plants with _Agrobacterium tumefaciens_ harboring T-DNA that 
 ## Goal
 * Develop new method for in planta trees transformation.
 
-# Materials
 
-* [Lysogeny broth](https://www.formedium.com/product/lb-broth-lennox/) (LB from ForMedium™) 
-* [Agar](https://www.formedium.com/product/agar/)
-* Ampicillin (Sigma-Aldrich™)
-* Rifampicin (Sigma-Aldrich™)
-* Acetosyringone (Sigma-Aldrich™)
-* Sucrose (Sigma-Aldrich™)
-* Murashige & Skoog (MS from Sigma-Aldrich™) 
-* [miniplsmid putification kit](https://www.geneaid.com/product.php?act=view&id=180) (Presto™)
-* [MicroPulser Electroporator by Bio-Rad](https://www.bio-rad.com/en-il/product/micropulser-electroporator?ID=83527990-34fb-4b33-b955-ca53b57bf8b9)
-* [Microcentrifuge](https://www.thermofisher.com/order/catalog/product/69720#/69720) (Pierce™)
-* [petri-dish](https://shop.gbo.com/en/row/products/bioscience/microbiology-bacteriology/dishes/petri-dishes/) (Greiner Bio-One™)
-* [CTAB](https://www.sigmaaldrich.com/catalog/product/sigma/h6269?lang=en&region=IL) (Sigma-Aldrich™)
+#  Materials and methods
 
 ## Plant matirial 
 
-For the experiments in this work, we used two types of plant material. The first is _Populus Alba-Tremula_ (PopAT) cultivar, which were reproduced by vegetative reproduction in tissue culture. The second is _Malus domestica_ (apple) cultivar, from seeds that were extracted from apple fruits.
+For the experiments in this work, we used two types of plant material. The first is _Populus Alba-Tremula_ (PopAT) cultivar, which were reproduced by vegetative reproduction in tissue culture (Table \ref{tab:Poplar mediums}). The second is _Malus domestica_ (apple) cultivar, from seeds that were extracted from apple fruits.
+
+```{r Poplar mediums, echo=FALSE}
+
+Components = c("","","MS","Sucrose","Agar","NAA","BAP","IBA","Kanamycin","Cefotaxime","Timentin","pH")
+M1 = c("(Plant Propagation","and Pre-Culture)","4.43 g/L","30 g/L","5.8 g/L","","","","","","","5.8")
+M2 = c("(Co-Culture)","","4.43 g/L","30 g/L","5.8 g/L","0.05 mg/L","0.5 mg/L","","","","","5.8")
+M3 = c("(Shoot Induction)","","4.43 g/L","30 g/L","5.8 g/L","0.05 mg/L","0.5 mg/L","","30 mg/L","200 mg/L","200 mg/L","5.8")
+M4 = c("(Root Induction)","","2.215 g/L","30 g/L","5.8 g/L","0.02 mg/L","","0.05 mg/L","30 mg/L","200 mg/L","200 mg/L","5.8")
 
 
-# methods
+mediums = data.frame(Components = Components, M1 = M1, M2 = M2, M3 = M3, M4 = M4)
 
-## [Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) [@Gibson2009]  
-## [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning) [@Cermak2017]  
+sep = c(rep('',length(Components)))                             
+kable(mediums, caption = "Composition of media for cultivation, tranformation, selection and regenetarion of hybrid poplar P.alba X P.glandulosa",booktabs = TRUE, align = "ccccc", linesep = sep) %>% kable_styling(latex_options = "HOLD_position")
+```
 
-## E.coli Heat-shock competent preperation [@Chang2017]  
+## Protocols
 
-Introduction:  
-
-Preperation of E.coli competent for Heat shock transformation   
-
-Materials:  
-
-* Liquid nitrogen
-* ice
-* LB with sutable antibiotics
-* 20 mM $CaCl_2$ + 15% glycerol sterile
-
-Procedure:  
-
-**Pre-Culture**  
-
-1. Pick single colony into a 4 ml LB (antibiotick if needed)
-2. Grow at $37^oC$, 150 rpm overnight culture
-
-**Culture**  
-
-3. Add 0.5 ml of pre-culture to 50 ml LB, and Incubate untill $OD_{600}$ 0.5-1.
-4. Chill culture on ice for 5-10 min.
-5. transfer maximum 30 ml of the colture to a 50 ml tube.
-6. Centrifuge for 10 min at 5000 rpm in $4^oC$.
-7. Discard the supernated and let the tube to dry inverted for 1 min.
-8. Add 0.5 ml ice cold 20 mM $CaCl_2$ + 15% glycerol.
-9. Aliquot 100 $\mu l$ and freeze directly in liquid nitrogen.
+* [Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) [@Gibson2009]
+* [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning)[@Cermak2017]
+* [Gel agarose for DNA electrophoresis](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf)
+* E.coli Heat-shock competent preperation [@Chang2017]
+* [E.coli heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) [@Chang2017]
+* CTAB protocol for the isolating of DNA from plant tissues[@Porebski1997]
 
 
-## [E.coli heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) [@Chang2017]  
-
-Introduction:   
-
-Heat shock plasmid transformation to competent E.coli  
-
-Materials:  
-
-* Competent E.coli cells
-* 50 $\mu l$ For each DNA construct / 100 $\mu l$ For ligation
-* 50 ng of circular DNA
-* Ice
-* Water bath at $42^oC$
-* 1.5 ml tube per sample (Eppendorf or similar)
-* 1 ml of LB per sample (with no antibiotic added)
-* LB + antibiotics plates 2 or 3 per sample for dilutions
-* Drigalski spatula
-
-Procedure:  
-
-**Heat shock**  
-
-1. Take competent E.coli cells from $-80^oC$ freezer. Use Top10 cells in most cases.
-2. Turn on water bath to $42^oC$.
-3. Put competent cells in a 1.5 ml tube (Eppendorf or similar). For transforming a DNA construct, use 50 $\mu l$ of competent cells. For transforming a ligation, use 100 $\mu l$ of competent cells. You may need more or less cells, depending how competent they are.
-4. Keep tubes on ice.
-5. Add 50 ng of circular DNA into E.coli cells. Incubate on ice for 20 min. to thaw competent cells.
-6. Put tubes with DNA and E.coli into water bath at $42^oC$ for 1.5 min.
-7. Put tubes back on ice for 5 minutes to reduce damage to the E.coli cells.
-8. Add 1 ml of LB (with no antibiotic added). Incubate tubes for 1 hour at $37^oC$. (Can incubate tubes for 30 minutes, unless trying to grow DNA for ligation which is more sensitive. For ligation, leave tubes for 1 hour).
-9. Spread about 100 $\mu l$ of the resulting culture on LB plates (with appropriate antibiotic added). Grow overnight.
-10. Pick colonies about 12-16 hours later.
-
-
-## CTAB protocol [@Porebski1997]  
-
-
-Introduction:   
-
-C-TAB Protocol for Isolating DNA from Plant Tissues
-
-Materials:  
-
-* Liquid nitrogen
-* Ice
-* Pestles
-* Stirer
-* $65^oC$ Bath
-* Centrifuge
-* CTAB buffer
-* 2% cetyl trimethylammonium bromide, 1% polyvinyl pyrrolidone,100 mM Tris-HCl, 1.4 M NaCl, 20 mM EDTA
-* 2-Mercaptoethanol
-* Chloroform octanol (1:24)
-* Sodium acetate (NaOAc)
-* 100% Ethanol
-* 70% Ethanol
-
-Procedure:  
-
-1. Grind ~200 mg of plant tissue to a fine paste.
-2. Add 700 $\mu l$ CTAB buffer pre-heated to $65^oC$ + 7$\mu l$ 2-Mercaptoethanol.
-3. Vortex.
-4. Incubation at $65^oC$ for 30 min (Vortex few times).
-5. Chill on ice.
-6. Add 700ul Chloroform octanol (1:24).
-7. Vortex.
-8. Centrifuge 5 min 14,000 rpm.
-9. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~550-600 $\mu l$).
-10. Add 400 $\mu l$ Chloroform octanol (1:24).
-11. Centrifuge 5 min 14,000 rpm.
-12. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~350 $\mu l$).
-13. Add 35 $\mu l$ Sodium acetate (NaOAc), (X0.1 of sample volume).
-14. Add 875 $\mu l$ 100% Ethanol, (X2.5 sample volume).
-15. Incubate at $-80^oC$ for Hour/over night.
-16. Centrifuge 10 min 10,000 rpm.
-17. Remove the supernatant.
-18. Add 1 ml 70% Ethanol.
-19. Centrifuge 10 min 10,000 rpm.
-20. Remove the supernatant.
-21. Air dry the pellet, invert on paper towel.
-22. Resuspend the DNA in 50 $\mu l$ sterile DNase free water.
-
-
-
-
-# Experimant scheme
+# Experimants scheme
 
 ## Implementing De-novo maristem induction and transformation.
 
@@ -606,5 +497,154 @@ include_graphics("Deform benthamiana PDS.png")
 ```{r Pommelo, out.width = "80%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Agrobacterium-mediated in planta transformation for Citrus maxima. \\textbf{a.} Three to four week old C. maxima seedlings. \\textbf{b.} Decapitated C. maxima seedlings. \\textbf{c.} Agrobacterium infection. \\textbf{d.} Agrobacterium infected seedlings with wounds wrapped with Parafilm. \\textbf{e.} Dark incubation during co-culture. \\textbf{f.} sprouted bud from newly formed callus. \\textbf{g.} sprouted buds from xylem. \\textbf{h.} regenerated shoots four weeks after transformation. \\textbf{i.} regenerated shoots three months after transformation. (Zhang et al. 2017)"}
 include_graphics("Pommelo transformation.png") 
 ```
+
+## Protocols
+
+## [Gel agarose for DNA electrophoresis](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf)
+
+Introduction:   
+
+Preperation protocol of gel agarose for DNA electrophoresis.  
+
+Materials:  
+
+* Tray + Comb (With enough places for samples + ladder)
+* LE multi-purpose agarose (Usually 1-2%)
+* TAE * 1 Buffer (volume depend on Container)
+* Ethidium bromide solution (1 drop for every 50 ml of gel)
+* loading dye (1 µL loading dye per 5 µL sample) *Taq ready mix already contain dye.
+
+Procedure:  
+
+**Gel mixture, loading and running**  
+
+1. Measure agarose by weight.
+2. Dissolves in TAE buffer.
+3. Microwave until fully dissolved.
+4. Add ethidium bromide.
+5. Pour into tray + comb.
+6. Wait until the gel polymerizes.
+7. Carefully remove the comb to expose the sample wells.
+8. Place the gel into the tank.
+9. Pour TAE buffer into the tank high enough to cover the gel.
+10. Add loading dye (if necessary).
+11. load DNA sample.
+12. Connect the tank to the power supply.
+13. Set the voltage at ~110 V for 30 minutes *The passage of current will produce bubbles at the electrodes.
+
+
+## E.coli Heat-shock competent preperation [@Chang2017]  
+
+Introduction:  
+
+Preperation of E.coli competent for Heat shock transformation.  
+
+Materials:  
+
+* Liquid nitrogen
+* ice
+* LB with sutable antibiotics
+* 20 mM $CaCl_2$ + 15% glycerol sterile
+
+Procedure:  
+
+**Pre-Culture**  
+
+1. Pick single colony into a 4 ml LB (antibiotick if needed)
+2. Grow at $37^oC$, 150 rpm overnight culture
+
+**Culture**  
+
+3. Add 0.5 ml of pre-culture to 50 ml LB, and Incubate untill $OD_{600}$ 0.5-1.
+4. Chill culture on ice for 5-10 min.
+5. transfer maximum 30 ml of the colture to a 50 ml tube.
+6. Centrifuge for 10 min at 5000 rpm in $4^oC$.
+7. Discard the supernated and let the tube to dry inverted for 1 min.
+8. Add 0.5 ml ice cold 20 mM $CaCl_2$ + 15% glycerol.
+9. Aliquot 100 $\mu l$ and freeze directly in liquid nitrogen.
+
+
+## [E.coli heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) [@Chang2017]  
+
+Introduction:   
+
+Heat shock plasmid transformation to competent E.coli  
+
+Materials:  
+
+* Competent E.coli cells
+* 50 $\mu l$ For each DNA construct / 100 $\mu l$ For ligation
+* 50 ng of circular DNA
+* Ice
+* Water bath at $42^oC$
+* 1.5 ml tube per sample (Eppendorf or similar)
+* 1 ml of LB per sample (with no antibiotic added)
+* LB + antibiotics plates 2 or 3 per sample for dilutions
+* Drigalski spatula
+
+Procedure:  
+
+**Heat shock**  
+
+1. Take competent E.coli cells from $-80^oC$ freezer. Use Top10 cells in most cases.
+2. Turn on water bath to $42^oC$.
+3. Put competent cells in a 1.5 ml tube (Eppendorf or similar). For transforming a DNA construct, use 50 $\mu l$ of competent cells. For transforming a ligation, use 100 $\mu l$ of competent cells. You may need more or less cells, depending how competent they are.
+4. Keep tubes on ice.
+5. Add 50 ng of circular DNA into E.coli cells. Incubate on ice for 20 min. to thaw competent cells.
+6. Put tubes with DNA and E.coli into water bath at $42^oC$ for 1.5 min.
+7. Put tubes back on ice for 5 minutes to reduce damage to the E.coli cells.
+8. Add 1 ml of LB (with no antibiotic added). Incubate tubes for 1 hour at $37^oC$. (Can incubate tubes for 30 minutes, unless trying to grow DNA for ligation which is more sensitive. For ligation, leave tubes for 1 hour).
+9. Spread about 100 $\mu l$ of the resulting culture on LB plates (with appropriate antibiotic added). Grow overnight.
+10. Pick colonies about 12-16 hours later.
+
+
+## CTAB protocol [@Porebski1997]  
+
+Introduction:   
+
+CTAB protocol for the isolating of DNA from plant tissues
+
+Materials:  
+
+* Liquid nitrogen
+* Ice
+* Pestles
+* Stirer
+* $65^oC$ Bath
+* Centrifuge
+* CTAB buffer
+* 2% cetyl trimethylammonium bromide, 1% polyvinyl pyrrolidone,100 mM Tris-HCl, 1.4 M NaCl, 20 mM EDTA
+* 2-Mercaptoethanol
+* Chloroform octanol (1:24)
+* Sodium acetate (NaOAc)
+* 100% Ethanol
+* 70% Ethanol
+
+Procedure:  
+
+1. Grind ~200 mg of plant tissue to a fine paste.
+2. Add 700 $\mu l$ CTAB buffer pre-heated to $65^oC$ + 7$\mu l$ 2-Mercaptoethanol.
+3. Vortex.
+4. Incubation at $65^oC$ for 30 min (Vortex few times).
+5. Chill on ice.
+6. Add 700ul Chloroform octanol (1:24).
+7. Vortex.
+8. Centrifuge 5 min 14,000 rpm.
+9. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~550-600 $\mu l$).
+10. Add 400 $\mu l$ Chloroform octanol (1:24).
+11. Centrifuge 5 min 14,000 rpm.
+12. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~350 $\mu l$).
+13. Add 35 $\mu l$ Sodium acetate (NaOAc), (X0.1 of sample volume).
+14. Add 875 $\mu l$ 100% Ethanol, (X2.5 sample volume).
+15. Incubate at $-80^oC$ for Hour/over night.
+16. Centrifuge 10 min 10,000 rpm.
+17. Remove the supernatant.
+18. Add 1 ml 70% Ethanol.
+19. Centrifuge 10 min 10,000 rpm.
+20. Remove the supernatant.
+21. Air dry the pellet, invert on paper towel.
+22. Resuspend the DNA in 50 $\mu l$ sterile DNase free water.
+
+
 
 # References
