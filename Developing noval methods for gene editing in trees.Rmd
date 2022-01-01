@@ -210,6 +210,8 @@ By infecting young plants with _Agrobacterium tumefaciens_ harboring T-DNA that 
 
 #  Materials and methods
 
+The main goal of this work is to develope a protocol as the final product. For that purpose we use an array of already established protocols for the preperation and validation of our experiments. Some of the protocols use in this work were used as is from the source, but many others were changed to fit our specific use case.
+
 ## Plant matirial 
 
 For the experiments in this work, we used two types of plant material. The first is _Populus Alba-Tremula_ (PopAT) cultivar, which were reproduced by vegetative reproduction in tissue culture (Table \ref{tab:Poplar mediums}). The second is _Malus domestica_ (apple) cultivar, from seeds that were extracted from apple fruits.
@@ -228,15 +230,42 @@ mediums = data.frame(Components = Components, M1 = M1, M2 = M2, M3 = M3, M4 = M4
 sep = c(rep('',length(Components)))                             
 kable(mediums, caption = "Composition of media for cultivation, tranformation, selection and regenetarion of hybrid poplar P.alba X P.glandulosa",booktabs = TRUE, align = "ccccc", linesep = sep) %>% kable_styling(latex_options = "HOLD_position")
 ```
+## Matirials
+* [Petri-dish](https://shop.gbo.com/en/row/products/bioscience/microbiology-bacteriology/dishes/petri-dishes/) (Greiner Bio-One™)
+* [Magenta™ vessel](https://www.sigmaaldrich.com/IL/en/substance/magentavessel1234598765)
+* PARAFILM® (Sigma-Aldrich™)
+* [Lysogeny broth](https://www.formedium.com/product/lb-broth-lennox/) (LB from ForMedium™)
+* [Agar](https://www.formedium.com/product/agar/)
+* Murashige & Skoog (MS from Sigma-Aldrich™)
+* [CTAB](https://www.sigmaaldrich.com/catalog/product/sigma/h6269?lang=en&region=IL) (Sigma-Aldrich™)
+* Acetosyringone (Sigma-Aldrich™)
+
+### antibiotics
+* Ampicillin (Sigma-Aldrich™)
+* Kanamycin (Sigma-Aldrich™)
+* Rifampicin (Sigma-Aldrich™)
+
+### Kits
+[Miniplsmid putification kit](https://www.geneaid.com/product.php?act=view&id=180) (Presto™)
+
+### Instruments
+* [MicroPulser Electroporator by Bio-Rad](https://www.bio-rad.com/en-il/product/micropulser-electroporator?ID=83527990-34fb-4b33-b955-ca53b57bf8b9)
+* [Microcentrifuge](https://www.thermofisher.com/order/catalog/product/69720#/69720) (Pierce™)
+* PCR machine [Biometra TRIO](https://www.analytik-jena.com/products/life-science/pcr-qpcr-thermal-cycler/thermal-cycler-pcr/biometra-trio-series/)
+* Power supply + Electrophoresis bath ([PowerPac™ Basic Power Supply](https://www.bio-rad.com/en-il/product/powerpac-basic-power-supply?ID=bea5dea1-cef0-43ad-8af5-b2c0287f6e07), [Wide Mini ReadySub-Cell GT Horizontal Electrophoresis System](https://www.bio-rad.com/en-il/sku/1704489-wide-mini-readysub-cell-gt-horizontal-electrophoresis-system-for-precast-gels?ID=1704489))
+* UV-light table [($UV_{DOC}$ HD2 by Uvitec Cambridge)](https://topac.com/documents/geldoc_%20catalogue.pdf)
 
 ## Protocols
+* [Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) [@Gibson2009]: In 2009 Dr. Daniel Gibson and colleagues at the J. Craig Venter Institute developed a novel method for the easy assembly of multiple linear DNA fragments. Regardless of fragment length or end compatibility, multiple overlapping DNA fragments can be joined in a single isothermal reaction. With the activities of three different enzymes, the product of a Gibson Assembly is a fully ligated double-stranded DNA molecule. This has proven to be an efficient and effective method for the assembly of plasmids, and molecular biologists now use this method extensively.
 
-* [Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) [@Gibson2009]
-* [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning)[@Cermak2017]
-* [Gel agarose for DNA electrophoresis](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf)
-* E.coli Heat-shock competent preperation [@Chang2017]
-* [E.coli heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) [@Chang2017]
-* CTAB protocol for the isolating of DNA from plant tissues[@Porebski1997]
+* [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning)[@Cermak2017]: Golden Gate cloning technology relies on Type IIS restriction enzymes, first discovered in 1996. Type IIS restriction enzymes are unique from "traditional" restriction enzymes in that they cleave outside of their recognition sequence, creating four base flanking overhangs. Since these overhangs are not part of the recognition sequence, they can be customized to direct assembly of DNA fragments. When designed correctly, the recognition sites do not appear in the final construct, allowing for precise, scarless cloning.
+
+* Gel agarose for DNA electrophoresis[@Lee2012]: Agarose gel electrophoresis is the most effective way of separating DNA fragments of varying sizes ranging from 100 bp to 25 kb. During gelation, agarose polymers associate non-covalently and form a network of bundles whose pore sizes determine a gel's molecular sieving properties. To separate DNA using agarose gel electrophoresis, the DNA is loaded into pre-cast wells in the gel and a current applied. The phosphate backbone of the DNA (and RNA) molecule is negatively charged, therefore when placed in an electric field, DNA fragments will migrate to the positively charged anode. Because DNA has a uniform mass/charge ratio, DNA molecules are separated by size within an agarose gel in a pattern such that the distance traveled is inversely proportional to the log of its molecular weight.
+
+* E.coli Heat-shock competent preperation and [transformation](https://www.addgene.org/protocols/bacterial-transformation/)[@Chang2017]: Calcium chloride heat-shock transformation is a powerful molecular biology technique used to introduce foreign DNA into a host cell. The concept of the technique is to encourages bacterial cells to uptake DNA from the surrounding environment when stressed by heat shock by using CaCl2 to render them more competent. This technique allow for introduction of plasmid for bacterial transformation.
+
+* CTAB protocol for the isolating of DNA from plant tissues[@Porebski1997]: A relatively quick, inexpensive and consistent protocol for extraction of DNA from plant tissues. CTAB extraction, employing high salt concentrations to remove polysaccharides, the use of polyvinyl pyrrolidone (PVP) to remove polyphenols, an extended RNase treatment and a phenol-chloroform extraction.
+
 
 
 # Experimants scheme
@@ -308,12 +337,11 @@ kable(AllConstracts, caption = "De-novo maristem induction constracts" ,booktabs
   kable_styling(latex_options = "HOLD_position")
 ```
 
-Transformation of Top10 bacteria with constructs for replication was preformed using [heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) and growing on [petri-dish](https://shop.gbo.com/en/row/products/bioscience/microbiology-bacteriology/dishes/petri-dishes/) (Greiner Bio-One™) containing [Lysogeny broth](https://www.formedium.com/product/lb-broth-lennox/) (LB from ForMedium™) medium with 1.1 % [Agar](https://www.formedium.com/product/agar/) 50 mg/L Ampicillin (Sigma-Aldrich™), at $37^oC$ over-night. Evaluating constructs using colony PCR (Polymerase chain reaction) reaction (Table \ref{tab:Primers}). Growing positive colonies in LB liquid-medium (containing 50 mg/L Ampicillin), shaking 200 rpm over-night at $37^oC$. Purifying constructs using [miniplsmid putification kit](https://www.geneaid.com/product.php?act=view&id=180) (Presto™). 
+Transformation of Top10 bacteria with constructs for replication was preformed using [heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) and growing on petri-dish containing Lysogeny broth medium with 1.1 % Agar 50 mg/L Ampicillin, at $37^oC$ over-night. Evaluating constructs using colony PCR (Polymerase chain reaction) reaction (Table \ref{tab:Primers}). Growing positive colonies in LB liquid-medium (containing 50 mg/L Ampicillin), shaking 200 rpm over-night at $37^oC$. Purifying constructs using miniplsmid putification kit. 
 
-Transformation of EHA-105 agrobacterium using electroporation [MicroPulser Electroporator by Bio-Rad](https://www.bio-rad.com/en-il/product/micropulser-electroporator?ID=83527990-34fb-4b33-b955-ca53b57bf8b9) and growing on petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin (Sigma-Aldrich™) at $28^oC$ for 2 days.
-Positive colonies are validated again using colony PCR. 
+Transformation of EHA-105 agrobacterium using electroporation MicroPulser Electroporator and growing on petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 2 days. Positive colonies are validated again using colony PCR. 
 
-Cultures of each positive EHA-105 agrobacterium are spread on new petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 4 days. At the day of plant transformation, the whole plate is picked using Drigalski spatula and transferred to 2 ml [Microcentrifuge](https://www.thermofisher.com/order/catalog/product/69720#/69720) (Pierce™) with a tip. The transferred colonies are weighed and elut in 2 $\mu l$ per mg Liquid medium containing $1/2$ Murashige & Skoog (MS from Sigma-Aldrich™), 1 % sucrose and 200 $\mu M$ acetosyringone (Sigma-Aldrich™).
+Cultures of each positive EHA-105 agrobacterium are spread on new petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 4 days. At the day of plant transformation, the whole plate is picked using Drigalski spatula and transferred to 2 ml Microcentrifuge with a tip. The transferred colonies are weighed and elut in 2 $\mu l$ per mg Liquid medium containing $1/2$ MS, 1 % sucrose and 200 $\mu M$ acetosyringone.
 
 ### Infection methods experiment
 
@@ -332,7 +360,7 @@ include_graphics("apple injection3.png")
 The second experiment is designed for the assessment of different DRs on the de-novo shoot induction influence.
 Seeds are extracted from 4 varieties of apples that have been refrigerated for few months (Pink Lady, Granny Smith, Starking, Golden Delicious). The seeds are then grown in a germination tray (11X17 cells) for 1 month.
 
-All plant are infected as described in method C (Figure \ref{fig:Agro-injection}). After injection, all stem cuts are covered with PARAFILM® (Sigma-Aldrich™) for 1 week. New shoots that grow from axillary buds are removed once a week.
+All plant are infected as described in method C (Figure \ref{fig:Agro-injection}). After injection, all stem cuts are covered with PARAFILM for 1 week. New shoots that grow from axillary buds are removed once a week.
 
 ```{r Agro-injection, out.width = "100%", fig.align="center", echo=FALSE, fig.cap="Injection of A.tumefaciens into a stem cut of 4 apple Varieties. \\newline{} \\textbf{A.} Injection into a stem cut \\textbf{B.} Starking \\textbf{C.} Pink Lady \\textbf{D.} Golden Delicious \\textbf{E.} Granny Smith"}
 include_graphics("apple injection2.png") 
@@ -341,7 +369,7 @@ include_graphics("apple injection2.png")
 
 Every construct have 11 repetitions in each apple variety, 44 overall.
 
-Validation of cassette integration in the genome by DNA extraction from old leaf in the base of the plant and new leaf in the shoot using [CTAB protocol](https://www.sigmaaldrich.com/catalog/product/sigma/h6269?lang=en&region=IL) (Sigma-Aldrich™) and sequence amplification from the T-DNA cassette that is part of the Cas9 gene using specific primers in PCR reaction. The PCR products are analyzed using agarose gel electrophoresis, and photographed on a UV-light table [($UV_{DOC}$ HD2 by Uvitec Cambridge)](https://topac.com/documents/geldoc_%20catalogue.pdf) (Table \ref{tab:Primers}).
+Validation of cassette integration in the genome by DNA extraction from old leaf in the base of the plant and new leaf in the shoot using CTAB protocol and sequence amplification from the T-DNA cassette that is part of the Cas9 gene using specific primers in PCR reaction. The PCR products are analyzed using agarose gel electrophoresis, and photographed on a UV-light table (Table \ref{tab:Primers}).
 
 Validation of mutation in the targeted sequence is achieved by amplification using specific primers in PCR reaction and sanger sequencing as a service from [(Macrogen Europe B.V., Meibergdreef 57 1105 BA, Amsterdam, the Netherlands)](https://dna.macrogen-europe.com/eng/index.jsp) (Table \ref{tab:Primers}).
 
@@ -357,7 +385,7 @@ Similar experiments were performed on Poplar plants, the main difference was tha
 Another experiment was the infection of poplar ex-plant on sterile growth medium without the use of hormones and antibiotics for selection.
 
 ### Identification of new trascription factors that are development regulators in poplar.
-Tissue specific transcriptomes of the hybrid *Populus Alba-Tremula* (PopAT) were obtaind from [NCBI's SRA site](https://www.ncbi.nlm.nih.gov/bioproject/?term=(Populus%20tremula%20x%20alba,%20clone%20717%20Transcriptome)%20AND%20bioproject_sra[filter]%20NOT%20bioproject_gap[filter]). The tissues that were analyzed were shoot-tip, root-tip, bud, callus, xylem, leaf and bark. The transcripts were analyzed in order to identify new trascription factors that are most representative of specific tissue, and therefor suspected to have a strong role as a development regulators for that specific tissue in poplar. The transcripts were downloaded as an SRR files and was converted to FASTQ using the sratoolkit [(version 2.11.0)](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software). Than the reads were processed using the [FASTP tool](https://github.com/OpenGene/fastp). After processing, the reads from each tissue were aligned to a reference trascriptome from *Populus trichocarpa* (PopTri) from [NCBI's Datasets site](https://www.ncbi.nlm.nih.gov/datasets/genomes/?txid=3689&term=Populus&utm_source=gquery&utm_medium=referral&utm_campaign=:assemb) using Burrows-Wheeler Aligner (BWA, version 0.7.1), and was outputted as a SAM file. The alignment files were analyzed further in order to extract the frequency of each transcript occurrences per tissue. The mathematical way we chose to calculate the a score for the representativeness of transcript to a specific tissue was to divide his frequency in the tissue in question against the frequency in each tissue and then look only on the genes that were at least 1 order of magnitude grater in the tissue in question in comparison to all other tissues. Then we sort by the sum of all ratios.
+Tissue specific transcriptomes of the hybrid *Populus Alba-Tremula* (PopAT) were obtaind from [NCBI's SRA site](https://www.ncbi.nlm.nih.gov/bioproject/?term=(Populus%20tremula%20x%20alba,%20clone%20717%20Transcriptome)%20AND%20bioproject_sra[filter]%20NOT%20bioproject_gap[filter]). The tissues that were analyzed were shoot-tip, root-tip, bud, callus, xylem, leaf and bark. The transcripts were analyzed in order to identify new trascription factors that are most representative of specific tissue, and therefor suspected to have a strong role as a development regulators for that specific tissue in poplar. The transcripts were downloaded as an SRR files and was converted to FASTQ using the sratoolkit [(version 2.11.0)](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software). Than the reads were processed using the [FASTP tool](https://github.com/OpenGene/fastp). After processing, the reads from each tissue were aligned to a reference trascriptome from _Populus trichocarpa_ (PopTri) from [NCBI's Datasets site](https://www.ncbi.nlm.nih.gov/datasets/genomes/?txid=3689&term=Populus&utm_source=gquery&utm_medium=referral&utm_campaign=:assemb) using Burrows-Wheeler Aligner (BWA, version 0.7.1), and was outputted as a SAM file. The alignment files were analyzed further in order to extract the frequency of each transcript occurrences per tissue. The mathematical way we chose to calculate the a score for the representativeness of transcript to a specific tissue was to divide his frequency in the tissue in question against the frequency in each tissue and then look only on the genes that were at least 1 order of magnitude grater in the tissue in question in comparison to all other tissues. Then we sort by the sum of all ratios.
 
 All the analysis code is available on GitHub in [https://github.com/BenSiv/PopAT-expression-analysis](https://github.com/BenSiv/PopAT-expression-analysis).
 
@@ -366,16 +394,16 @@ For the validation of the RNA-seq analysis, RNA is exctarcted from the same tiss
 
 
 # Results
-In this work we are attempting to implement a novel gene editing method in-planta on trees. We worked on two cultivars, PopAT from vegetative reproduction in tissue culture and apples from seeds. In this research we used PopAT plants as the best case scenario for gene editing in trees. With PopAT we could control and mitigate as much of the variability in our experiment, because there is no genetic diversity in the plants and as a model organism they are known to be susceptible to agroinfiltration. With apples is was a whole different story, the plants were grown from seeds and because the plants are known to be selfincompatible, the seedlings are much more diverse in their genetic makeup. Although our research is based on some success of others, still there is no consensus about the best practice to approach in-planta transformation. On the one hand, we try new plants and new DRs, therefor it would be logical to go way back to expression in tissue culture for the assessment of those genes. On the other hand, we dont want to strey so far from our final goal of in-planta transformation and because the complexity of the biological system, it is well understood that we can not deduce from tissue culture results to an in-planta experiment in a straight forward manner. Hence, our experiment scheme starts right away with in-planta experiment, but from the basics of that stage without tacking much for grunted. At first, we assess the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Later, we assess the influence of different combination of DRs on the plant development. Finaly, we scale up the best findings from the last two for statistical analysis purposes. In parallel to all that, we try to inhance our over all knowledge on the natural expression of genes in the different tissues and especially in the shoot-tip by analysing tissue specific transcriptome from PopAT.
+In this work we are attempting to implement a novel gene editing method in-planta on trees. We worked on two cultivars, PopAT from vegetative reproduction in tissue culture and apples from seeds. In this research we used PopAT plants as the best case scenario for gene editing in trees. With PopAT we could control and mitigate as much of the variability in our experiment, because there is no genetic diversity in the plants and as a model organism they are known to be susceptible to agroinfiltration. With apples it was a whole different story, the plants were grown from seeds and because the plants are known to be self incompatible, the seedlings are much more diverse in their genetic makeup. Although our research is based on some success of others, still there is no consensus about the best practice to approach in-planta transformation. On the one hand, we try new plants and new DRs, therefore it would be logical to go way back to expression in tissue culture for the assessment of those genes. On the other hand, we don't want to stray so far from our final goal of in-planta transformation and because of the complexity of the biological system, it is well understood that one can not deduce from tissue culture results to an in-planta experiment in a straightforward manner. Hence, our experiment scheme starts right away with in-planta experiment, but from the basics of that stage without taking much for grunted. At first, we assess the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Later, we assess the influence of different combinations of DRs on the plant development. Finally, we scale up the best findings from the last two for statistical analysis purposes. In parallel to all that, we try to enhance our overall knowledge on the natural expression of genes in the different tissues and especially in the shoot-tip by analyzing tissue specific transcriptomes from PopAT.
 
 ## Implementing De-novo maristem induction and transformation.
 
 ### Construction of plasmids containing DRs, Cas9 and sgRNAs
-This work is exploratory in nature, as a results a variety of plasmids was required to insure a wide range of DR combinations on both cultivars with different a reporter gene. As consequence, over 40 plasmids were planed and as mush as 21 final plasmids were used. The construction of the plasmid were planed with the golden gate assembly protocol in mind. This assembly method is based on the compatibility of a backbone and 4 modules. Each module can either include a functional insert or not at all. The combination of the different building blocks is what gives us the diverse array of plasmids. Some of the building blocks were available to purchase ready made for use, but some was needed to be constructed in house. 
+This work is exploratory in nature, as a result a variety of plasmids was required to insure a wide range of DR combinations on both cultivars with different reporter genes. As a consequence, over 40 plasmids were planned and as much as 21 final plasmids were used. The construction of the plasmid was planned with the golden gate assembly protocol in mind. This assembly method is based on the compatibility of a backbone and 4 modules. Each module can either include a functional insert or not at all. The combination of the different building blocks is what gives us the diverse array of plasmids. Some of the building blocks were available to purchase ready made for use, but some needed to be constructed in house. 
 
 
 ### Infection methods experiment
-Assessment of infection method for the infiltration and infection of apple plants by agrobacterium, is preformed with 3 methods (Figure \ref{fig:Agro-infection methods}). In infection methods A and B, no phenotype was observed. In contrast, 2 newly formed shoots was observed from the stem cut site in plants that was infected with the constructs that included the genes *WOX11*-*STM* and *WUS2*-*STM* (Figure \ref{fig:wox-stm transformant}). In 1 of the cases, Cotyledon like emerged from the cut before the shoot.
+Assessment of infection methods for the infiltration and infection of apple plants by agrobacterium, is preformed with 3 methods (Figure \ref{fig:Agro-infection methods}). Infection method A is based on a well established protocol for _Nicotiana benthamiana_ where the agrobacterium is pushed by pressure into the spaces between the cells in the leaf through the stoma (**Citation**). In contrast to _Nicotiana benthamiana_, apple leaves are stiff and can not abbsorb liquid as much. In Infection method B, the motivation to attack specifically the veins of the leafs is because in tissue culture it is clear that those cells are the first to regenerate. In Infection method C, we mimic in a way the natural growth of shoot tip, where if in fact there will be a transformation occurrence and a cell is regenerated by the over expression of the DRs to a meristem tissue, its possibility of growth increases by the help of the whole plant, like in grafting. In infection methods A and B, no phenotype was observed. In contrast in Infection method C, 2 newly formed shoots were observed from the stem cut site in plants that were infected with the constructs that included the genes *WOX11*-*STM* and *WUS2*-*STM* (Figure \ref{fig:wox-stm transformant}). In 1 of the cases, Cotyledon like emerged from the cut before the shoot.
 
 ```{r wox-stm transformant, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "h", fig.cap="Injection of A.tumefaciens into a stem cut of 4 apple Varieties. \\newline{} \\textbf{A.} Cotyledon like emerging from stem cut, two weeks post infection \\textbf{B.} Shoot grow, three weeks post infection"}
 include_graphics("wox-stm transformant3.png") 
@@ -404,14 +432,29 @@ At the scale up experiment about 800 seeds were planted, and as much as 400 plan
 At the high humidity experiment about 500 seeds were planted in a 300 ml containers on sterile soil. The objective is to exclode any variables from the enviroment and maintain moisture for the cells that exposed to air in the proccess. Unfortunately, no shoot regeneration was observed. 
 
 ### Poplar infections  
-No phenotype as result of the treatment was observed.
+Similar experiment were preformed on PopAT as described above, unfortunately no phenotype as result of the treatment was observed. Although our initial assumption was that it would be easier to transform poplar compared to apples, we have'nt took into account the influence of the different growth stages which we act appon. Parhapse with seedlings of PopAT we could get different results.
 
 ### Identification of new trascription factors that are development regulators in poplar  
-After several experiments in apples and poplar plants with the most known DRs, the results were mixed and insufficient for further analysis. We decided to try and identify new transcriptional factors that are more representative of the tissue in question. Therefore, tissue specific transcriptome data was analyzed including shoot-tip transcriptome. We found that from the WUSHCEL-related family, WOX1 was by far the most expressed in shoot-tip in comparison to other tissues (Figure \ref{fig:RNA-seq}).
+After several experiments in apples and poplar plants with the most known DRs, the results were mixed and insufficient for further analysis. We decided to try and identify new transcriptional factors that are more representative of the tissue in question. Therefore, tissue specific transcriptome data was analyzed including shoot-tip transcriptome. For each tissue, we mapped the reads onto transcriptome from _Populus trichocarpa_ and extracted the read count per accession (gene transcript). After that we filterd the accessions to only those whose count was graiter then at least an order of magnitude in shoot tip than any other tissue. After the filtration We were left with 85 accessions. We found that from the WUSHCEL-related gene family, WOX1 was by far the most expressed in shoot-tip in comparison to other tissues (Figure \ref{fig:RNA-seq}) and was found in the 8'th place over all (Table \ref{tab:ShootSpecific}).
+
 ```{r RNA-seq, echo=FALSE, out.width = "80%", fig.align="center", echo=FALSE, fig.pos= "h", fig.cap="WOX1 expression by the RNA-seq analysis"}
 WOX1_df <- read.csv("WOX1_df.csv")
-RNA_plot = barplot(WOX1_df$Expression, names = WOX1_df$Tissue, ylim = c(0, 800), ylab = " WOX1 count", xlab = "Tissues")
+RNA_plot <- barplot(WOX1_df$Expression, names = WOX1_df$Tissue, ylim = c(0, 800), ylab = " WOX1 count", xlab = "Tissues")
 ```
+
+```{r ShootSpecific, echo=FALSE, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "h"}
+ShootSpecific_Over10 <- read.csv("ShootSpecific_Over10.csv")
+
+ShootSpecific_Over10 <- ShootSpecific_Over10 %>% select(Accession, Description)
+
+ShootSpecific_Over10$Description <- str_replace(ShootSpecific_Over10$Description, "PREDICTED: Populus trichocarpa ", "")
+
+
+sep = c(rep('',nrow(ShootSpecific_Over10)))                             
+kable(ShootSpecific_Over10[1:10,] , caption = "List of genes when sorted by the expression specificity to shoot tip (First 10)" ,booktabs = TRUE, linesep = sep) %>%
+  kable_styling(latex_options = "HOLD_position") %>% row_spec(8, bold = TRUE)
+```
+
 
 ### Validation of the RNA-seq analysis with real-time quantitive PCR (RT-qPCR)
 In most RT-qPCR expiraments, the samples are from the same tissue and the only difference is a certine treatment (water salinity, gene expression etc.). Therefor it is easy to choose an house-kipping gene to act as a normalizer. In our case study, the samples are different tissues, which differ in many biological pathways. At first, we tried to use the most recognized house-keeping gene, Actin-7. The results showed too much varience in the expression, so we went and looked in the RNA-seq result for the most unchanged genes across all tissues and chose 2 genes, Serine/threonine-protein phosphatase PP2A-4 catalytic subunit and E3 ubiquitin ligase.   
@@ -436,9 +479,9 @@ E3_plot = barplot(qPCR_E3$Avg, names = qPCR_E3$Tissue, ylim = c(0, 1), main = pa
 ```
 
 ### _WOX1_ gene isolation from PopAT shoot tip
-For the assembly of plasmids with the gene _WOX1_ as a DR for shoot regeneration, DNA was extracted and purified from PopAT's shoot tip tissue. Then the gene was amplified using PCR reaction. The PCR product was analyzed using agarose gel electrophoresis and was found to be about 300 bp longer than expected, although it does not know to include introns. Consequently, we decide to try and isolate the gene from cDNA to see if the length would be as expected and we can deduce that in PopAT there is the presence of intron, or parhapse somthing else went wrong and the sequence we amplified wasent the target. After extraction and purification of RNA from the tissue, cDNA was prepared, and _WOX1_ was amplified. The band observed in the agarose gel was at the expected length, so it could be cleaned and be used in further assembly. 
+For the assembly of plasmids with the gene _WOX1_ as a DR for shoot regeneration, DNA was extracted and purified from PopAT's shoot tip tissue. Then the gene was amplified using PCR reaction. The PCR product was analyzed using agarose gel electrophoresis and was found to be about 300 bp longer than expected, although it does not known to include introns. Consequently, we decide to try and isolate the gene from cDNA to see if the length would be as expected and we can deduce that in PopAT there is the presence of intron, or parhapse somthing else went wrong and the sequence we amplified was not the target. After extraction and purification of RNA from the tissue, cDNA was prepared, and _WOX1_ was amplified. The band observed in the agarose gel was at the expected length, so it could be cleaned and be used in further assembly (Figures \ref{fig:wox1 isolation}). 
 
-```{r wox1 isolation, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "h", fig.cap="Isolation of the WOX1 gene from PopAT shoot tip"}
+```{r wox1 isolation, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Isolation of the WOX1 gene from PopAT shoot tip"}
 include_graphics("WOX1_isolation.png") 
 ```
 
@@ -478,7 +521,7 @@ The quest to achieve an in-planta transformation in trees was a huge challenge. 
 
 # Supplementary information
 
-[Analysis code link.](https://htmlpreview.github.io/?https://rsaw.githubusercontent.com/BenSiv/PopAT-expression-analysis/main/PopAT_Expression.html)
+[Analysis code link.](https://htmlpreview.github.io/?https://github.com/BenSiv/PopAT-expression-analysis/blob/main/PopAT_Expression.html)
 
 ```{r Bud_Excision, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "h", fig.cap="Surgical removal of the axillary bud and injection of vector for de-novo shoot induction (Maher et al. 2020)"}
 include_graphics("Bud excision.png") 

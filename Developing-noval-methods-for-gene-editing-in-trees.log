@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.10)  31 DEC 2021 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.10)  1 JAN 2022 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -596,12 +596,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--122
 
  []
 
-<telhai logo.jpg, id=221, 513.92pt x 202.7575pt>
+<telhai logo.jpg, id=237, 513.92pt x 202.7575pt>
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
 Package pdftex.def Info: telhai logo.jpg  used on input line 123.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-<MigalLogo.png, id=222, 1150.2975pt x 401.5pt>
+<MigalLogo.png, id=238, 1150.2975pt x 401.5pt>
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
 Package pdftex.def Info: MigalLogo.png  used on input line 123.
@@ -637,11 +637,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 3.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 36.
+Package pdftex.def Info: telhai logo.jpg  used on input line 37.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 36.
+Package pdftex.def Info: MigalLogo.png  used on input line 37.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -655,7 +655,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 ...n and transformation.}{19}{subsection.5.1}
+l.37 ...ators in poplar.}{19}{subsubsection.4.1.7}
                                                   % [1])
 \tf@toc=\write4
 \openout4 = `Developing-noval-methods-for-gene-editing-in-trees.toc'.
@@ -784,7 +784,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 <Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/agricult
-ural area per capita-1.pdf, id=387, 469.755pt x 325.215pt>
+ural area per capita-1.pdf, id=409, 469.755pt x 325.215pt>
 File: Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/agr
 icultural area per capita-1.pdf Graphic file (type pdf)
 <use Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/agri
@@ -862,11 +862,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [12]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 701.
+Package pdftex.def Info: telhai logo.jpg  used on input line 697.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 701.
+Package pdftex.def Info: MigalLogo.png  used on input line 697.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -880,24 +880,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.701 \end{itemize}
-                   ]
-Overfull \hbox (44.24472pt too wide) in paragraph at lines 727--739
- [][] 
- []
-
-
-Overfull \hbox (59.45264pt too wide) in paragraph at lines 754--784
- [][] 
- []
-
+l.697   P
+         ARAFILM® (Sigma-Aldrich™)]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 785.
+Package pdftex.def Info: telhai logo.jpg  used on input line 799.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 785.
+Package pdftex.def Info: MigalLogo.png  used on input line 799.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -907,19 +898,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.785 
-      ]
+[14]
+Overfull \hbox (44.24472pt too wide) in paragraph at lines 840--852
+ [][] 
+ []
+
+
+Overfull \hbox (59.45264pt too wide) in paragraph at lines 867--897
+ [][] 
+ []
+
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 831.
+Package pdftex.def Info: telhai logo.jpg  used on input line 898.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 831.
+Package pdftex.def Info: MigalLogo.png  used on input line 898.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -929,27 +924,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.831 
+l.898 
       ]
-<apple injection3.png, id=458, 1019.4888pt x 342.5598pt>
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 944.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 944.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[16pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.944 
+      ]
+<apple injection3.png, id=496, 1019.4888pt x 342.5598pt>
 File: apple injection3.png Graphic file (type png)
 <use apple injection3.png>
-Package pdftex.def Info: apple injection3.png  used on input line 888.
+Package pdftex.def Info: apple injection3.png  used on input line 990.
 (pdftex.def)             Requested size: 469.74835pt x 157.84076pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 903.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1005.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 903.
+Package pdftex.def Info: MigalLogo.png  used on input line 1005.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -959,24 +976,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+[17pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.903 
-      ]
-<apple injection2.png, id=470, 963.6pt x 361.8318pt>
+l.1005 
+       ]
+<apple injection2.png, id=506, 963.6pt x 361.8318pt>
 File: apple injection2.png Graphic file (type png)
 <use apple injection2.png>
-Package pdftex.def Info: apple injection2.png  used on input line 911.
+Package pdftex.def Info: apple injection2.png  used on input line 1013.
 (pdftex.def)             Requested size: 469.75679pt x 176.39366pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 936.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1037.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 936.
+Package pdftex.def Info: MigalLogo.png  used on input line 1037.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -986,62 +1003,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.936 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
+l.1037 ... experiment}\label{scale-up-experiment}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.3}) has been already used, duplicat
+e ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.936 
-       <./apple injection3.png> <./apple injection2.png>]
+l.1037 ... experiment}\label{scale-up-experiment}}
+                                                   <./apple injection3.png> <./
+apple injection2.png>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1048.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1148.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1048.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 37.7435pt, for example:
-(fancyhdr)                \setlength{\headheight}{37.7435pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
-
-[18]
-<wox-stm transformant3.png, id=502, 963.6pt x 422.889pt>
-File: wox-stm transformant3.png Graphic file (type png)
-<use wox-stm transformant3.png>
-Package pdftex.def Info: wox-stm transformant3.png  used on input line 1084.
-(pdftex.def)             Requested size: 469.75679pt x 206.15916pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<WOX-STM transformant Cas9+Actin3.jpg, id=504, 881.2925pt x 371.3875pt>
-File: WOX-STM transformant Cas9+Actin3.jpg Graphic file (type jpg)
-<use WOX-STM transformant Cas9+Actin3.jpg>
-Package pdftex.def Info: WOX-STM transformant Cas9+Actin3.jpg  used on input li
-ne 1107.
-(pdftex.def)             Requested size: 375.80168pt x 158.36745pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `tab:S-RNase Constracts' on page 19 undefined on input
- line 1121.
-
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1127.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1127.
+Package pdftex.def Info: MigalLogo.png  used on input line 1148.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1052,33 +1033,95 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
 [19]
-<Transformant2 results.png, id=516, 1133.6754pt x 547.8066pt>
+<wox-stm transformant3.png, id=539, 963.6pt x 422.889pt>
+File: wox-stm transformant3.png Graphic file (type png)
+<use wox-stm transformant3.png>
+Package pdftex.def Info: wox-stm transformant3.png  used on input line 1196.
+(pdftex.def)             Requested size: 469.75679pt x 206.15916pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1216.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1216.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[20]
+<WOX-STM transformant Cas9+Actin3.jpg, id=548, 881.2925pt x 371.3875pt>
+File: WOX-STM transformant Cas9+Actin3.jpg Graphic file (type jpg)
+<use WOX-STM transformant Cas9+Actin3.jpg>
+Package pdftex.def Info: WOX-STM transformant Cas9+Actin3.jpg  used on input li
+ne 1219.
+(pdftex.def)             Requested size: 375.80168pt x 158.36745pt.
+
+LaTeX Warning: Reference `tab:S-RNase Constracts' on page 21 undefined on input
+ line 1233.
+
+<Transformant2 results.png, id=551, 1133.6754pt x 547.8066pt>
 File: Transformant2 results.png Graphic file (type png)
 <use Transformant2 results.png>
-Package pdftex.def Info: Transformant2 results.png  used on input line 1130.
+Package pdftex.def Info: Transformant2 results.png  used on input line 1242.
 (pdftex.def)             Requested size: 375.8093pt x 181.5959pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1257.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1257.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1257 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1257 
+        <./wox-stm transformant3.png> <./WOX-STM transformant Cas9+Actin3.jpg>]
 <Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RNA-seq-
-1.pdf, id=518, 469.755pt x 325.215pt>
+1.pdf, id=561, 469.755pt x 325.215pt>
 File: Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RNA
 -seq-1.pdf Graphic file (type pdf)
 <use Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RNA-
 seq-1.pdf>
 Package pdftex.def Info: Developing-noval-methods-for-gene-editing-in-trees_fil
-es/figure-latex/RNA-seq-1.pdf  used on input line 1176.
+es/figure-latex/RNA-seq-1.pdf  used on input line 1299.
 (pdftex.def)             Requested size: 375.80452pt x 260.17235pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1198.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1327.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1198.
+Package pdftex.def Info: MigalLogo.png  used on input line 1327.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1088,28 +1131,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1198 
-        <./wox-stm transformant3.png>]
+l.1327 
+        <./Transformant2 results.png>]
 <Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPCR-1.p
-df, id=531, 469.755pt x 325.215pt>
+df, id=571, 469.755pt x 325.215pt>
 File: Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPC
 R-1.pdf Graphic file (type pdf)
 <use Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPCR
 -1.pdf>
 Package pdftex.def Info: Developing-noval-methods-for-gene-editing-in-trees_fil
-es/figure-latex/qPCR-1.pdf  used on input line 1207.
+es/figure-latex/qPCR-1.pdf  used on input line 1352.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1213.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1357.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1213.
+Package pdftex.def Info: MigalLogo.png  used on input line 1357.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1119,61 +1162,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1213 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.6}) has been already used, duplicate ignored
+l.1357 \end{figure}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1213 
-        <./WOX-STM transformant Cas9+Actin3.jpg> <./Transformant2 results.png>]
-
-Overfull \vbox (34.8454pt too high) has occurred while \output is active []
-
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1213.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1213.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 37.7435pt, for example:
-(fancyhdr)                \setlength{\headheight}{37.7435pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
-
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1213 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1213 
-        <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-late
-x/RNA-seq-1.pdf> <./Developing-noval-methods-for-gene-editing-in-trees_files/fi
-gure-latex/qPCR-1.pdf>]
-<WOX1_isolation.png, id=552, 617.1858pt x 366.6498pt>
+l.1357 \end{figure}
+                    <./Developing-noval-methods-for-gene-editing-in-trees_files
+/figure-latex/RNA-seq-1.pdf>]
+<WOX1_isolation.png, id=583, 617.1858pt x 366.6498pt>
 File: WOX1_isolation.png Graphic file (type png)
 <use WOX1_isolation.png>
-Package pdftex.def Info: WOX1_isolation.png  used on input line 1235.
+Package pdftex.def Info: WOX1_isolation.png  used on input line 1380.
 (pdftex.def)             Requested size: 469.7724pt x 279.07632pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1271.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1386.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1271.
+Package pdftex.def Info: MigalLogo.png  used on input line 1386.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1183,19 +1195,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1271 
+l.1386 
+        <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-late
+x/qPCR-1.pdf>]
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1431.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1431.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1431 
         <./WOX1_isolation.png>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1350.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1527.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1350.
+Package pdftex.def Info: MigalLogo.png  used on input line 1527.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1205,46 +1240,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[24]
-<Bud excision.png, id=574, 963.6pt x 179.92218pt>
+[26]
+<Bud excision.png, id=616, 963.6pt x 179.92218pt>
 File: Bud excision.png Graphic file (type png)
 <use Bud excision.png>
-Package pdftex.def Info: Bud excision.png  used on input line 1434.
+Package pdftex.def Info: Bud excision.png  used on input line 1579.
 (pdftex.def)             Requested size: 469.75679pt x 87.71239pt.
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1439.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1439.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 37.7435pt, for example:
-(fancyhdr)                \setlength{\headheight}{37.7435pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
-
-[25]
-<Deform benthamiana PDS.png, id=581, 963.6pt x 439.6425pt>
+<Deform benthamiana PDS.png, id=617, 963.6pt x 439.6425pt>
 File: Deform benthamiana PDS.png Graphic file (type png)
 <use Deform benthamiana PDS.png>
-Package pdftex.def Info: Deform benthamiana PDS.png  used on input line 1442.
+Package pdftex.def Info: Deform benthamiana PDS.png  used on input line 1587.
 (pdftex.def)             Requested size: 469.75679pt x 214.32652pt.
-<Pommelo transformation.png, id=582, 532.99126pt x 542.025pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pommelo transformation.png, id=618, 532.99126pt x 542.025pt>
 File: Pommelo transformation.png Graphic file (type png)
 <use Pommelo transformation.png>
-Package pdftex.def Info: Pommelo transformation.png  used on input line 1450.
+Package pdftex.def Info: Pommelo transformation.png  used on input line 1595.
 (pdftex.def)             Requested size: 375.81583pt x 382.18556pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1456.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1601.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1456.
+Package pdftex.def Info: MigalLogo.png  used on input line 1601.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1254,64 +1278,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+[27]
+Overfull \vbox (193.29446pt too high) has occurred while \output is active []
+
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1601.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1601.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1456 
+l.1601 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1456 
-        <./Bud excision.png> <./Deform Benthamiana PDS.png>]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1488.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1488.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 37.7435pt, for example:
-(fancyhdr)                \setlength{\headheight}{37.7435pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
-
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
-) has been already used, duplicate ignored
+l.1601 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1488 \textbf{Gel mixture, loading and running}
-                                                 <./Pommelo transformation.png>
-]
+l.1601 
+        <./Bud excision.png> <./Deform Benthamiana PDS.png> <./Pommelo transfor
+mation.png>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1598.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1716.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1598.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 37.7435pt, for example:
-(fancyhdr)                \setlength{\headheight}{37.7435pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
-
-[28]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1705.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1705.
+Package pdftex.def Info: MigalLogo.png  used on input line 1716.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1324,11 +1333,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [29]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1833.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1817.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1833.
+Package pdftex.def Info: MigalLogo.png  used on input line 1817.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1341,11 +1350,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [30]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1975.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1921.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1975.
+Package pdftex.def Info: MigalLogo.png  used on input line 1921.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1355,19 +1364,70 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
 
-[31] (./Developing-noval-methods-for-gene-editing-in-trees.aux)
+[31]
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 2019.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 2019.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[32]
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 2122.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 2122.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[33]
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 2125.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 2125.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 37.7435pt, for example:
+(fancyhdr)                \setlength{\headheight}{37.7435pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-25.7435pt}.
+
+[34] (./Developing-noval-methods-for-gene-editing-in-trees.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Developing-noval-methods-for-gene-editing-in
 -trees.out' has not changed.
-(rerunfilecheck)             Checksum: DAC33FA60A1C13039A20B2790510984F;13104.
+(rerunfilecheck)             Checksum: 57CCCC4148665DB5A95C4FFE71455D7B;13541.
  ) 
 Here is how much of TeX's memory you used:
- 11402 strings out of 480313
- 185384 string characters out of 5895443
- 481807 words of memory out of 5000000
- 28823 multiletter control sequences out of 15000+600000
+ 11424 strings out of 480313
+ 185670 string characters out of 5895443
+ 481091 words of memory out of 5000000
+ 28832 multiletter control sequences out of 15000+600000
  463610 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,16n,63p,780b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1389,11 +1449,11 @@ type1/public/lm/lmr17.pfb><c:/Users/Ben_Sivan/AppData/Roaming/TinyTeX/texmf-dis
 t/fonts/type1/public/lm/lmr7.pfb><c:/Users/Ben_Sivan/AppData/Roaming/TinyTeX/te
 xmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/Ben_Sivan/AppData/Roaming/T
 inyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Developing-noval-methods-for-gene-editing-in-trees.pdf (31 pa
-ges, 29678371 bytes).
+Output written on Developing-noval-methods-for-gene-editing-in-trees.pdf (34 pa
+ges, 29687104 bytes).
 PDF statistics:
- 875 PDF objects out of 1000 (max. 8388607)
- 784 compressed objects within 8 object streams
- 246 named destinations out of 1000 (max. 500000)
- 503 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 928 PDF objects out of 1000 (max. 8388607)
+ 833 compressed objects within 9 object streams
+ 259 named destinations out of 1000 (max. 500000)
+ 535 words of extra memory for PDF output out of 10000 (max. 10000000)
 
