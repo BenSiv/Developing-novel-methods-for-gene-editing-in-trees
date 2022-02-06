@@ -320,6 +320,58 @@ kable(mediums, caption = "Composition of media for cultivation, tranformation, s
 
 Experimants scheme as it was planned for the achievment of the milestones and to test the hypotheses.
 
+```{r Experimants scheme, echo=FALSE}
+library(DiagrammeR)
+library(DiagrammeRsvg)  # for conversion to svg
+library(rsvg)  # for saving svg
+
+FlowChart <- 
+  grViz(diagram = "digraph flowchart {
+    node [fontname = arial, shape = rect];
+    edge [fontname = arial];
+
+    hypothesis [label = 'Hypothesis: \nBy infecting young plants with Agrobacterium tumefaciens \nharboring T-DNA that contains DRs, CRISPR/Cas9 and sgRNA, \nit is possible to achieve de-novo shoot regeneration with knockout at the target gene.']
+
+    plasmids [label = 'Construction of plasmids containing DRs, Cas9 and sgRNAs \n11 per cultivar']
+
+    infection_methods [label = 'Infection methods experiment:\n3 Infection methods with all 11 plasmids']
+
+    DRs [label = 'DRs experiment:\nBest Infection methods with all 11 plasmids']
+
+    ScaleUp [label = 'Scale-up experiment:\nBest Infection methods with most successful plasmids']
+    
+    hypothesis -> plasmids -> infection_methods -> DRs -> ScaleUp;
+  }")
+  
+tmp <- capture.output(rsvg_png(charToRaw(export_svg(FlowChart)),'De-novo_meristem_induction_FlowChart.png'))
+
+FlowChart <- 
+  grViz(diagram = "digraph flowchart {
+    node [fontname = arial, shape = rect];
+    edge [fontname = arial];
+
+    hypothesis [label = 'Hypothesis: \nBy infecting Cas9-OE plants with viral vector bearing sgRNA targeting PDS endogenes, \nit would be possible to isolate PDS knockout plant.']
+
+    plants [label = 'Generating Cas9-OE tree']
+
+    vectors [label = 'Generating a viral vector bearing sgRNA targeting PDS endogenes']
+
+    NB_infection [label = 'Infecting Cas9-OE Nicotiana Benthamiana with GM-vector']
+
+    plant_infection [label = 'Infecting Cas9-OE tree with GM-vector']
+    
+    hypothesis -> plants -> vectors -> NB_infection -> plant_infection;
+  }")
+  
+tmp <- capture.output(rsvg_png(charToRaw(export_svg(FlowChart)),'VIGE_FlowChart.png'))
+```
+```{r VIGE_FlowChart, out.width = "80%", fig.align="center", echo=FALSE, fig.cap="VIGE experimants scheme"}
+include_graphics("VIGE_FlowChart.png") 
+```
+```{r De-novo_meristem_induction_FlowChart, out.width = "80%", fig.align="center", echo=FALSE, fig.cap="De-novo meristem induction experimants scheme"}
+include_graphics("De-novo_meristem_induction_FlowChart.png") 
+```
+
 ## Implementing VIGE in trees
 
 ### Generating Cas9-OE poplar plant
@@ -360,7 +412,7 @@ Amplified in PCR (Gradient thermal cycler by VWR) for propagation examination. W
 
 Infiltrated leaves from positive plants are collected and immediately transferred to liquid nitrogen. The tissue is grounded to a fine powder and suspended in phosphate buffer (0.1 M, pH 7.5) solution (3 mL per gram of tissue-powder). Sea-sand is added to induce micro-cuts to the leaves. The given liquid is rubbed on the leaves of young Cas9-OE plants to induce viral infection.
 
-## Implementing De-novo maristem induction and transformation.
+## Implementing De-novo meristem induction and transformation.
 
 ### Construction of plasmids containing DRs, Cas9 and sgRNAs
 
@@ -487,7 +539,7 @@ PopAT were transformed as described in [**Generating Cas9-OE poplar plant**](#Ge
 include_graphics("T1-4.jpg") 
 ```
 
-DNA was isolated from these shoots and PCR was preformed with primers from the TDNA in order to validate transformation. No shoot was found positive.
+DNA was isolated from these shoots and PCR was preformed with primers from the T-DNA in order to validate transformation. No shoot was found positive.
 
 ### Generating a viral vector bearing sgRNA targeting PDS endogenes fused with mobile RNA sequence and GFP.
 
@@ -500,7 +552,7 @@ kable(VVectors, caption = "Viral vectors" ,booktabs = TRUE) %>%
 
 ### Infecting Cas9-OE poplar and Cas9-OE apples with GM-vector
 
-Since we couldn't successfully generate Cas9-OE poplars, we couldn't infect them with out vectors. Fortunately, we teamed up as part of a graiter collaboration with Moshe Flaishmans lab from the Department of Fruit Trees Sciences in the Institute of Plant Sciences at The Volcani Center. Flaishmans lab generated two lines of Cas9-OE apples (#166, #177). These plants where transformed with the plasmid **pK7WGF2,0::hCas9** using Agrobacterium mediated transformation in tissue culture.  
+Since we couldn't successfully generate Cas9-OE poplars, we couldn't infect them with out vectors. Fortunately, we teamed up as part of a graiter collaboration with Moshe Flaishman's lab from the Department of Fruit Trees Sciences in the Institute of Plant Sciences at The Volcani Center. Flaishman's lab generated two lines of Cas9-OE apples (#166, #177). These plants where transformed with the plasmid **pK7WGF2,0::hCas9** using Agrobacterium mediated transformation in tissue culture.  
 
 
 ```{r Flaishmans_apples, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="One of the plants that reproduced from the \\#167 line. \\newline{} \\textbf{A.} Map of the T-DNA vector \\textbf{B.} The plant post infection"}
@@ -552,7 +604,7 @@ include_graphics("Transformant2 results.png")
 ```
 
 ### Scale-up experiment  
-At the scale up experiment for the purpose of statistical analysis of the methods found in the last two experiments. At this experiment about 800 seeds were planted, out of which 400 plants were infected with 2 of the most promising plasmids (WOX11-STM and WUS2-STM) and 1 control plasmid (Empty). However, the plants were infected by Powdery mildew and Aphids diseases, hence no phenotype could be observed.
+At the scale up experiment for the purpose of statistical analysis of the methods found in the last two experiments. At this experiment about 800 seeds were planted from two apple varieties (Pink Lady and Granny Smith), out of which about half germinated. 400 plantlets were infected with 2 of the most promising plasmids (WOX11-STM and WUS2-STM) and 1 control plasmid (Empty). However, the plants were infected by Powdery mildew and Aphids diseases, hence no phenotype could be observed.
 
 ### High humidity experiment  
 The objective of this experiment was to exclude any variables from the environment and maintain moisture for the cells that were exposed to air during the infection process. In the high humidity experiment about 500 seeds were planted in close containers with sterile soil. Next, these plants were infected with agrobacterium containing _WOX11_-_STM_ and _WUS2_-_STM_ plasmids, similarly to the Scale-up experiment. Unfortunately, with those conditions no shoot regeneration was observed.
@@ -627,39 +679,47 @@ For the assembly of plasmids with the _WOX1_ gene as a DR for shoot regeneration
 include_graphics("WOX1_isolation.png") 
 ```
 
-# Conclusions
+# Discussion and Conclusions
 
-Food security is one of the major challenges facing humanity in the 21st century [@FAO2011], especially in light of forecasts regarding climate change and population growth. Cereals are staple crops and account for as much as 44% of all agriculture land use for food production [(AREA USED FOR PRODUCTION (FAO 2017))](https://ourworldindata.org/grapher/global-agricultural-land-use-by-major-crop-type). Cereal cultivars are annual plant and as such are more prone to be effected by change in irrigation and overall climate patterns[@Shiferaw2014]. In contrast, Trees, especially fruit trees in the context of food production, are more resilient to changes in the environment as a result of their strong and deep roots. Consequently trees serves a vital role as a source for food security. To date, fruit trees only serves a small part of the overall food production. For trees to reach their full potential as staple crop in many parts of the world, crop improvement methods need to be more robust. Genetic engineering and especially genome editing methods  with the use of CRISPR/Cas9 technology have that potential. For those methods to be adopted, they need to fulfill cretin criteria such as, speed, ease of execution, cheap and minimal preliminary knowledge required. The most common used method for crop improvement by genetic engineering is agrobacterium-mediated transformation that is preformed on ex-plant in sterile environment on tissue culture medium. Many researchers combined that technology with CRISPR/Cas9 by integrating the Cas9 DNA sequence as part of the agrobacterium T-DNA cassette. This method takes several month at least to get from soil-grown wild type plant to soil-grown transformant one, it takes very skilled personal to preform and require preliminary knowledge in specific growth medium per cultivar.
+Food security is one of the major challenges facing humanity in the 21st century [@FAO2011], especially in light of forecasts regarding climate change and population growth. Cereals are staple crops and account for as much as 44% of all agriculture land use for food production [(AREA USED FOR PRODUCTION (FAO 2017))](https://ourworldindata.org/grapher/global-agricultural-land-use-by-major-crop-type). Cereal cultivars are annual plant and as such are more prone to be effected by changes in irrigation and overall climate patterns [@Shiferaw2014]. In contrast, Trees, or specifically fruit trees in the context of food production, are more resilient to environmental changes manly due to their strong and deep roots. Consequently, trees have an important role in food security. Currently, fruit trees produce a small part of the world's overall food production. For trees to reach their full potential, crop improvement methods need to be more robust. Genome editing using CRISPR/Cas9 technology can contribute to this effort. For a method to be adopted, it needs to fulfill certain criteria such as, speed, ease of execution, cheap and minimal preliminary knowledge. The most common used method for crop improvement using a molecular genetic approach is by agrobacterium-mediated transformation. This method involves ex-plant in sterile environment on tissue culture medium. At present, for genome editing, the CRISPR/Cas9 system is ligated into agrobacterium T-DNA cassette. This method was a dramatic brake through in plant genetics but still it takes several months till soil-grown transformant plant is obtained and moreover it requires skilled personal for implementation and knowhow such as the specific growth medium and conditions per cultivar etc.
 
-In-planta transformation is much desirable goal. In pursuing that objective, Zhang et al.[@Zhang2017] developed a new method for plant transformation, that mimicks the work in tissue culture, but in-planta. In that method, rather than grow the whole plant in a sterile envoriment on an agar medium, the researchers created micro enviroment on an inner tissue section of the plant. It was done by cutting a stam of a young pommelo plant, and enclosing it using a tube and parafilm. The tube is than filled with a liquid growth medium containing antibiotics and hormones (Figure \ref{fig:Pommelo}). Few seccess was shown with that method, it holds several advantages over tissue colture methods such as needs less time and labor cost, requires less equipments and less strict experiment conditions and less skilled personal. but as the design suggests, several of the drawbacks in tissue colture methods are present here too, like the need for hormones and antibiotiotics.    
+In-planta transformation, without involving cell culture, is an extremely desired goal. Zhang et al.(2017) developed a transformation method that mimics  tissue culture in-planta by creating a micro environment on an inner tissue section of the plant. The method was implemented on pomelo. a stem of a young plant was cut and the edge was inserted into a tube which was filled with liquid growth medium. From there on, the whole process was in line with other agrobacterium-mediated transformation procedures, co-culture with _Agrobacterium tumefaciens_ in the dark, adding of antibiotics and hormones (Figure \ref{fig:Pommelo}). several of the drawbacks in tissue culture methods are present here too, like the need for hormones and antibiotics.   
 
-Maher et al.[@Maher2020] developed novel method for plant gene editing by introducing DRs into the cell as well as CRISPR/Cas9 and sgRNA, with the use of agrobacterium on soil-grown plants. In that way, the phenotype formed by the transformation is de-novo shoot induction as well as knockout in the gene of interest. This method have the potential to remove the need entirely of tissue culture and enable gene editing in-planta. Furthermore, shoot regeneration is a direct result of the transformation, therefor no induction with hormones or selection with antibiotics is required in contrast to the work of Zhang et al.[@Zhang2017]. In their work, to show de-novo shoot induction, the vector was introduced to the location of axillary bud right after it was surgically removed (Figure \ref{fig:Bud_Excision}). New shoot was formed when the right combination of DRs was introduced, but in most cases it was deformed as a result of the unregulated over expression of the DRs. 
+## DRs based tree transformation experiments 
 
-In this work we attempted to implement this novel transformation method, on apple and poplar plants as the first trees used for this method. The potential of this method is sound and in trees it is even more striking when compared with traditional methods. Poplar tree was chosen as a model tree and apple tree was chosen because of its commercially importance. Also, a major set back in apple plantation is its self-incompatibility, which means that new plantations need to be vegetative reproduced mainly by cuttings and grafts. In apples S-RNase is one of the key mechanisms that regulates self-incompatibility and as such can serve a suited target for gene editing [@DelDuca2019]. Therefor, the target gene of interest in this work is the apple's S-RNase, if knocked out will have notable commercially importance, as the first self-compatible apple variety. In poplar the target gene was PDS because it is a well established reporter gene for the verification of gene knockout. 
+Maher et al.(2020) developed a novel method for plant gene editing by introducing a defined combination of DRs into the cell as well as CRISPR/Cas9 and sgRNA, with the use of agrobacterium on soil-grown plants. As a result a de-novo shoot induction is obtained as well as editing in the gene of interest without using tissue culture. The experiment was performed on annual plants (tobacco, tomato) and one Perennial plant, grapevine. It should be noted that in most cases deformations occurred as a result of the over expression of the DRs.
 
-In our work, we tried three different introduction of the agrobacterium to the plant, pressure injection to the leaf surface, injection to leaf vains and injection to stem cut. Similar to the method described by Zhang et al., our result was in favor of the latter (Figure \ref{fig:Pommelo}). In comparison to Maher et al. that describe the work on _Nicotiana benthamiana_ and also mentioned work on tomato, potato and grape, we attempted to implement the method on apple and poplar trees. Another result different in comparison to their work, the new shoot formed on the top of the stem was not deformed (Figure \ref{fig:Deform_benthamiana}), possibly as a result of the nature of the growth, mimicking the natural shoot apical meristem, and the apical control with all its hormone flux involve in the process.
+In this work I attempted to implement this novel transformation method on trees, on poplar as a model system and on apple as one of the most economically important fruit trees. The potential of this method is sound and in trees it is even more striking when compared with traditional methods because all the reason discussed in the genetic editing bottleneck section.
 
-In the infection methods experiment only 1 plant was infected with each plasmid with the method described and later on shown promise results in de-novo shoot regeneration. Although regenerative plants was clearly observed, no mutation was found as a result of the Cas9 activity. Further investigation is required in the subject for more conclusive results, Therefor DRs experiment was preformed, with more repetitions and wider range of apple varieties.
+The target in poplar was PDS because it is a well-established reporter gene for the verification of gene knockout (mutating the gene results in disruption of green pigmentation and the plant turns white). The target gene in apple was the S-RNase gene which regulates the self-incompatibility fertilization system (mutating the gene results in self-fertilization ability) [@DelDuca2019]. If this editing will succeed this will be a major step towards the construction of self-compatible apple cultivar which up to date do not exist. 
 
-In the DRs experiment 352 plants infected, out of 44 infected with _WOX11_-_STM_, 4 regenerate new shoot from the cut site. In the infection methods experiment, the cut site was not covered. After reviewing the work of [@Zhang2017], a decision was made to use parafilm for better moister maintenance. 
+I examined three different strategies for introducing DNA into the plant using agrobacterium:  pressure injection to the leaf surface, injection to the leaf veins and injection to a stem cut. Our result was in favor of the latter, which is a similar method to the one described by Zhang et al.(2017) (Figure \ref{fig:Pommelo}).
+
+Maher et al.(2020) aimed to show de-novo shoot induction as a proof of concept, hence their DNA introduction strategy was to surgically remove axillary buds and inject the agrobacterium to the cuts. Since my target gene in apples wasn't going to produce visual clues for gene editing, I was concerned for not beeing able to properly insure total removal of the axillary bud, and in order to avoid false positives for the regeneration as much as possible, I decided to not imitate their research on that regard. 
+
+In comparison to Maher et al.(2020) that describe the work on _Nicotiana benthamiana_ and also mentioned work on tomato, potato and grape, we attempted to implement the method on poplar and apple trees. Another difference in comparison to their work appeared in the results. The new shoot formed on the top of the stem was not deformed (Figure \ref{fig:Deform_benthamiana}), possibly as a result of the nature of the growth, mimicking the natural shoot apical meristem, and the apical control with all its hormone flux involve in the process.
+
+The infection methods were examined at first as a preliminary experiment only on one plant with each of the plasmids, resulted in regenerative plants when the plasmids harbored the DR combinations WOX11-STM and WUS-STM. The construct contained also the CRISPR system with a gRNA targeting the S-RNase gene however editing was not identified in the sequence of the S-RNase genes. For further verification a larger experiment was performed with the same plasmids (DRs experiment). 352 plants were infected. 44 of them with WOX11-STM, and 4 of them regenerated new shoot from the cut site. Other the the scale DRs experiment was different compared to the preliminary one in that the cut site was covered with parafilm for better moister maintenance [@Zhang2017].
 
 In the scale-up experiment, both parafilm and aluminum foil was used to cover the stem cut for kipping dark and moist environment. The Dark environment is crucial in the first 48 hours for the agrobacterium infection. Unfortunately, as a result of disease spread, no phenotype was observed. 
 
-To increase the possibility of infection success, the next seeds were grown under aseptic conditions, on soil. And were kept in a high humidity environment. No shoot regeneration formed in that case too.
+In another experiment, to increase the possibility of infection success, the seeds were grown under aseptic conditions, on soil and were kept in a high humidity environment. However, this strategy did not help and no shoot regeneration was not formed.
 
-In contarst to our first assumption that the biggest factor for seccess would be the chosen plant metiral, described as "the best case scenario" in the results chapter,  it seems that it is more important to use plants in the correct growth stage i.e. seedlings and not cuttings. Hence we suggest that for future experiment to utilize this property of seedlings and all the other advantages of PopAT, it hould be wise to experiment on PopAT seedlings.
+Although some experiments I has technical problems I think that from the results that were obtained one may suggest that it is important to use plants at an exact growth stage that may be more susceptible to transformation with agrobacterium. Possibly seedlings are preferable than cuttings and probably an early stage of the seedling development – immediately after developing the first two leaves. Hence, I suggest that for future experiment to utilize this property of seedlings and all the other advantages of PopAT, it hould be wise to experiment on PopAT seedlings.
 
-To further attempt and increase the frequency of de-novo shoot formation, we pursue the identification of new trascription factors that are development regulators in trees and parhapse, under the right conditions, would act as a master regulators. Fortunatly, in 2017 the [**DOE Joint Genome Institute**](https://genome.jgi.doe.gov/portal/PoptreSequencing_FD/PoptreSequencing_FD.info.html) [@Grigoriev2012] sequenced the _Populus tremula x alba_ INRA717-IB4 transcriptome. With that dataset available, we could analyse the transcription profile per tissue, and highlight certine genes that holds strong correlation to the development of shoot. In our analysis we found that out of the WUSCHEL-related homeobox (WOX) gene family, _WOX1_ had the strongest correlation for shoot formation. That finding correspond to the findings mentioned in Tvorogova et al's. review [@Tvorogova2021], there _WOX1_ found to regulate auxin response. This can be realized since many of the genes whose expression is affected by WOX1 are involved in signaling pathways, transport, and synthesis of auxin. Furthermore, after narrowing the results only to those genes that are at least an order of magnitude shoot specific over all tissues, WOX1 came in &8^{th}& position out of 85 genes. 
+## _WOX1_ as a potential epical meristem transcription factor for DR induced transformation
 
-With strong corelation to our results of regeneration with the combination of genes _WOX11_-_STM_ and _WUS2_-_STM_, It has been shown that in the regulation of SAM, STM and WUS act in parallel, and they are necessary for the normal expression of each other [@Tvorogova2021]. This insight can also explain the non-deformed shoot formation we observe in contrast to Maher et al's.[@Maher2020] findings. 
+To further attempts to increase the frequency of de-novo shoot formation, I pursue the identification of new transcription factors that are development regulators in trees and perhaps, under the right conditions, would act as a master regulators. Fortunately, in 2017 the [**DOE Joint Genome Institute**](https://genome.jgi.doe.gov/portal/PoptreSequencing_FD/PoptreSequencing_FD.info.html) [@Grigoriev2012] sequenced the _Populus tremula x alba_ INRA717-IB4 transcriptome.I analyzed the transcription profile per tissue, and identified genes that are strongly correlated to shoot development. In the analysis it appeared that out of the WUSCHEL-related homeobox (WOX) gene family, _WOX1_ had the strongest correlation to shoot formation. This finding corresponds to the Tvorogova et al.(2021), where _WOX1_ was found to regulate auxin response. This makes sense, since many of the genes whose expression is affected by WOX1 are involved in signaling pathways, transport, and synthesis of auxin. Furthermore, after narrowing the results to genes that are at least an order of magnitude shoot specific over all tissues, WOX1 came in &8^{th}& place out of 85. 
 
-_WOX11_ known primarily as regulators of callus formation and development of adventitious roots, although it has been shown to be involved in other types of regeneration, such as shoot regeneration and somatic embryogenesis. For example, the positive effect of PtWOX11 on shoot regeneration in _Populus alba x glandulosa_ has been shown [@Liu2018a].  
+With strong corelation to our results of regeneration with the combination of genes _WOX11_-_STM_ and _WUS2_-_STM_, It has been shown that in the regulation of SAM, STM and WUS act in parallel, and they are necessary for the normal expression of each other [@Tvorogova2021]. This insight can also explain the non-deformed shoot formation I observe in contrast to Maher et al's.[@Maher2020] findings. 
 
-To validate our RNA-seq analisys, we extracted total RNA from similar tissues as the DOE's dataset (excluding callus, since it does not acure in natural growth). Then we run RT-qPCR analisys on the expression of _WOX1_ with varius normalizer genes. Since the expression profile of the different tissues vary massivly, it has been hard to find an appropriate normalizer gene whose expression remains homogeneousness between the tissues. Despite that, we can still see the over all trend in which it does seems that as the coefficient of variation (CV) get smaller, the results of the RT-qPCR become more similar to the RNA-seq results (Figure \ref{fig:qPCR}). When sorting the tissues by the expression of the gene _WOX1_ in the RT-qPCR results and in the RNA-seq analisys, the only tissue moved in the order was shoot tip. This tissue is not well defined and the major variability in the results can be explained by the resolution of the isolation of the tissue. Shoot tip is a combination of SAM, stem and leaves among other tissues and it is hard to isolate, let alone define in a gene expression lens.
+_WOX11_ is known as a regulator of callus formation, development of adventitious roots, shoot regeneration and somatic embryogenesis [@Liu2018a].  
 
-The quest to achieve an in-planta transformation in trees was a huge challenge. In this work we have built upon the success of legends in the field of plant manipulation and widen a lot the base knowledge and knowhow in this area. Although the final results could not reach the last milestone of in-planta gene editing, it has seccid in constructing an array of vectors and manage to evoke de-novo shoot regeneration on an soil grown tree.  
+To validate our RNA-seq analysis, I extracted total RNA from similar tissues as the DOE's dataset (excluding callus, since it does not occur in natural growth). Then I run RT-qPCR analysis on the expression of _WOX1_ with various normalizer genes. Since the expression profile of the different tissues vary massively, it's difficult to find an appropriate normalizer gene with a similar expression level between the tissues. Despite that, I could still see the overall trend in which it does seemed that as the coefficient of variation (CV) got smaller, the results of the RT-qPCR become more similar to the RNA-seq results (Figure \ref{fig:qPCR}). When sorting the tissues by the expression of the gene _WOX1_ in the RT-qPCR results and in the RNA-seq analysis, the only tissue that shifted was shoot tip. The tissue is not well defined since is a combination of SAM, stem and leaves among other tissues and it is hard to isolate. Hence, the larg variability in the results can be explained by the resolution of the isolation of the tissue. 
 
-Although our initial assumption was that it would be easier to transform poplar compared to apples, we didn’t take into account the influence of the different growth stages which we act upon. Perhaps with seedlings of PopAT we could get different results.
+In summary: the quest to achieve an in-planta transformation in trees is a huge challenge. In this work although I did not reach the final milestone of in-planta tree gene editing, still I hope that the work has closed part of the gap and will contribute to evoke de-novo shoot regeneration on a soil grown tree.  
+
+Although our initial assumption was that it would be easier to transform poplar compared to apples, I didn’t take into account the influence of the different growth stages which I act upon. Perhaps with seedlings of PopAT I could get different results.
 
 # Acknowledgements
 
@@ -679,7 +739,7 @@ include_graphics("Pommelo transformation.png")
 ****
 ## Protocols
 
-## [Gel agarose for DNA electrophoresis](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf)
+### [Gel agarose for DNA electrophoresis](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf)
 
 Introduction:   
 
@@ -712,7 +772,7 @@ Procedure:
 13. Set the voltage at ~110 V for 30 minutes *The passage of current will produce bubbles at the electrodes.
 
 
-## E.coli Heat-shock competent preperation [@Chang2017]  
+### E.coli Heat-shock competent preperation [@Chang2017]  
 
 Introduction:  
 
@@ -743,7 +803,7 @@ Procedure:
 9. Aliquot 100 $\mu l$ and freeze directly in liquid nitrogen.
 
 
-## [E.coli heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) [@Chang2017]  
+### [E.coli heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) [@Chang2017]  
 
 Introduction:   
 
@@ -777,7 +837,7 @@ Procedure:
 10. Pick colonies about 12-16 hours later.
 
 
-## CTAB protocol [@Porebski1997]  
+### CTAB protocol [@Porebski1997]  
 
 Introduction:   
 
@@ -824,7 +884,7 @@ Procedure:
 21. Air dry the pellet, invert on paper towel.
 22. Resuspend the DNA in 50 $\mu l$ sterile DNase free water.
 
-## TRI Reagent® Protocol 
+### TRI Reagent® Protocol 
 
 Introduction:   
 
