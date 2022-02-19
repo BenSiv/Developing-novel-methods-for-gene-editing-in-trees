@@ -520,7 +520,8 @@ For the validation of the RNA-seq analysis, RNA is exctarcted from the same tiss
 
 # Results
 
-In this work I attempted to implement a novel gene editing method in-planta on trees. I worked on two species, Poplar from vegetative reproduction in tissue culture and apples plantlets from seeds. Poplar was used since it is a model plant and could serve for the best case scenario for gene editing in trees. I used PopAT so that I could control and mitigate as much of the variability in the experiments, because there is no genetic diversity in the plants and as a model organism, they are known to be susceptible to agroinfiltration. With apples it was different, the plants were grown from seeds and since apples are self-incompatible, the seedlings are diverse in their genetic makeup. Although the research is based on some success of others, still there is no consensus about the best practice to approach in-planta transformation. I examined new plants and new DRs, therefore however I did not begin by expressing the genes in tissue culture since I didn’t reasoned that as my final goal was in-planta transformation and because, it is well documented that one cannot deduce from tissue culture results to an in-planta experiment in a straightforward manner. Hence, the experiment scheme starts with in-planta experiments. sI began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Next, I examined the influence of different combinations of DRs on the plant development. Finally, I scaled up the best results from the last two experiments for statistical analysis. In parallel I tried to examine the natural expression of genes in different tissues and especially in the shoot-tip by analyzing tissue specific transcriptomes of PopAT.
+In this work I attempted to implement a novel gene editing method in-planta on trees. I worked on two species, Poplar from vegetative reproduction in tissue culture and apples plantlets from seeds. Poplar was used since it is a model plant and could serve for the best case scenario for gene editing in trees. I used PopAT so that I could control and mitigate as much of the variability in the experiments, because there is no genetic diversity in the plants and as a model organism, they are known to be susceptible to agroinfiltration. With apples it was different, the plants were grown from seeds and since apples are self-incompatible, the seedlings are diverse in their genetic makeup. Although the research is based on some success of others, still there is no consensus about the best practice to approach in-planta transformation. In the case of VIGE, I tried to generate Cas9-OE poplar plants for infection and teamed up with another research group for the assement of the system on Cas9-OE apple plants. In the case of de-novo maristem induction and transformation, I examined new plants and new DRs, therefore however I did not begin by expressing the genes in tissue culture since I didn’t reasoned that as my final goal was in-planta transformation and because, it is well documented that one cannot deduce from tissue culture results to an in-planta experiment in a straightforward manner. Hence, the experiment scheme starts with in-planta experiments. I began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Next, I examined the influence of different combinations of DRs on the plant development. Finally, I scaled up the best results from the last two experiments for statistical analysis. In parallel I tried to examine the natural expression of genes in different tissues and especially in the shoot-tip by analyzing tissue specific transcriptomes of PopAT.
+
 
 ## Regeneration of sterile PopAT
 
@@ -550,14 +551,63 @@ kable(VVectors, caption = "Viral vectors" ,booktabs = TRUE) %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 
+```{r Viral-vectors, out.width = "100%", fig.align="center", fig.pos="H", echo=FALSE, fig.cap="Viral constructs designs. \\textbf{A.} Fast cloning cassette for guidRNAs. sgPRO - sub-genomic promoter. crRNA - conserved part of CRISPR guidRNA. \\textbf{B.} TRV two sub-genomes constructs. \\textbf{C.} BSMV three sub-genomes constructs. (Figures were adjusted from Yuan et al., 2011)"}
+include_graphics("VIGE_vectors.png") 
+```
+
+
 ### Infecting Cas9-OE poplar and Cas9-OE apples with GM-vector
 
-Since we couldn't successfully generate Cas9-OE poplars, we couldn't infect them with out vectors. Fortunately, we teamed up as part of a graiter collaboration with Moshe Flaishman's lab from the Department of Fruit Trees Sciences in the Institute of Plant Sciences at The Volcani Center. Flaishman's lab generated two lines of Cas9-OE apples (#166, #177). These plants where transformed with the plasmid **pK7WGF2,0::hCas9** using Agrobacterium mediated transformation in tissue culture.  
+Since we couldn't successfully generate Cas9-OE poplars, we couldn't infect them with our vectors. Fortunately, we teamed up as part of a graiter collaboration with Moshe Flaishman's lab from the Department of Fruit Trees Sciences in the Institute of Plant Sciences at The Volcani Center. Flaishman's lab generated two lines of Cas9-OE apples (#166, #177). These plants where transformed with the plasmid **pK7WGF2,0::hCas9** using Agrobacterium mediated transformation in tissue culture (Figure \ref{fig:Flaishmans_apples}).  
 
 
 ```{r Flaishmans_apples, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="One of the plants that reproduced from the \\#167 line. \\newline{} \\textbf{A.} Map of the T-DNA vector \\textbf{B.} The plant post infection"}
-include_graphics("Flaishmans_apples.png") 
+include_graphics("Flaishmans_apples.png")
 ```
+
+As part of the collaboration, some other efforts were made to remove the T-DNA cassette from the genome by inducing multiple digestion sites at the borders of the cassette. In order to examine the possibility of T-DNA editing by VIGE in apple trees, we constructed two types of viruses – TRV and BSMV – with guides against different targets in the borders of the T-DNA cassette, which harbor the Cas9 gene and already exist in transgenic apple plants (Figure \ref{fig:Cassette_map}).
+
+```{r Cassette_map, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Map of binary plasmid used in transgenic apple lines \\#166 and \\#167. Green squares - T-DNA borders, arrow heads - targets for viral guide-RNAs, RB - right border, LB - left border."}
+include_graphics("Cassette_map.png")
+```
+
+Viruses were propagated in N.benthamiana plants by Agroinfiltration of the plasmids. Systemic infection of the viruses was confirmed in un-infected N.benthamiana leaves. In this first attempt, we were able to verify the infectious of two BSMV and four TRV viruses against different targets (Table \ref{tab:apple_infected}). We infected each virus on two plantlets of each of the apple transgenic lines (#166, #167). Out of the 24 infected plantlets only 18 survived. 
+
+```{r apple_infected, echo=FALSE}
+infected_apples <- data.frame(Treatment_number = c(1,2,3,4,5,6,7),
+                              Virus = c("TRV", "TRV", "BSMV", "TRV", "TRV", "BSMV", "Negative control"),
+                              Target = c("LB1","LB2","LB1","RB2","RB1","RB1","-"),
+                              Plantlets_infected = c(4,4,4,4,4,4,4),
+                              Plantlets_survived = c(3,4,4,3,3,1,4))
+
+kable(infected_apples, caption = "Viral infection of apple plantlets" ,booktabs = TRUE, linesep = "") %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+One month post infection we examined systemic infection of the virus in the plantlets by PCR on new emerged leaves. Out of the 18 plantlets checked, only five showed systemic infection: three were TRV positive and two BSMV positive (Figure \ref{fig:Apples_infection_validation}). 
+
+```{r Apples_infection_validation, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="PCR on new leaves of infected apple plantlets with virus specific primers. Upper gel - TRV, Lower gel - BSMV. '+' - plasmid positive control. 166/167 – apple transgenic lines."}
+include_graphics("Apples_infection_validation.jpg")
+```
+
+Since some of the plantlets showed un-expected virus infection (TRV instead of BSMV), probably due to cross infection or contamination, we decided to check all targets in all plantlets
+for editing events. We amplified target regions from genomic DNA and sent them for Sanger sequencing. In one of the plants, which was infected with TRV, harboring the LB2-gRNA, we found a double chromatogram starting around the PAM site of the LB2 target (Figure \ref{fig:Double_chromotogram}). 
+
+```{r Double_chromotogram, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Sequencing of the LB2 region in infected apple plants. Upper chromatogram - Sanger sequencing of LB2 target in plant infected by TRV-LB2gRNA. Lower chromatogram - Sanger sequencing of LB2 target in plant infected by TRV-RB1gRNA. Red arrow – start of alternate sequence. Turquoise bar - LB2 target."}
+include_graphics("Double_chromotogram.png")
+```
+
+Analyzing of the alternative chromatogram predicts a deletion of 31 bps and an insertion of +A. additional sequencing is required to determine the frequency of this mutation and to search for additional low frequencies InDels.
+
+### Improving gRNA delivery by adding tRNA sequence to the gRNA
+
+In order to improve the systemic infection in apple, we purchased the new viral system developed by Dan Voytas lab who showed efficient editing in model plants and crops [@Ellison2020]. In this system, a tRNA sequence which was added to the gRNA showed improved mobility and editing of meristems. We prepared new constructs with guides against PDS gene of apple to check the feasibility of VIGE in trees with a visible marker. In addition, we constructed TRV-GFP-tRNA plasmids in order to compare the infection abilities of the two systems. We propagated the TRV-GFP-tRNA virus in _N.benthamiana_ and infected young apple seedlings by stabbing one leaf. Two weeks post infection we found a stronger GFP signal in the TRV-GFP-tRNA infected plants compare to TRV-GFP (Figure \ref{fig:TRV_GFP}).
+
+```{r TRV_GFP, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="GFP fluorescence in apple cotyledons two weeks after viral infection."}
+include_graphics("TRV_GFP.png")
+```
+
+Following the improvement in GFP expression, we designed an experiment to check if VIGE can also be improve. We constructed a TRV-PDSgRNA-tRNA virus, targeting the PDS endogene of apple. As before, we infected apple plantlets by co-cultivation and checked for viral infection in new un-infected leaves. This time we could not find any evidence for virus presence in the new leaves. Moreover, most of the plantlets died few weeks after infection. Hence, this experiment needs to be repeated to obtain results that are more conclusive. 
+
 
 ## Implementing De-novo maristem induction and transformation in trees
 
