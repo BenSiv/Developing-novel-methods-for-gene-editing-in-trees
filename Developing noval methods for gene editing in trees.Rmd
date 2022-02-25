@@ -669,7 +669,7 @@ After several experiments in apples and poplar plants with DRs described in the 
 
 ```{r RNA-seq, echo=FALSE, out.width = "80%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="WOX1 expression detected by the RNA-seq analysis"}
 WOX1_df <- read.csv("Tables/WOX1_df.csv")
-RNA_plot <- barplot(WOX1_df$Expression, names = WOX1_df$Tissue, ylim = c(0, 800), ylab = " WOX1 count", xlab = "Tissues")
+RNA_plot <- barplot(WOX1_df$Expression, names = WOX1_df$Tissue, ylab = " WOX1 count", xlab = "Tissues")
 ```
 
 ```{r ShootSpecific, echo=FALSE, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H"}
@@ -682,7 +682,7 @@ ShootSpecific_Over10$Description <- str_replace(ShootSpecific_Over10$Description
 
 sep = c(rep('',nrow(ShootSpecific_Over10)))                             
 kable(ShootSpecific_Over10[1:10,] , caption = "List of genes when sorted by the expression specificity to shoot tip (First 10)" ,booktabs = TRUE, linesep = sep) %>%
-  kable_styling(latex_options = "HOLD_position") %>% row_spec(8, bold = TRUE)
+  kable_styling(latex_options = "HOLD_position") %>% row_spec(7, bold = TRUE)
 ```
 
 
@@ -690,20 +690,24 @@ kable(ShootSpecific_Over10[1:10,] , caption = "List of genes when sorted by the 
 The RT-qPCR is a well established and highly sensitive method for the assessment of gene specific expression and hence can help validate the results of RNA-seq analysis. In most RT-qPCR experiments, the samples are from the same tissue which was exposed to different conditions and hence there are a few house-kipping gene that are commonly used for internal normalization. I performed, RT-qPCR on _WOX1_ for compering its expression in different tissues (RT-qPCR tissues). At first, I tried to use one of the common house-keeping gene, Actin-7, but, it exhibited a high variation in its expression between the tissues and can not be used as a reliable internal normalizer. Therefore, I returned to the RNA-seq data to look for other normalization genes. I chose the most unchanged genes across all tissues that were compared (RT-qPCR tissues). Excluding uncharacterized and mitochondrial genes the most uniformly expressed genes were Serine/threonine-protein phosphatase PP2A-4 catalytic subunit and E3 ubiquitin ligase. Hence, I used these two for normalization in the _WOX1_ RT-qPCR tests. In each test I compared the variation in the expression of the normalizing gene among all tissues calculated by the coefficient of variance. In other words, I examined how different was the expression of each gene in the different tissues. Even though the RNA-seq analysis showed little variability in the expression of those gene in the different tissues, the RT-qPCR results showed otherwise. PP2A-4 gene expression was similar in its variation to the expression of Actin-7 gene with a CV of 0.13 and E3 ubiquitin ligase expression was the most uniform with a CV of 0.05 (Figures \ref{fig:qPCR_normalizers}).
 
 
-```{r qPCR_normalizers, echo=FALSE, out.width = "100%", fig.align="center", echo=FALSE, fig.show="hold" ,fig.pos= "H", fig.cap="Expression of internal normalizers gene analyzed by RT-qPCR. CV referse to the coefficient of variation and it represent a score for the amount in which the normalizer expressed consistently between the different tissues. As the CV get smaller, the expression is more uniform."}
-par(mfrow = c(1,3))
+```{r qPCR_normalizers, out.width = "100%", fig.align="center", echo=FALSE, message=FALSE, fig.show="hold" ,fig.pos= "H", fig.cap="Expression of internal normalizers gene analyzed by RT-qPCR. Coefficient of variation (CV) represent a score for the amount in which the normalizer expressed consistently between the different tissues. As the CV get smaller, the expression is more uniform. The numbers on are the mean value of CV."}
 
 qPCR_actin_only <- read.csv("Tables/Actin_only.csv")
-Actin_CV = round(sd(qPCR_actin_only$Avg_Cq)/mean(qPCR_actin_only$Avg_Cq), digits = 2)
-Actin_only_plot = barplot(qPCR_actin_only$Avg, names = qPCR_actin_only$Tissue, ylim = c(0, 1), main = paste("Actin-7 \n CV = ", Actin_CV), las = 2)
+qPCR_actin_only$Normalizer <- rep("Actin-7", nrow(qPCR_actin_only))
 
 qPCR_PP2A4_only <- read.csv("Tables/PP2A4_only.csv")
-PP2A4_CV = round(sd(qPCR_PP2A4_only$Avg_Cq)/mean(qPCR_PP2A4_only$Avg_Cq), digits = 2)
-PP2A4_only_plot = barplot(qPCR_PP2A4_only$Avg, names = qPCR_PP2A4_only$Tissue, ylim = c(0, 1), main = paste("PP2A-4 \n CV = ", PP2A4_CV), las = 2)
+qPCR_PP2A4_only$Normalizer <- rep("PP2A-4", nrow(qPCR_PP2A4_only))
 
 qPCR_E3_only <- read.csv("Tables/E3_only.csv")
-E3_CV = round(sd(qPCR_E3_only$Avg_Cq)/mean(qPCR_E3_only$Avg_Cq), digits = 2)
-E3_only_plot = barplot(qPCR_E3_only$Avg, names = qPCR_E3_only$Tissue, ylim = c(0, 1), main = paste("E3 Ubiquitin ligase \n CV = ", E3_CV), las = 2)
+qPCR_E3_only$Normalizer <- rep("E3 Ubiquitin ligase", nrow(qPCR_E3_only))
+
+AllNormalizers <- rbind(qPCR_actin_only, qPCR_PP2A4_only, qPCR_E3_only)
+AllNormalizers <- dplyr::mutate(AllNormalizers, CV = Std_Cq / Avg_Cq) %>% group_by(Normalizer) %>% summarise(CV = CV, CV_mean = mean(CV), CV_sum = sort(sum(CV)))
+
+AllNormalizers_mean <- AllNormalizers %>% group_by(Normalizer) %>% summarise(CV_mean = sort(mean(CV)))
+
+
+ggplot(data = AllNormalizers, aes(x = reorder(Normalizer,CV_sum), y = CV)) + geom_boxplot() + theme_classic() + labs(x = "Internal normalizer genes", y = "coefficient of variation") + geom_text(data = AllNormalizers_mean, aes(x = reorder(Normalizer,CV_mean), y = CV_mean, label=round(CV_mean, 3)), size = 5)
 
 ```
 For further analysis of _WOX1_, I analyzed the RT-qPCR results despite the normalizers inconsistency (Figures \ref{fig:qPCR}). The order in which the tissues appeared when sorted by the _WOX1_ gene expression remains consistent with the normalizers PP2A-4 and E3 against the RNA-seq analysis (Bud > RootTip > Bark > Xylem > Leaf), the only tissue that repositioned was the shoot tip, from third in E3 to last in PP2A-4. The fact that the results of position order of all tissues but one was correlated between seemingly unrelated normalizer genes, suggesting that those results are sound. Unfortunately, the tissue in question, Shoot-Tip wasn't correlated, hence it was impossible to deduce its true position, which was the information I was after.
@@ -711,14 +715,14 @@ For further analysis of _WOX1_, I analyzed the RT-qPCR results despite the norma
 ```{r qPCR, echo=FALSE, out.width = "100%", fig.align="center", echo=FALSE, fig.show="hold" ,fig.pos= "H", fig.cap="WOX1 expression analyzed by the RT-qPCR with different internal normalizers."}
 par(mfrow = c(1,3))
 
+qPCR_E3 <- read.csv("Tables/qPCR_E3.csv")
+E3_plot = barplot(qPCR_E3$Avg, names = qPCR_E3$Tissue, ylim = c(0, 1), main = paste("E3 Ubiquitin ligase"), las = 2)
+
 qPCR_actin <- read.csv("Tables/qPCR_actin.csv")
 Actin_plot = barplot(qPCR_actin$Avg, names = qPCR_actin$Tissue, ylim = c(0, 1), main = paste("Actin-7"), las = 2)
 
 qPCR_PP2A_4 <- read.csv("Tables/qPCR_PP2A-4.csv")
 PP2A_4_plot = barplot(qPCR_PP2A_4$Avg, names = qPCR_PP2A_4$Tissue, ylim = c(0, 1), main = paste("PP2A-4"), las = 2)
-
-qPCR_E3 <- read.csv("Tables/qPCR_E3.csv")
-E3_plot = barplot(qPCR_E3$Avg, names = qPCR_E3$Tissue, ylim = c(0, 1), main = paste("E3 Ubiquitin ligase"), las = 2)
 
 ```
 
