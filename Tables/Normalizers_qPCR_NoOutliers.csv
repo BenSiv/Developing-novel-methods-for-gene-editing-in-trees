@@ -1,0 +1,17 @@
+Target,Tissue,Expression,Order
+Actin-7,ShootTip,3.56E-05,2
+Actin-7,Bark,0.315851773,2
+Actin-7,Bud,0.147244743,2
+Actin-7,Leaf,0.32008495,2
+Actin-7,Xylem,1,2
+E3 ubiquitin ligase,Bud,0.933360033,1
+E3 ubiquitin ligase,RootTip,1,1
+E3 ubiquitin ligase,ShootTip,0.132071577,1
+E3 ubiquitin ligase,Bark,0.266154641,1
+E3 ubiquitin ligase,Leaf,0.097878515,1
+E3 ubiquitin ligase,Xylem,0.226289167,1
+PP2A-4,RootTip,1,3
+PP2A-4,ShootTip,0.038258519,3
+PP2A-4,Bark,0.381885411,3
+PP2A-4,Leaf,0.072790177,3
+PP2A-4,Xylem,0.189447952,3
