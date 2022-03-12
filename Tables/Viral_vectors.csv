@@ -1,5 +1,13 @@
 Target plant,BackBone,Virus,Genome Partite,Target gene,Mobile RNA
-Apple,pCambia,TRV,2,PDS,Isoleucine
+Apple,pCambia,TRV,2,LB-1,
+,pCambia,TRV,2,LB-2,
+,pCambia,TRV,2,RB-1,
+,pCambia,TRV,2,RB-2,
+,pCASS4,BSMV,Gamma,LB-1,
+,pCASS4,BSMV,Gamma,LB-2,
+,pCASS4,BSMV,Gamma,RB-1,
+,pCASS4,BSMV,Gamma,RB-2,
+,pCambia,TRV,2,PDS,Isoleucine
 ,pCambia,TRV,2,PDS,
 ,pCASS4,BSMV,Gamma,PDS,Isoleucine
 ,pCASS4,BSMV,Gamma,PDS,

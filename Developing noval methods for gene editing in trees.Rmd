@@ -15,7 +15,7 @@ output:
     pdf_document:
     number_sections: yes
 always_allow_html: true
-bibliography: library.bib
+bibliography: library2.bib
 csl: Taylor & Francis - Council of Science Editors.csl
 ---
 
@@ -217,9 +217,7 @@ two cultivars that pollinate each other). However, up to date non of apple culti
 
 By infecting young plants with _Agrobacterium tumefaciens_ harboring T-DNA that contains DRs, CRISPR/Cas9 and sgRNA, it is possible to achieve de-novo shoot regeneration with knockout at the target gene.
 
-By infecting Cas9-OE plants with viral vector bearing sgRNA targeting PDS endogenes, it would be possible to isolate PDS knockout plant.
-
-By infecting Cas9-OE plants with viral vector bearing sgRNA targeting PDS endogenes fused with mobile RNA sequence, it would be possible to isolate from meristem PDS knockout plant.
+By infecting Cas9-OE plants with viral vector bearing sgRNA targeting endogenous gene, it would be possible to isolate a tissue with the gene being knocked out.
 
 ## Milstones
 
@@ -245,7 +243,7 @@ By infecting Cas9-OE plants with viral vector bearing sgRNA targeting PDS endoge
 
 ## Goal
 
-* Develop new method for in-planta trees transformation.
+* Develop new method for in-planta trees transformation and gene editing.
 
 #  Materials and methods
 
@@ -332,7 +330,7 @@ FlowChart <-
 
     hypothesis [label = 'Hypothesis: \nBy infecting young plants with Agrobacterium tumefaciens \nharboring T-DNA that contains DRs, CRISPR/Cas9 and sgRNA, \nit is possible to achieve de-novo shoot regeneration with knockout at the target gene.']
 
-    plasmids [label = 'Construction of plasmids containing DRs, Cas9 and sgRNAs \n11 per cultivar']
+    plasmids [label = 'Construction of plasmids containing 11 combinations of DRs, Cas9 and sgRNAs \n11 per cultivar']
 
     infection_methods [label = 'Infection methods experiment:\n3 Infection methods with all 11 plasmids']
 
@@ -350,13 +348,13 @@ FlowChart <-
     node [fontname = arial, shape = rect];
     edge [fontname = arial];
 
-    hypothesis [label = 'Hypothesis: \nBy infecting Cas9-OE plants with viral vector bearing sgRNA targeting PDS endogenes, \nit would be possible to isolate PDS knockout plant.']
+    hypothesis [label = 'Hypothesis: \nBy infecting Cas9-OE plants with viral vector bearing sgRNA targeting endogenous gene, \nit would be possible to isolate a tissue with the gene being knocked out.']
 
     plants [label = 'Generating Cas9-OE tree']
 
-    vectors [label = 'Generating a viral vector bearing sgRNA targeting PDS endogenes']
+    vectors [label = 'Generating a viral vector bearing sgRNA targeting endogenous gene']
 
-    NB_infection [label = 'Infecting Cas9-OE Nicotiana Benthamiana with GM-vector']
+    NB_infection [label = 'Propagating GM-vector in Nicotiana Benthamiana']
 
     plant_infection [label = 'Infecting Cas9-OE tree with GM-vector']
     
@@ -378,11 +376,11 @@ include_graphics("De-novo_meristem_induction_FlowChart.png")
 
 Based on protocol developed by Song et al.[@Song2019] with minor changes.
 
-Top10 bacteria with $3\Omega1$-NPT-ubi::Cas9 plasmid are grown in LB liquid-medium containing 50 mg/L Spectinomycin, at 200rpm over-night at $37^oC$. The following day the plasmids are extracted using miniplsmid putification kit. Then the plasmid are introduced into EHA-105 agrobacterium using electropuration and plated on LB-agar medium containing 50 mg/L Spectinomycin and 50 mg/L Gentamicin, at $28^oC$ for two days. A single colony is picked to LB liquid-medium containing 50 mg/L Spectinomycin and 50 mg/L Gentamicin and incubated with shaking 200rpm over-night at $28^oC$. The cells are then harvested by centrifuge at 5000 rpm for 10 min and resuspended with 1/2 MS solution (pH 5.8 to 6.0) containing 5% (w/v) sucrose and acetosyringone (100 µM) as the transformation solution, to a culture density of 0.6 $OD_{600}$. 
+Top10 bacteria with $3\Omega1$-NPT-ubi::Cas9 plasmid were grown in LB liquid-medium containing 50 mg/L Spectinomycin, at 200rpm over-night at $37^oC$. The following day the plasmids were extracted using miniplsmid putification kit. Then the plasmid were introduced into EHA-105 agrobacterium using electropuration and plated on LB-agar medium containing 50 mg/L Spectinomycin and 50 mg/L Gentamicin, at $28^oC$ for two days. A single colony was picked to LB liquid-medium containing 50 mg/L Spectinomycin and 50 mg/L Gentamicin and incubated with shaking 200rpm over-night at $28^oC$. The cells were then harvested by centrifuge at 5000 rpm for 10 min and resuspended with 1/2 MS solution (pH 5.8 to 6.0) containing 5% (w/v) sucrose and acetosyringone (100 µM) as the transformation solution, to a culture density of 0.6 $OD_{600}$. 
 
-The leaf explants for transformation are prepared from 3-week-old plantlets that were cut perpendicular to main veins and layed on M1 for 2 days. Next the cut leaves are incubated with the suspended agrobacterium for 15 min with slow shaking every 5 min and then blotted with sterile filter paper to remove the excess bacteria and cultured on M2 in dark conditions for 3 days.
+The leaf explants for transformation were prepared from 3-week-old plantlets that were cut perpendicular to main veins and laid on M1 for 2 days. Next the cut leaves were incubated with the suspended agrobacterium for 15 min with slow shaking every 5 min and then blotted with sterile filter paper to remove the excess bacteria and cultured on M2 in dark conditions for 3 days.
 
-The co-cultivated leaves are washed X2 in sterilized distilled water for 5 min, blotted with sterile filter paper to remove the excess water and transferred to M3 for 10 days. After 4 weeks 1 to 2 cm shoots are cut off and transferred to M4 For obtaining plants. The transgenic poplar plants were transferred to M1 for 3 weeks to avoid agrobacterium contamination.
+The co-cultivated leaves were washed twice in sterilized distilled water for 5 min, blotted with sterile filter paper to remove the excess water and transferred to M3 for 10 days. After 4 weeks 1 to 2 cm shoots were cut off and transferred to M4 For obtaining plants. The transgenic poplar plants were transferred to M1 for 3 weeks to avoid agrobacterium contamination.
 
 ### Generating a viral vector bearing sgRNA targeting PDS endogenes fused with mobile RNA sequence and GFP.
 
@@ -399,26 +397,26 @@ TRV:\
 - pRNA1\
 - pRNA2.PEBV::PDS.gRNA\
 
-The TRV2 and $\gamma$ partite cloned with sgRNA via ligation independent cloning (LIC). GV-3101 agrobacterium is transformed using electropuration and grown on petri-plate containing  LB-agar medium containing 50 mg/L kanamycin and 10 mg/L Gentamicin, at $28^oC$ for two days. A single colony is picked to LB liquid-medium containing 50 mg/L kanamycin and 10 mg/L  Gentamicin, and incubated with shaking 200rpm over-night at $28^oC$. Cells are collected by centrifuge for 10min in 4500rpm, and re-suspended in infiltration buffer(1/4 MS with 1% sucrose, 100 $\mu M$ and 0.01% Silwet L-77) to $OD_{600}$ of 0.5.
+The TRV2 and $\gamma$ partites were cloned with sgRNA via ligation independent cloning (LIC). GV-3101 agrobacterium was transformed using electropuration and grown on petri-plate containing  LB-agar medium containing 50 mg/L kanamycin and 10 mg/L Gentamicin, at $28^oC$ for two days. A single colony was picked to LB liquid-medium containing 50 mg/L kanamycin and 10 mg/L Gentamicin, and incubated with shaking 200rpm over-night at $28^oC$. Cells were collected by centrifuge for 10min in 4500rpm, and re-suspended in infiltration buffer(1/4 MS with 1% sucrose, 100 $\mu M$ and 0.01% Silwet L-77) to $OD_{600}$ of 0.5.
 
-PDS-gRNA and GFP are cloned into $pPEBV-TRV_2$. The mobile RNA sequence is Isoleucine-tRNA.
+PDS-gRNA and GFP were cloned into $pPEBV-TRV_2$. The mobile RNA sequence was Isoleucine-tRNA.
 
-### Infecting Cas9-OE *Nicotiana Benthamiana* with GM-vector
+### Infecting Cas9-OE *Nicotiana Benthamiana* with genetically modified vector
 
-Cas9-OE *Nicotiana Benthamiana* is infected with GM-vector as a Preliminary experiment, for examination of the GM-vector. Bacteria is infiltrated into *Nicotiana Benthamiana* leaves by 1 mL plastic syringe (without needle), dry in the light (1 hour) and keep in the dark for 24 hours, in $23-25^oC$. The plants are than moved to a long day conditions (16-8 light/dark), in $23-25^oC$ for 3-4 days. The uninfected leaves are collected and RNA is isolated using TRI reagent protocol. The RNA was than reverse transcribe to cDNA. A section of the vector was
+Cas9-OE *Nicotiana Benthamiana* was infected with GM-vector as a Preliminary experiment, for examination of the GM-vector. Bacteria was infiltrated into *Nicotiana Benthamiana* leaves by 1 mL plastic syringe (without needle), were dried in the light for 1 hour and were kept in the dark for 24 hours, in $23-25^oC$. The plants were than moved to a long day conditions (16-8 light/dark), in $23-25^oC$ for 3-4 days. The uninfected leaves were collected and RNA was isolated using TRI reagent protocol. The RNA was than reverse transcribe to cDNA. A section of the vector was
 Amplified in PCR (Gradient thermal cycler by VWR) for propagation examination. Wild-Type *Nicotiana Benthamiana* was also infected with GM-vector as a propagation factory, to generate GM-vector from T-DNA, in the same manner.
 
-### Infecting Cas9-OE poplar and Cas9-OE apples with GM-vector
+### Infecting Cas9-OE apples with GM-vector
 
-Infiltrated leaves from positive plants are collected and immediately transferred to liquid nitrogen. The tissue is grounded to a fine powder and suspended in phosphate buffer (0.1 M, pH 7.5) solution (3 mL per gram of tissue-powder). Sea-sand is added to induce micro-cuts to the leaves. The given liquid is rubbed on the leaves of young Cas9-OE plants to induce viral infection.
+Infiltrated leaves from positive plants were collected and immediately transferred to liquid nitrogen. The tissue was grounded to a fine powder and suspended in phosphate buffer (0.1 M, pH 7.5) solution (3 mL per gram of tissue-powder). Three different methods for the best infection method for young apple plants (raised from tissue culture) were tested: 1. Rubbing - leaves were injured with small cuts and rubbed with virus solution using plastic spreader. 2. Needle - stems were pinched by needles soaked in virus solution. 3. Co-cultivation - leaves were removed and stems were incubated in the virus solution for 15 minutes. All infected plants were grown for ten days in sterile conditions and the virus presence was verified by PCR in new leaves that developed after the infection.
 
 ## Implementing De-novo meristem induction and transformation.
 
 ### Construction of plasmids containing DRs, Cas9 and sgRNAs
 
-Constructing plasmids with combinations of DRs for de-novo maristem induction for novel transformation protocol.
+Constructing plasmids with combinations of DRs for de-novo meristem induction for novel transformation protocol.
 
-All the plasmid building blocks for the final vectors are bought from [Addgene](https://www.addgene.org/) (Table \ref{tab:Building blocks}), except for pMOD-B with S-RNase sgRNA array and pMOD-C with WOX11 from _Populus trichocarpa_ which was assembled in-house.
+All the plasmid building blocks for the final vectors were bought from [Addgene](https://www.addgene.org/) (Table \ref{tab:Building blocks}), except for pMOD-B with S-RNase sgRNA array and pMOD-C with WOX11 from _Populus trichocarpa_ which was assembled in-house.
 
 ```{r Building blocks, echo=FALSE}
 
@@ -462,18 +460,18 @@ The gene _WOX11_ from _Populus trichocarpa_ were synthesized into pUC57 plasmid 
 
 The final plasmids were constructed into pTRANS backbone using [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning)[@Cermak2017] (Table \ref{tab:AllConstracts}).
 
-Transformation of Top10 bacteria with constructs for replication was preformed using [heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) and growing on petri-dish containing Lysogeny broth medium with 1.1 % Agar 50 mg/L Ampicillin, at $37^oC$ over-night. Evaluating constructs using colony PCR (Polymerase chain reaction) reaction (Table \ref{tab:Primers}). Growing positive colonies in LB liquid-medium (containing 50 mg/L Ampicillin), shaking 200 rpm over-night at $37^oC$. Purifying constructs using miniplsmid putification kit. 
+Transformation of Top10 bacteria with constructs for replication was preformed using [heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) and were grown on petri-dish containing Lysogeny broth medium with 1.1 % Agar 50 mg/L Ampicillin, at $37^oC$ over-night. Constructs were evaluated using colony PCR (Polymerase chain reaction) reaction (Table \ref{tab:Primers}). Positive colonies were grown in LB liquid-medium (containing 50 mg/L Ampicillin) and were shaken at 200 rpm over-night at $37^oC$. Constructs were purified using miniplsmid putification kit.
 
-Transformation of EHA-105 agrobacterium using electroporation MicroPulser Electroporator and growing on petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 2 days. Positive colonies are validated again using colony PCR. 
+EHA-105 agrobacterium was Transformed using electroporation MicroPulser Electroporator and were grown on petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 2 days. Positive colonies were validated again using colony PCR. 
 
-Cultures of each positive EHA-105 agrobacterium are spread on new petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 4 days. At the day of plant transformation, the whole plate is picked using Drigalski spatula and transferred to 2 ml Microcentrifuge with a tip. The transferred colonies are weighed and elut in 2 $\mu l$ per mg Liquid medium containing $1/2$ MS, 1 % sucrose and 200 $\mu M$ acetosyringone.
+Cultures of each positive EHA-105 agrobacterium were spread on new petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 4 days. At the day of plant transformation, the whole plate was picked using Drigalski spatula and transferred to 2 ml Microcentrifuge with a tip. The transferred colonies were weighed and eluted in 2 $\mu l$ per mg Liquid medium containing $1/2$ MS, 1 % sucrose and 200 $\mu M$ acetosyringone.
 
 ### Infection methods experiment
 
-The first experiment is designed for the assessment of different infection methods on the agro-infection effectiveness.
-Seeds are extracted from apple of the variety Pink-lady, that have been refrigerated for few months. The seeds are then grown in a germination tray (11X17 cells) for 1 month.
+The first experiment was designed for the assessment of different infection methods on the agro-infection effectiveness.
+Seeds were extracted from apple of the variety Pink-lady, that have been refrigerated for few months. The seeds were then grown in a germination tray (11X17 cells) for 1 month.
 
-Three methods of Agro-infection was tested on the plants. The first is agro-infiltration to the leaves through pressure with needleless syringe. The second is micro-stabs of concentrated bacteria culture into the leaf vains. The last is vertical cut of the stem as far as possible from the nearest axillary bud below and injection of concentrated bacteria culture into the cut (Figure \ref{fig:Agro-infection methods}). Each infection method got repetitions with each construct as follows: first 4, second 3, third 1. 
+Three methods of Agro-infection were tested on the plants. The first is agro-infiltration to the leaves through pressure with needleless syringe. The second is micro-stabs of concentrated bacteria culture into the leaf vains. The last is vertical cut of the stem as far as possible from the nearest axillary bud below and injection of concentrated bacteria culture into the cut (Figure \ref{fig:Agro-infection methods}). Each infection method got repetitions with each construct as follows: first four plants, second three plants, third one plant. 
 
 
 ```{r Agro-infection methods, out.width = "100%", fig.align="center", echo=FALSE, fig.cap="Infection of Apples with A.tumefaciens, three methods. \\newline{} \\textbf{A.} agro-infiltration to the leaves \\textbf{B.} micro-stabs to the leaf vains \\textbf{C.} injection to the stem cut"}
@@ -482,27 +480,27 @@ include_graphics("apple_injection3.png")
 
 ### DRs experiment
 
-The second experiment is designed for the assessment of different DRs on the de-novo shoot induction influence.
-Seeds are extracted from 4 varieties of apples that have been refrigerated for few months (Pink Lady, Granny Smith, Starking, Golden Delicious). The seeds are then grown in a germination tray (11X17 cells) for 1 month.
+The second experiment was designed for the assessment of different DRs on the de-novo shoot induction influence.
+Seeds were extracted from 4 varieties of apples that have been refrigerated for few months (Pink Lady, Granny Smith, Starking, Golden Delicious). The seeds were then grown in a germination tray (11X17 cells) for 1 month.
 
-All plant are infected as described in method C (Figure \ref{fig:Agro-injection}). After injection, all stem cuts are covered with PARAFILM for 1 week. New shoots that grow from axillary buds are removed once a week.
+All plant were infected as described in method C (Figure \ref{fig:Agro-injection}). After injection, all stem cuts were covered with PARAFILM for 1 week. New shoots that grown from axillary buds were removed once a week.
 
 ```{r Agro-injection, out.width = "100%", fig.align="center", echo=FALSE, fig.cap="Injection of A.tumefaciens into a stem cut of 4 apple Varieties. \\newline{} \\textbf{A.} Injection into a stem cut \\textbf{B.} Starking \\textbf{C.} Pink Lady \\textbf{D.} Golden Delicious \\textbf{E.} Granny Smith"}
 include_graphics("apple_injection2.png") 
 ```
 
 
-Every construct have 11 repetitions in each apple variety, 44 overall.
+Every construct had 11 repetitions in each apple variety, 44 overall.
 
-Validation of cassette integration in the genome by DNA extraction from old leaf in the base of the plant and new leaf in the shoot using CTAB protocol and sequence amplification from the T-DNA cassette that is part of the Cas9 gene using specific primers in PCR reaction. The PCR products are analyzed using agarose gel electrophoresis, and photographed on a UV-light table (Table \ref{tab:Primers}).
+Cassette integration in the genome was validated by DNA extraction from old leaf in the base of the plant and new leaf in the shoot using CTAB protocol and sequence amplification from the T-DNA cassette that is part of the Cas9 gene using specific primers in PCR reaction. The PCR products were analyzed using agarose gel electrophoresis, and photographed on a UV-light table (Table \ref{tab:Primers}).
 
 Validation of mutation in the targeted sequence is achieved by amplification using specific primers in PCR reaction and sanger sequencing as a service from [(Macrogen Europe B.V., Meibergdreef 57 1105 BA, Amsterdam, the Netherlands)](https://dna.macrogen-europe.com/eng/index.jsp) (Table \ref{tab:Primers}).
 
 ### Scale-up experiment
-The third experiment is designed for the assessment of de-novo shoot induction occurrences influenced by the two most promising DR combinations. Seeds are extracted from apples of the variety Pink-lady and Granny-smith, that have been refrigerated for few months. The seeds are then grown in a small pots (5X5 cm wide and 7 cm high) for 1 month. 800 seeds extracted of 2 varieties are infected with 2 most promising plasmids and 1 without DRs. Third of the plants are infected with the plasmid *WOX11*-*STM*, third with *WUS2*-*STM* and third with Empty-Empty. The plants are then sealed with parafilm and aluminum foil. The aluminum foil are covering for 2 days, and the parafilm for additional week.
+The third experiment was designed for the assessment of de-novo shoot induction occurrences influenced by the two most promising DR combinations. Seeds were extracted from apples of the variety Pink-lady and Granny-smith, that have been refrigerated for few months. The seeds were then grown in a small pots (5X5 cm wide and 7 cm high) for 1 month. 800 seeds extracted of 2 varieties are infected with 2 most promising plasmids and 1 without DRs. Third of the plants were infected with the plasmid *WOX11*-*STM*, third with *WUS2*-*STM* and third with Empty-Empty. The plants were then sealed with parafilm and aluminum foil. The aluminum foil were covering for 2 days, and the parafilm for additional week.
 
 ### High humidity experiment
-Another experiment is designed to isolate as much of the variability in soil experiment by growing the seedlings in a semi-sterile and close environment. Than the plants can be infected in the same manner only without covering the infected stem cut.  
+Another experiment is designed to isolate as much of the variability in soil experiment by growing the seedlings in a semi-sterile and close environment which maintain high humidity. Then the plants can be infected in the same manner only without covering the infected stem cut.  
 
 ### Poplar infections
 Similar experiments were performed on Poplar plants, the main difference was that the plant material was started from vegetative reproduction and not from seeds.  
@@ -515,12 +513,12 @@ Tissue specific transcriptomes of the hybrid *Populus Alba-Tremula* (PopAT) were
 All the analysis code is available on GitHub in [https://github.com/BenSiv/PopAT-expression-analysis](https://github.com/BenSiv/PopAT-expression-analysis).
 
 ### Validation of the RNA-seq analysis with real-time quantitive PCR (RT-qPCR)
-For the validation of the RNA-seq analysis, RNA is exctarcted from the same tissues as the RNA-seq tissues excluding callus (RT-qPCR tissues). Then RT-qPCR is preformed on the complementary DNA (cDNA) with specific primers for the gene that was identified as the most shoot-tip specific by the RNA-seq analysis. Several normalizer genes were used for the quantification of the expression between the different tissues.
+For the validation of the RNA-seq analysis, RNA was extracted from the same tissues as the RNA-seq tissues excluding callus (RT-qPCR tissues). Then RT-qPCR was performed on the complementary DNA (cDNA) with specific primers for the gene that was identified as the most shoot-tip specific by the RNA-seq analysis. Several normalizer genes were used for the quantification of the expression between the different tissues.
 
 
 # Results
 
-In this work I attempted to implement a novel gene editing method in-planta on trees. I worked on two species, Poplar from vegetative reproduction in tissue culture and apples plantlets from seeds. Poplar was used since it is a model plant and could serve for the best case scenario for gene editing in trees. I used PopAT so that I could control and mitigate as much of the variability in the experiments, because there is no genetic diversity in the plants and as a model organism, they are known to be susceptible to agroinfiltration. With apples it was different, the plants were grown from seeds and since apples are self-incompatible, the seedlings are diverse in their genetic makeup. Although the research is based on some success of others, still there is no consensus about the best practice to approach in-planta transformation. In the case of VIGE, I tried to generate Cas9-OE poplar plants for infection and teamed up with another research group for the assement of the system on Cas9-OE apple plants. In the case of de-novo maristem induction and transformation, I examined new plants and new DRs, therefore however I did not begin by expressing the genes in tissue culture since I didn’t reasoned that as my final goal was in-planta transformation and because, it is well documented that one cannot deduce from tissue culture results to an in-planta experiment in a straightforward manner. Hence, the experiment scheme starts with in-planta experiments. I began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Next, I examined the influence of different combinations of DRs on the plant development. Finally, I scaled up the best results from the last two experiments for statistical analysis. In parallel I tried to examine the natural expression of genes in different tissues and especially in the shoot-tip by analyzing tissue specific transcriptomes of PopAT.
+In this work I attempted to implement a novel gene editing method in-planta on trees. I worked on two species, Poplar from vegetative reproduction in tissue culture and apples plantlets from seeds. Poplar was used since it is a model plant and could serve for the best-case scenario for gene editing in trees. I used PopAT that were propagated in tissue culture, so that I could control and mitigate as much of the variability in the experiments, because there is no genetic diversity in the plants in comparison to seedlings and as a model organism, they are known to be susceptible to agroinfiltration. With apples it was different, the plants were grown from seeds and since apples are self-incompatible, the seedlings are diverse in their genetic makeup. Although the research is based on some success of others, still there is no consensus about the best practice to approach in-planta transformation. In the case of VIGE, I tried to generate Cas9-OE poplar plants for infection and teamed up with another research group for the assement of the system on Cas9-OE apple plants. In the case of de-novo meristem induction and transformation, I examined new plants and new DRs, therefore however I did not begin by expressing the genes in tissue culture since I didn’t reasoned that as my final goal was in-planta transformation and because, it is well documented that one cannot deduce from tissue culture results to an in-planta experiment in a straightforward manner. Hence, the experiment scheme starts with in-planta experiments. I began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Next, I examined the influence of different combinations of DRs on the plant development. Finally, I scaled up the best results from the last two experiments for statistical analysis. In parallel I tried to examine the natural expression of genes in different tissues and especially in the shoot-tip by analyzing tissue specific transcriptomes of PopAT.
 
 
 ## Regeneration of sterile PopAT
@@ -534,7 +532,7 @@ include_graphics("PopAT-regeneration.png")
 
 ### Generating of Cas9-OE poplar plant
 
-PopAT were transformed as described in [**Generating Cas9-OE poplar plant**](#Generating Cas9-OE poplar plant) in order to generate Cas9-OE poplar plants for purpose of implementing VIGE on them. Many attempts were made on that goal, most of which endded in failure as results of fungi contamination or agrobacterium over growth. One attempt even got to the point of final transformant validation (Figure \ref{fig:PopAT-transformants}). 
+PopAT were transformed as described in [**Generating Cas9-OE poplar plant**](#Generating Cas9-OE poplar plant) in order to generate Cas9-OE poplar plants for purpose of implementing VIGE on them. Many attempts were made on that goal, most of which endded in failure as results of fungi contamination or agrobacterium over growth. One attempt got to the point of final transformant validation (Figure \ref{fig:PopAT-transformants}). 
 
 ```{r PopAT-transformants, out.width = "50%", fig.align="center", fig.pos="H", echo=FALSE, fig.cap="Regenerated shoots T2 and T3 are susceptible to kanamycin, T4 is partially susceptible and T1 is unaffected"}
 include_graphics("T1-4.jpg") 
@@ -542,14 +540,19 @@ include_graphics("T1-4.jpg")
 
 DNA was isolated from these shoots and PCR was preformed with primers from the T-DNA in order to validate transformation. No shoot was found positive.
 
-### Generating a viral vector bearing sgRNA targeting PDS endogenes fused with mobile RNA sequence and GFP.
+### Generating a viral vector bearing sgRNA
+
+Twelve viral vectors bearing sgRNA were constructed for the VIGE experimants on Cas9-OE apple plants (Table \ref{tab:Viruses}).
 
 ```{r Viruses, echo=FALSE}
 VVectors <- read.csv("Tables/Viral_vectors.csv")
 
-kable(VVectors, caption = "Viral vectors" ,booktabs = TRUE) %>%
+sep = c(rep('', 7), '\\addlinespace', rep('', 3))
+
+kable(VVectors, caption = "Viral vectors" ,booktabs = TRUE, linesep = sep) %>%
   kable_styling(latex_options = "HOLD_position")
 ```
+In order to allow easy and efficient construction of new gRNAs into the virus genome, we created a gRNA cassette that contain a BaeI restriction site flanked by a specific sub-genomic promoter (sgPRO) and the conserved crisprRNA part of the gRNA (crRNA). We used the Pea Early Browning Virus (PEBV) sgPRO to construct the Tobacco Rattle Virus (TRV) cassette and the minimal $\gamma$BSMV sgPRO for the Barley Stripe Mosaic Virus (BSMV) construct. In both cases, the gRNA cassette was introduced to one of the viruse's sub-genomes. The TRV and BSMV sub-genomes were then clone separately into the pCAMBIA and pCASS4 binary vectors respectively (Figure \ref{fig:Viral-vectors}). This approach allows fast cloning of new targets by simply digesting the complete vector with BaeI and ligating a short dsDNA oligo with compatible sticky ends.
 
 ```{r Viral-vectors, out.width = "80%", fig.align="center", fig.pos="H", echo=FALSE, fig.cap="Viral constructs designs. \\textbf{A.} Fast cloning cassette for guidRNAs. sgPRO - sub-genomic promoter. crRNA - conserved part of CRISPR guidRNA. \\textbf{B.} TRV two sub-genomes constructs. \\textbf{C.} BSMV three sub-genomes constructs. (Figures were adjusted from Yuan et al., 2011)"}
 include_graphics("VIGE_vectors.png") 
@@ -558,14 +561,14 @@ include_graphics("VIGE_vectors.png")
 
 ### Infecting Cas9-OE poplar and Cas9-OE apples with GM-vector
 
-Since we couldn't successfully generate Cas9-OE poplars, we couldn't infect them with our vectors. Fortunately, we teamed up as part of a graiter collaboration with Moshe Flaishman's lab from the Department of Fruit Trees Sciences in the Institute of Plant Sciences at The Volcani Center. Flaishman's lab generated two lines of Cas9-OE apples (#166, #177). These plants where transformed with the plasmid **pK7WGF2,0::hCas9** using Agrobacterium mediated transformation in tissue culture (Figure \ref{fig:Flaishmans_apples}).  
+Since we couldn't successfully generate Cas9-OE poplars, we couldn't infect them with our vectors. For the apple experiments we used two lines of Cas9-OE plantlets - #166, #177  (developed by Moshe Flaishman’s lab ,ARO). These plants where transformed with the plasmid **pK7WGF2,0::hCas9** using Agrobacterium mediated transformation in tissue culture (Figure \ref{fig:Flaishmans_apples}).  
 
 
 ```{r Flaishmans_apples, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="One of the plants that reproduced from the \\#167 line. \\newline{} \\textbf{A.} Map of the T-DNA vector \\textbf{B.} The plant post infection"}
 include_graphics("Flaishmans_apples.png")
 ```
 
-As part of the collaboration, some other efforts were made to remove the T-DNA cassette from the genome by inducing multiple digestion sites at the borders of the cassette. In order to examine the possibility of T-DNA editing by VIGE in apple trees, we constructed two types of viruses – TRV and BSMV – with guides against different targets in the borders of the T-DNA cassette, which harbor the Cas9 gene and already exist in transgenic apple plants (Figure \ref{fig:Cassette_map}).
+in this experiment, as part of an effort to remove the T-DNA cassette from the genome we examine the efficiency of VIGE in apple trees, by constructing two types of viruses, TRV and BSMV, with guides against four different targets in the borders of the T-DNA cassette, which harbor the Cas9 gene and already exist in transgenic apple plants (Figure \ref{fig:Cassette_map}).
 
 ```{r Cassette_map, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Map of binary plasmid used in transgenic apple lines \\#166 and \\#167. Green squares - T-DNA borders, arrow heads - targets for viral guide-RNAs, RB - right border, LB - left border."}
 include_graphics("Cassette_map.png")
@@ -604,16 +607,16 @@ include_graphics("LB2mutation.png")
 
 ### Improving gRNA delivery by adding tRNA sequence to the gRNA
 
-In order to improve the systemic infection in apple, we purchased the new viral system developed by Dan Voytas lab who showed efficient editing in model plants and crops [@Ellison2020]. In this system, a tRNA sequence which was added to the gRNA showed improved mobility and editing of meristems. We prepared new constructs with guides against PDS gene of apple to check the feasibility of VIGE in trees with a visible marker. In addition, we constructed TRV-GFP-tRNA plasmids in order to compare the infection abilities of the two systems. We propagated the TRV-GFP-tRNA virus in _N.benthamiana_ and infected young apple seedlings by stabbing one leaf. Two weeks post infection we found a stronger GFP signal in the TRV-GFP-tRNA infected plants compare to TRV-GFP (Figure \ref{fig:TRV_GFP}).
+To improve the systemic infection in apple, we purchased the new viral system developed by Dan Voytas lab who showed efficient editing in model plants and crops [@Ellison2020]. In this system, a tRNA sequence which was added to the gRNA showed improved mobility and editing of meristems. In order to examine whether these construts perform better also in apple, we constructed TRV-GFP-tRNA plasmids and compare the infection abilities of the two systems. We propagated the TRV-GFP-tRNA virus in _N.benthamiana_ and infected young apple seedlings by stabbing one leaf. Two weeks post infection we found a stronger GFP signal in the TRV-GFP-tRNA infected plants compare to TRV-GFP (Figure \ref{fig:TRV_GFP}).
 
 ```{r TRV_GFP, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="GFP fluorescence in apple cotyledons two weeks after viral infection."}
 include_graphics("TRV_GFP.png")
 ```
 
-Following the improvement in GFP expression, we designed an experiment to check if VIGE can also be improve. We constructed a TRV-PDSgRNA-tRNA virus, targeting the PDS endogene of apple. As before, we infected apple plantlets by co-cultivation and checked for viral infection in new un-infected leaves. This time we could not find any evidence for virus presence in the new leaves. Moreover, most of the plantlets died few weeks after infection. Hence, this experiment needs to be repeated to obtain results that are more conclusive. 
+Following the improvement in GFP expression, we designed an experiment to check if VIGE can also be improved. We constructed a TRV-PDSgRNA-tRNA virus, targeting the PDS endogene of apple. As before, we infected apple plantlets by co-cultivation and checked for viral infection in new un-infected leaves. This time we could not find any evidence for virus presence in the new leaves. Moreover, most of the plantlets died few weeks after infection. Hence, this experiment needs to be repeated to obtain results that are more conclusive. 
 
 
-## Implementing De-novo maristem induction and transformation in trees
+## Implementing De-novo meristem induction and transformation in trees
 
 ### Construction of plasmids containing DRs, Cas9 and sgRNAs
 A variety of plasmids was required to insure a wide range of DR combinations on both cultivars with different reporter genes. Therefor as much as 21 plasmids constructed (Table \ref{tab:AllConstracts}). The construction of the plasmid was planned with the golden gate assembly protocol. This assembly method is based on the compatibility of a backbone and 4 modules. Each module can either include or not include a functional insert. The combination of the different building blocks provides the diverse array of plasmids. Some of the building blocks were purchased ready-made and some I constructed.
@@ -632,7 +635,7 @@ for (row in 1:(nrow(AllConstracts)-1)) {
   }
 }
 
-kable(AllConstracts, caption = "De-novo maristem induction constracts" ,booktabs = TRUE, linesep = sep) %>%
+kable(AllConstracts, caption = "De-novo meristem induction constracts" ,booktabs = TRUE, linesep = sep) %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 
@@ -748,22 +751,22 @@ Maher et al.(2020) developed a novel method for plant gene editing by introducin
 
 In this work I attempted to implement this novel transformation method on trees, on poplar as a model system and on apple as one of the most economically important fruit trees. The potential of this method is sound and in trees it is even more striking when compared with traditional methods because all the reason discussed in the genetic editing bottleneck section. The target in poplar was PDS because it is a well-established reporter gene for the verification of gene knockout (mutating the gene results in disruption of green pigmentation and the plant turns white). The target gene in apple was the S-RNase gene which regulates the self-incompatibility fertilization system (mutating the gene results in self-fertilization ability) [@DelDuca2019]. If this editing will succeed this will be a major step towards the construction of self-compatible apple cultivar which up to date do not exist. 
 
-Maher et al.(2020) aimed to show de-novo shoot induction as a proof of concept, hence their DNA introduction strategy was to surgically remove axillary buds and inject the agrobacterium to the cuts. Since my target gene in apples wasn't going to produce visual clues for gene editing, I was concerned for not beeing able to properly insure total removal of the axillary bud, and in order to avoid false positives for the regeneration as much as possible, I decided to not imitate their research on that regard. Hence, I examined three different strategies for introducing DNA into the plant using agrobacterium: pressure injection to the leaf surface, injection to the leaf veins and injection to a stem cut. Our result was in favor of the latter, which is a similar method to the one described by Zhang et al.(2017) (Figure \ref{fig:Pommelo}).
+Maher et al.(2020) aimed to show de-novo shoot induction as a proof of concept, hence their DNA introduction strategy was to surgically remove axillary buds and inject the agrobacterium to the cuts. Since my target gene in apples wasn't going to produce visual clues for gene editing, I was concerned for not beeing able to properly insure total removal of the axillary bud, and in order to avoid false positives for the regeneration as much as possible, I decided not to imitate their research on that regard. Hence, I examined three different strategies for introducing DNA into the plant using agrobacterium: pressure injection to the leaf surface, injection to the leaf veins and injection to a stem cut. Our result was in favor of the latter, which is a similar method to the one described by Zhang et al.(2017) (Figure \ref{fig:Pommelo}).
 
 In comparison to Maher et al.(2020) that describe the work on _Nicotiana benthamiana_ and also mentioned work on tomato, potato and grape, we attempted to implement the method on poplar and apple trees. Another difference in comparison to their work appeared in the results. The new shoot formed on the top of the stem was not deformed (Figure \ref{fig:Deform_benthamiana}), possibly as a result of the nature of the growth, mimicking the natural shoot apical meristem, and the apical control with all its hormone flux involve in the process.
 
-The infection methods were examined at first as a preliminary experiment only on one plant with each of the plasmids, resulted in regenerative plants when the plasmids harbored the DR combinations _WOX11_-_STM_ and _WUS_-_STM_. The construct contained also the CRISPR system with a gRNA targeting the S-RNase gene however editing was not identified in the sequence of the S-RNase genes. For further verification a larger experiment was performed with the same plasmids (DRs experiment). 352 plants were infected. 44 of them with _WOX11_-_STM_, and 4 of them regenerated new shoot from the cut site. Other the the scale DRs experiment was different compared to the preliminary one in that the cut site was covered with parafilm for better moister maintenance [@Zhang2017]. With strong corelation to our results of regeneration with the combination of genes _WOX11_-_STM_ and _WUS2_-_STM_, It has been shown that in the regulation of SAM, STM and WUS act in parallel, and they are necessary for the normal expression of each other [@Tvorogova2021]. This insight can also explain the non-deformed shoot formation I observe in contrast to Maher et al's.[@Maher2020] findings. _WOX11_ is known as a regulator of callus formation, development of adventitious roots, shoot regeneration and somatic embryogenesis [@Liu2018a].  
+The infection methods were examined at first as a preliminary experiment only on one plant with each of the plasmids, resulted in regenerative plants when the plasmids harbored the DR combinations _WOX11_-_STM_ and _WUS_-_STM_. The construct contained also the CRISPR system with a gRNA targeting the S-RNase gene however editing was not identified in the sequence of the S-RNase genes. For further verification a larger experiment was performed with the same plasmids (DRs experiment). 352 plants were infected. 44 of them with _WOX11_-_STM_, and 4 of them regenerated new shoot from the cut site. Other then the scale, DRs experiment was different compared to the preliminary one in that the cut site was covered with parafilm for better moister maintenance [@Zhang2017]. With strong corelation to our results of regeneration with the combination of genes _WOX11_-_STM_ and _WUS2_-_STM_, It has been shown that in the regulation of SAM, STM and WUS act in parallel, and they are necessary for the normal expression of each other [@Tvorogova2021]. This insight can also explain the non-deformed shoot formation I observe in contrast to Maher et al's.[@Maher2020] findings. _WOX11_ is known as a regulator of callus formation, development of adventitious roots, shoot regeneration and somatic embryogenesis [@Liu2018a].  
 
 
 In the scale-up experiment, both parafilm and aluminum foil was used to cover the stem cut for kipping dark and moist environment. The Dark environment is crucial in the first 48 hours for the agrobacterium infection. Unfortunately, as a result of disease spread, no phenotype was observed. 
 
 In another experiment, to increase the possibility of infection success, the seeds were grown under aseptic conditions, on soil and were kept in a high humidity environment. However, this strategy did not help and no shoot regeneration was not formed.
 
-Although some experiments has technical problems I think that from the results that were obtained one may suggest that it is important to use plants at an exact growth stage that may be more potent to regeneration or susceptible to transformation with agrobacterium. Possibly seedlings are preferable than cuttings and probably an early stage of the seedling development – immediately after developing the first two leaves. Hence, I suggest that for future experiment to utilize this property of seedlings and all the other advantages of PopAT, it would be wise to experiment on PopAT seedlings.
+Although in some experiments had some technical problems I think that from the results that were obtained one may suggest that it is important to use plants at an exact growth stage that may be more potent to regeneration or susceptible to transformation with agrobacterium. Possibly seedlings are preferable than cuttings and probably an early stage of the seedling development - immediately after developing the first two leaves. Hence, I suggest that for future experiment to utilize this property of seedlings and all the other advantages of PopAT, it would be wise to experiment on PopAT seedlings.
 
 ## _WOX1_ as a potential epical meristem transcription factor for DR induced transformation
 
-To further attempts to increase the frequency of de-novo shoot formation, I pursue the identification of new transcription factors that are development regulators in trees and perhaps, under the right conditions, would act as a master regulators. Fortunately, in 2017 the [**DOE Joint Genome Institute**](https://genome.jgi.doe.gov/portal/PoptreSequencing_FD/PoptreSequencing_FD.info.html) [@Grigoriev2012] sequenced the _Populus tremula x alba_ INRA717-IB4 transcriptome. I analyzed the transcription profile per tissue, and identified genes that are strongly correlated to shoot development. In the analysis it appeared that out of the WUSCHEL-related homeobox (WOX) gene family, _WOX1_ had the strongest correlation to shoot formation. This finding corresponds to the Tvorogova et al.(2021), where _WOX1_ was found to regulate auxin response. This makes sense, since many of the genes whose expression is affected by WOX1 are involved in signaling pathways, transport, and synthesis of auxin. Furthermore, after narrowing the results to genes that are at least an order of magnitude shoot specific over all tissues, WOX1 came in $7^{th}$ place out of 157. 
+To further increase the frequency of de-novo shoot formation, I pursue the identification of new transcription factors that are development regulators in trees and perhaps, under the right conditions, would act as a master regulators. Fortunately, in 2017 the [**DOE Joint Genome Institute**](https://genome.jgi.doe.gov/portal/PoptreSequencing_FD/PoptreSequencing_FD.info.html) [@Grigoriev2012] sequenced the _Populus tremula x alba_ INRA717-IB4 transcriptome. I analyzed the transcription profile per tissue, and identified genes that are strongly correlated to shoot development. In this analysis, it appeared that out of the WUSCHEL-related homeobox (WOX) gene family, _WOX1_ had the strongest correlation to shoot formation. This finding corresponds to the work of Tvorogova et al.(2021), where _WOX1_ was found to regulate auxin response. This makes sense, since many of the genes whose expression is affected by WOX1 are involved in signaling pathways, transport, and synthesis of auxin. Furthermore, after narrowing the results to genes that are at least an order of magnitude shoot specific over all tissues, WOX1 came in $7^{th}$ place out of 157. 
 
 To validate our RNA-seq analysis, I extracted total RNA from similar tissues as the DOE's dataset (excluding callus, since it does not occur in natural growth). Then I run RT-qPCR analysis on the expression of _WOX1_ with various normalizer genes. Since the expression profile of the different tissues vary massively, it's difficult to find an appropriate normalizer gene with a similar expression level between the tissues. Despite that, I could still see the overall trend in which it does seemed that as the coefficient of variation (CV) got smaller, the results of the RT-qPCR become more similar to the RNA-seq results (Figure \ref{fig:qPCR}). When sorting the tissues by the expression of the gene _WOX1_ in the RT-qPCR results and in the RNA-seq analysis, the only tissue that shifted was shoot tip. The tissue is not well defined since is a combination of SAM, stem and leaves among other tissues and it is hard to isolate. Hence, the larg variability in the results can be explained by the resolution of the isolation of the tissue. 
 
