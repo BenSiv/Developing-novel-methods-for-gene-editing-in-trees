@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.18)  5 MAY 2022 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.18)  7 MAY 2022 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,13 +586,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.50 ...plementing VIGE in trees}{22}{section*.53}
-                                                  % [1]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
-7.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
+l.50 ...plementing VIGE in trees}{25}{section*.53}
+                                                  % [1])
 \tf@toc=\write3
 \openout3 = `Developing-noval-methods-for-gene-editing-in-trees.toc'.
 
@@ -609,24 +604,24 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.163 \newpage
-               [2] (./Developing-noval-methods-for-gene-editing-in-trees.lof)
-\tf@lof=\write4
-\openout4 = `Developing-noval-methods-for-gene-editing-in-trees.lof'.
-
+               [2] (./Developing-noval-methods-for-gene-editing-in-trees.lof
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 166.
+Package pdftex.def Info: telhai logo.jpg  used on input line 24.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 166.
+Package pdftex.def Info: MigalLogo.png  used on input line 24.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \newpage
-               [3]
+l.24 ...ssion (Maher et al. 2020)}}{41}{figure.24}
+                                                  % [3])
+\tf@lof=\write4
+\openout4 = `Developing-noval-methods-for-gene-editing-in-trees.lof'.
+
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
 Package pdftex.def Info: telhai logo.jpg  used on input line 166.
@@ -686,7 +681,7 @@ Package pdftex.def Info: MigalLogo.png  used on input line 431.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [9]
 <Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/agricult
-ural area per capita-1.pdf, id=326, 469.755pt x 325.215pt>
+ural area per capita-1.pdf, id=310, 469.755pt x 325.215pt>
 File: Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/agr
 icultural area per capita-1.pdf Graphic file (type pdf)
 <use Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/agri
@@ -713,6 +708,11 @@ Package pdftex.def Info: MigalLogo.png  used on input line 560.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [11 <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/ag
 ricultural area per capita-1.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
+65.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
 Package pdftex.def Info: telhai logo.jpg  used on input line 662.
@@ -740,222 +740,126 @@ File: MigalLogo.png Graphic file (type png)
 Package pdftex.def Info: MigalLogo.png  used on input line 856.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [14]
-<De-novo_meristem_induction_FlowChart.png, id=395, 551.05875pt x 466.74374pt>
-File: De-novo_meristem_induction_FlowChart.png Graphic file (type png)
-<use De-novo_meristem_induction_FlowChart.png>
-Package pdftex.def Info: De-novo_meristem_induction_FlowChart.png  used on inpu
-t line 894.
-(pdftex.def)             Requested size: 375.81648pt x 318.31451pt.
-<VIGE_FlowChart.png, id=396, 582.175pt x 427.5975pt>
-File: VIGE_FlowChart.png Graphic file (type png)
-<use VIGE_FlowChart.png>
-Package pdftex.def Info: VIGE_FlowChart.png  used on input line 902.
-(pdftex.def)             Requested size: 375.81535pt x 276.02989pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 907.
+Package pdftex.def Info: telhai logo.jpg  used on input line 954.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 907.
+Package pdftex.def Info: MigalLogo.png  used on input line 954.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [15]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 908.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1072.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 908.
+Package pdftex.def Info: MigalLogo.png  used on input line 1072.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[16 <./De-novo_meristem_induction_FlowChart.png>]
+[16]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 961.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1182.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 961.
+Package pdftex.def Info: MigalLogo.png  used on input line 1182.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[17 <./VIGE_FlowChart.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 963--967
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 968--971
-
- []
-
-
-Overfull \hbox (44.24472pt too wide) in paragraph at lines 1045--1057
- [][] 
- []
-
+[17]
+<De-novo_meristem_induction_FlowChart.png, id=452, 551.05875pt x 466.74374pt>
+File: De-novo_meristem_induction_FlowChart.png Graphic file (type png)
+<use De-novo_meristem_induction_FlowChart.png>
+Package pdftex.def Info: De-novo_meristem_induction_FlowChart.png  used on inpu
+t line 1276.
+(pdftex.def)             Requested size: 375.81648pt x 318.31451pt.
+<VIGE_FlowChart.png, id=453, 582.175pt x 427.5975pt>
+File: VIGE_FlowChart.png Graphic file (type png)
+<use VIGE_FlowChart.png>
+Package pdftex.def Info: VIGE_FlowChart.png  used on input line 1284.
+(pdftex.def)             Requested size: 375.81535pt x 276.02989pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1058.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1289.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1058.
+Package pdftex.def Info: MigalLogo.png  used on input line 1289.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [18]
-Overfull \hbox (59.45264pt too wide) in paragraph at lines 1072--1104
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1290.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1290.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[19 <./De-novo_meristem_induction_FlowChart.png>]
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1343.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1343.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[20 <./VIGE_FlowChart.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1353
+
+ []
+
+
+Overfull \hbox (44.24472pt too wide) in paragraph at lines 1427--1439
  [][] 
  []
 
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1128.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1440.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1128.
+Package pdftex.def Info: MigalLogo.png  used on input line 1440.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[19]
-<apple_injection3.png, id=443, 1019.4888pt x 342.5598pt>
+[21]
+Overfull \hbox (59.45264pt too wide) in paragraph at lines 1454--1486
+ [][] 
+ []
+
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1510.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1510.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[22]
+<apple_injection3.png, id=515, 1019.4888pt x 342.5598pt>
 File: apple_injection3.png Graphic file (type png)
 <use apple_injection3.png>
-Package pdftex.def Info: apple_injection3.png  used on input line 1159.
+Package pdftex.def Info: apple_injection3.png  used on input line 1541.
 (pdftex.def)             Requested size: 469.74835pt x 157.84076pt.
-<apple_injection2.png, id=445, 963.6pt x 361.8318pt>
+<apple_injection2.png, id=517, 963.6pt x 361.8318pt>
 File: apple_injection2.png Graphic file (type png)
 <use apple_injection2.png>
-Package pdftex.def Info: apple_injection2.png  used on input line 1182.
+Package pdftex.def Info: apple_injection2.png  used on input line 1564.
 (pdftex.def)             Requested size: 469.75679pt x 176.39366pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1188.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1570.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1188.
+Package pdftex.def Info: MigalLogo.png  used on input line 1570.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[20 <./apple_injection3.png>]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1259.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1259.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[21 <./apple_injection2.png>]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1339.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1339.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[22]
-<VIGE_vectors.png, id=481, 759.711pt x 499.977pt>
-File: VIGE_vectors.png Graphic file (type png)
-<use VIGE_vectors.png>
-Package pdftex.def Info: VIGE_vectors.png  used on input line 1356.
-(pdftex.def)             Requested size: 375.80887pt x 247.32535pt.
-<PopAT-regeneration.png, id=483, 956.07187pt x 335.00156pt>
-File: PopAT-regeneration.png Graphic file (type png)
-<use PopAT-regeneration.png>
-Package pdftex.def Info: PopAT-regeneration.png  used on input line 1372.
-(pdftex.def)             Requested size: 469.74852pt x 164.59691pt.
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1377.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1377.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[23 <./VIGE_vectors.png>]
-<T1-4.jpg, id=492, 574.3056pt x 542.025pt>
-File: T1-4.jpg Graphic file (type jpg)
-<use T1-4.jpg>
-Package pdftex.def Info: T1-4.jpg  used on input line 1393.
-(pdftex.def)             Requested size: 234.87968pt x 221.67755pt.
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1405.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1405.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[24 <./PopAT-regeneration.png> <./T1-4.jpg>]
-<Flaishmans_apples.png, id=501, 894.396pt x 454.863pt>
-File: Flaishmans_apples.png Graphic file (type png)
-<use Flaishmans_apples.png>
-Package pdftex.def Info: Flaishmans_apples.png  used on input line 1413.
-(pdftex.def)             Requested size: 469.756pt x 238.90382pt.
-<Cassette_map.png, id=503, 963.6pt x 91.84312pt>
-File: Cassette_map.png Graphic file (type png)
-<use Cassette_map.png>
-Package pdftex.def Info: Cassette_map.png  used on input line 1429.
-(pdftex.def)             Requested size: 469.75679pt x 44.77368pt.
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1461.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1461.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[25 <./Flaishmans_apples.png> <./Cassette_map.png>]
-<Apples_infection_validation.jpg, id=514, 752.8125pt x 566.86781pt>
-File: Apples_infection_validation.jpg Graphic file (type jpg)
-<use Apples_infection_validation.jpg>
-Package pdftex.def Info: Apples_infection_validation.jpg  used on input line 14
-69.
-(pdftex.def)             Requested size: 469.77148pt x 353.73793pt.
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1486.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1486.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[26 <./Apples_infection_validation.jpg>]
-<Double_chromotogram.png, id=520, 963.6pt x 322.20375pt>
-File: Double_chromotogram.png Graphic file (type png)
-<use Double_chromotogram.png>
-Package pdftex.def Info: Double_chromotogram.png  used on input line 1489.
-(pdftex.def)             Requested size: 469.75679pt x 157.07492pt.
-<LB2mutation.png, id=522, 742.191pt x 120.45pt>
-File: LB2mutation.png Graphic file (type png)
-<use LB2mutation.png>
-Package pdftex.def Info: LB2mutation.png  used on input line 1501.
-(pdftex.def)             Requested size: 469.74585pt x 76.23492pt.
-<TRV_GFP.png, id=524, 963.6pt x 283.0575pt>
-File: TRV_GFP.png Graphic file (type png)
-<use TRV_GFP.png>
-Package pdftex.def Info: TRV_GFP.png  used on input line 1526.
-(pdftex.def)             Requested size: 469.75679pt x 137.99104pt.
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1532.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1532.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[27 <./Double_chromotogram.png> <./LB2mutation.png>]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1600.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1600.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[28 <./TRV_GFP.png>]
-<wox-stm transformant3.png, id=543, 963.6pt x 422.889pt>
-File: wox-stm transformant3.png Graphic file (type png)
-<use wox-stm transformant3.png>
-Package pdftex.def Info: wox-stm transformant3.png  used on input line 1635.
-(pdftex.def)             Requested size: 469.75679pt x 206.15916pt.
+[23 <./apple_injection3.png>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
 Package pdftex.def Info: telhai logo.jpg  used on input line 1641.
@@ -964,205 +868,301 @@ File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
 Package pdftex.def Info: MigalLogo.png  used on input line 1641.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[29]
-<WOX-STM transformant Cas9+Actin3.jpg, id=550, 668.826pt x 278.349pt>
-File: WOX-STM transformant Cas9+Actin3.jpg Graphic file (type jpg)
-<use WOX-STM transformant Cas9+Actin3.jpg>
-Package pdftex.def Info: WOX-STM transformant Cas9+Actin3.jpg  used on input li
-ne 1655.
-(pdftex.def)             Requested size: 375.80548pt x 156.40103pt.
-
-LaTeX Warning: Reference `tab:S-RNase Constracts' on page 30 undefined on input
- line 1672.
-
+[24 <./apple_injection2.png>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1679.
+Package pdftex.def Info: telhai logo.jpg  used on input line 1721.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1679.
+Package pdftex.def Info: MigalLogo.png  used on input line 1721.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[30 <./wox-stm transformant3.png> <./WOX-STM transformant Cas9+Actin3.jpg>]
-<Transformant2 results.png, id=561, 1133.6754pt x 547.8066pt>
+[25]
+<VIGE_vectors.png, id=554, 759.711pt x 499.977pt>
+File: VIGE_vectors.png Graphic file (type png)
+<use VIGE_vectors.png>
+Package pdftex.def Info: VIGE_vectors.png  used on input line 1738.
+(pdftex.def)             Requested size: 375.80887pt x 247.32535pt.
+<PopAT-regeneration.png, id=556, 956.07187pt x 335.00156pt>
+File: PopAT-regeneration.png Graphic file (type png)
+<use PopAT-regeneration.png>
+Package pdftex.def Info: PopAT-regeneration.png  used on input line 1754.
+(pdftex.def)             Requested size: 469.74852pt x 164.59691pt.
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1759.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1759.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[26 <./VIGE_vectors.png>]
+<T1-4.jpg, id=565, 574.3056pt x 542.025pt>
+File: T1-4.jpg Graphic file (type jpg)
+<use T1-4.jpg>
+Package pdftex.def Info: T1-4.jpg  used on input line 1775.
+(pdftex.def)             Requested size: 234.87968pt x 221.67755pt.
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1787.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1787.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[27 <./PopAT-regeneration.png> <./T1-4.jpg>]
+<Flaishmans_apples.png, id=573, 894.396pt x 454.863pt>
+File: Flaishmans_apples.png Graphic file (type png)
+<use Flaishmans_apples.png>
+Package pdftex.def Info: Flaishmans_apples.png  used on input line 1795.
+(pdftex.def)             Requested size: 469.756pt x 238.90382pt.
+<Cassette_map.png, id=575, 963.6pt x 91.84312pt>
+File: Cassette_map.png Graphic file (type png)
+<use Cassette_map.png>
+Package pdftex.def Info: Cassette_map.png  used on input line 1811.
+(pdftex.def)             Requested size: 469.75679pt x 44.77368pt.
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1843.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1843.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[28 <./Flaishmans_apples.png> <./Cassette_map.png>]
+<Apples_infection_validation.jpg, id=585, 752.8125pt x 566.86781pt>
+File: Apples_infection_validation.jpg Graphic file (type jpg)
+<use Apples_infection_validation.jpg>
+Package pdftex.def Info: Apples_infection_validation.jpg  used on input line 18
+51.
+(pdftex.def)             Requested size: 469.77148pt x 353.73793pt.
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1868.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1868.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[29 <./Apples_infection_validation.jpg>]
+<Double_chromotogram.png, id=591, 963.6pt x 322.20375pt>
+File: Double_chromotogram.png Graphic file (type png)
+<use Double_chromotogram.png>
+Package pdftex.def Info: Double_chromotogram.png  used on input line 1871.
+(pdftex.def)             Requested size: 469.75679pt x 157.07492pt.
+<LB2mutation.png, id=593, 742.191pt x 120.45pt>
+File: LB2mutation.png Graphic file (type png)
+<use LB2mutation.png>
+Package pdftex.def Info: LB2mutation.png  used on input line 1883.
+(pdftex.def)             Requested size: 469.74585pt x 76.23492pt.
+<TRV_GFP.png, id=595, 963.6pt x 283.0575pt>
+File: TRV_GFP.png Graphic file (type png)
+<use TRV_GFP.png>
+Package pdftex.def Info: TRV_GFP.png  used on input line 1908.
+(pdftex.def)             Requested size: 469.75679pt x 137.99104pt.
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1914.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1914.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[30 <./Double_chromotogram.png> <./LB2mutation.png>]
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 1982.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 1982.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[31 <./TRV_GFP.png>]
+<wox-stm transformant3.png, id=616, 963.6pt x 422.889pt>
+File: wox-stm transformant3.png Graphic file (type png)
+<use wox-stm transformant3.png>
+Package pdftex.def Info: wox-stm transformant3.png  used on input line 2017.
+(pdftex.def)             Requested size: 469.75679pt x 206.15916pt.
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 2023.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 2023.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[32]
+<WOX-STM transformant Cas9+Actin3.jpg, id=623, 668.826pt x 278.349pt>
+File: WOX-STM transformant Cas9+Actin3.jpg Graphic file (type jpg)
+<use WOX-STM transformant Cas9+Actin3.jpg>
+Package pdftex.def Info: WOX-STM transformant Cas9+Actin3.jpg  used on input li
+ne 2037.
+(pdftex.def)             Requested size: 375.80548pt x 156.40103pt.
+
+LaTeX Warning: Reference `tab:S-RNase Constructs' on page 33 undefined on input
+ line 2054.
+
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 2061.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 2061.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[33 <./wox-stm transformant3.png> <./WOX-STM transformant Cas9+Actin3.jpg>]
+<Transformant2 results.png, id=633, 1133.6754pt x 547.8066pt>
 File: Transformant2 results.png Graphic file (type png)
 <use Transformant2 results.png>
-Package pdftex.def Info: Transformant2 results.png  used on input line 1682.
+Package pdftex.def Info: Transformant2 results.png  used on input line 2064.
 (pdftex.def)             Requested size: 375.8093pt x 181.5959pt.
 <Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RNA-seq-
-1.pdf, id=565, 469.755pt x 325.215pt>
+1.pdf, id=637, 469.755pt x 325.215pt>
 File: Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RNA
 -seq-1.pdf Graphic file (type pdf)
 <use Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RNA-
 seq-1.pdf>
 Package pdftex.def Info: Developing-noval-methods-for-gene-editing-in-trees_fil
-es/figure-latex/RNA-seq-1.pdf  used on input line 1739.
+es/figure-latex/RNA-seq-1.pdf  used on input line 2121.
 (pdftex.def)             Requested size: 375.80452pt x 260.17235pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1745.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2127.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1745.
+Package pdftex.def Info: MigalLogo.png  used on input line 2127.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[31 <./Transformant2 results.png>]
+[34 <./Transformant2 results.png>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1802.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2184.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1802.
+Package pdftex.def Info: MigalLogo.png  used on input line 2184.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[32 <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RN
+[35 <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/RN
 A-seq-1.pdf>]
 <Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPCR_nor
-malizers-1.pdf, id=586, 469.755pt x 325.215pt>
+malizers-1.pdf, id=658, 469.755pt x 325.215pt>
 File: Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPC
 R_normalizers-1.pdf Graphic file (type pdf)
 <use Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPCR
 _normalizers-1.pdf>
 Package pdftex.def Info: Developing-noval-methods-for-gene-editing-in-trees_fil
-es/figure-latex/qPCR_normalizers-1.pdf  used on input line 1805.
+es/figure-latex/qPCR_normalizers-1.pdf  used on input line 2187.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 <Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPCR-1.p
-df, id=588, 469.755pt x 325.215pt>
+df, id=660, 469.755pt x 325.215pt>
 File: Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPC
 R-1.pdf Graphic file (type pdf)
 <use Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qPCR
 -1.pdf>
 Package pdftex.def Info: Developing-noval-methods-for-gene-editing-in-trees_fil
-es/figure-latex/qPCR-1.pdf  used on input line 1827.
+es/figure-latex/qPCR-1.pdf  used on input line 2209.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1833.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2215.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1833.
+Package pdftex.def Info: MigalLogo.png  used on input line 2215.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[33 <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qP
+[36 <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qP
 CR_normalizers-1.pdf>]
-<WOX1_isolation.png, id=599, 1285.80376pt x 763.85374pt>
+<WOX1_isolation.png, id=672, 1285.80376pt x 763.85374pt>
 File: WOX1_isolation.png Graphic file (type png)
 <use WOX1_isolation.png>
-Package pdftex.def Info: WOX1_isolation.png  used on input line 1853.
+Package pdftex.def Info: WOX1_isolation.png  used on input line 2235.
 (pdftex.def)             Requested size: 469.75592pt x 279.06654pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1859.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2241.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1859.
+Package pdftex.def Info: MigalLogo.png  used on input line 2241.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[34 <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qP
+[37 <./Developing-noval-methods-for-gene-editing-in-trees_files/figure-latex/qP
 CR-1.pdf>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1905.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2288.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1905.
+Package pdftex.def Info: MigalLogo.png  used on input line 2288.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[35 <./WOX1_isolation.png>]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 1988.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 1988.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[36]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2088.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2088.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[37]
-<Bud excision.png, id=642, 963.6pt x 179.92218pt>
+[38 <./WOX1_isolation.png>]
+<Bud excision.png, id=697, 963.6pt x 179.92218pt>
 File: Bud excision.png Graphic file (type png)
 <use Bud excision.png>
-Package pdftex.def Info: Bud excision.png  used on input line 2106.
+Package pdftex.def Info: Bud excision.png  used on input line 2360.
 (pdftex.def)             Requested size: 469.75679pt x 87.71239pt.
-<Deform benthamiana PDS.png, id=643, 963.6pt x 439.6425pt>
-File: Deform benthamiana PDS.png Graphic file (type png)
-<use Deform benthamiana PDS.png>
-Package pdftex.def Info: Deform benthamiana PDS.png  used on input line 2114.
-(pdftex.def)             Requested size: 469.75679pt x 214.32652pt.
-<Pommelo transformation.png, id=644, 532.99126pt x 542.025pt>
+File: telhai logo.jpg Graphic file (type jpg)
+<use telhai logo.jpg>
+Package pdftex.def Info: telhai logo.jpg  used on input line 2366.
+(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
+File: MigalLogo.png Graphic file (type png)
+<use MigalLogo.png>
+Package pdftex.def Info: MigalLogo.png  used on input line 2366.
+(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
+[39]
+<Pommelo transformation.png, id=704, 532.99126pt x 542.025pt>
 File: Pommelo transformation.png Graphic file (type png)
 <use Pommelo transformation.png>
-Package pdftex.def Info: Pommelo transformation.png  used on input line 2122.
+Package pdftex.def Info: Pommelo transformation.png  used on input line 2369.
 (pdftex.def)             Requested size: 375.81583pt x 382.18556pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2128.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2384.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2128.
+Package pdftex.def Info: MigalLogo.png  used on input line 2384.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[38 <./Bud excision.png> <./Deform benthamiana PDS.png>]
+[40 <./Bud excision.png> <./Pommelo transformation.png>]
+<Deform benthamiana PDS.png, id=712, 963.6pt x 439.6425pt>
+File: Deform benthamiana PDS.png Graphic file (type png)
+<use Deform benthamiana PDS.png>
+Package pdftex.def Info: Deform benthamiana PDS.png  used on input line 2387.
+(pdftex.def)             Requested size: 469.75679pt x 214.32652pt.
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2162.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2442.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2162.
+Package pdftex.def Info: MigalLogo.png  used on input line 2442.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[39 <./Pommelo transformation.png>]
+[41 <./Deform benthamiana PDS.png>]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2280.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2526.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2280.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[40]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2394.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2394.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[41]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2509.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2509.
+Package pdftex.def Info: MigalLogo.png  used on input line 2526.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [42]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2590.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2612.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2590.
+Package pdftex.def Info: MigalLogo.png  used on input line 2612.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [43]
 File: telhai logo.jpg Graphic file (type jpg)
 <use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2675.
+Package pdftex.def Info: telhai logo.jpg  used on input line 2695.
 (pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
 File: MigalLogo.png Graphic file (type png)
 <use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2675.
+Package pdftex.def Info: MigalLogo.png  used on input line 2695.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [44]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2764.
@@ -1175,15 +1175,6 @@ File: MigalLogo.png Graphic file (type png)
 Package pdftex.def Info: MigalLogo.png  used on input line 2764.
 (pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
 [45]
-File: telhai logo.jpg Graphic file (type jpg)
-<use telhai logo.jpg>
-Package pdftex.def Info: telhai logo.jpg  used on input line 2764.
-(pdftex.def)             Requested size: 86.54185pt x 34.14346pt.
-File: MigalLogo.png Graphic file (type png)
-<use MigalLogo.png>
-Package pdftex.def Info: MigalLogo.png  used on input line 2764.
-(pdftex.def)             Requested size: 97.81787pt x 34.14235pt.
-[46]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 2764.
 (./Developing-noval-methods-for-gene-editing-in-trees.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2764.
@@ -1193,23 +1184,20 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14090 strings out of 483183
- 210371 string characters out of 5966292
- 495663 words of memory out of 5000000
- 28350 multiletter control sequences out of 15000+600000
- 604395 words of font info for 144 fonts, out of 8000000 for 9000
+ 14059 strings out of 483183
+ 209786 string characters out of 5966292
+ 495059 words of memory out of 5000000
+ 28336 multiletter control sequences out of 15000+600000
+ 603891 words of font info for 142 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,16n,45p,1289b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Experimantsux5cux2520scheme} has been referenced 
-but does not exist, replaced by a fixed one
+ 41i,16n,45p,1290b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Generatingux5cux2520Cas9-OEux5cux2520poplarux5cux
+2520plant} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Generatingux5cux2520Cas9-OEux5cux2520poplarux5cux25
-20plant} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/
-texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-math
-it.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fon
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-t
+s1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></us
@@ -1217,11 +1205,11 @@ r/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/l
 msy10.pfb>
-Output written on Developing-noval-methods-for-gene-editing-in-trees.pdf (47 pa
-ges, 41519225 bytes).
+Output written on Developing-noval-methods-for-gene-editing-in-trees.pdf (46 pa
+ges, 41517140 bytes).
 PDF statistics:
- 1180 PDF objects out of 1200 (max. 8388607)
- 1064 compressed objects within 11 object streams
- 360 named destinations out of 1000 (max. 500000)
- 13043 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 1132 PDF objects out of 1200 (max. 8388607)
+ 1017 compressed objects within 11 object streams
+ 346 named destinations out of 1000 (max. 500000)
+ 12995 words of extra memory for PDF output out of 14400 (max. 10000000)
 

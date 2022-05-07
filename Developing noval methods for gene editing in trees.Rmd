@@ -300,19 +300,219 @@ kable(mediums, caption = "Composition of media for cultivation, tranformation, s
 
 ## Protocols
 
-[Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) [@Gibson2009]: In 2009 Dr. Daniel Gibson and colleagues at the J. Craig Venter Institute developed a novel method for the easy assembly of multiple linear DNA fragments. Regardless of fragment length or end compatibility, multiple overlapping DNA fragments can be joined in a single isothermal reaction. With the activities of three different enzymes, the product of a Gibson Assembly is a fully ligated double-stranded DNA molecule. The reaction is carried out under isothermal conditions using three enzymatic activities: a 5' exonuclease generates long overhangs, a polymerase fills in the gaps of the annealed single strand regions, and a DNA ligase seals the nicks of the annealed and filled-in gaps.
+[**Gibson Assembly Cloning**](https://www.addgene.org/protocols/gibson-assembly/) [@Gibson2009]: In 2009 Dr. Daniel Gibson and colleagues at the J. Craig Venter Institute developed a novel method for the easy assembly of multiple linear DNA fragments. Regardless of fragment length or end compatibility, multiple overlapping DNA fragments can be joined in a single isothermal reaction. With the activities of three different enzymes, the product of a Gibson Assembly is a fully ligated double-stranded DNA molecule. The reaction is carried out under isothermal conditions using three enzymatic activities: a 5' exonuclease generates long overhangs, a polymerase fills in the gaps of the annealed single strand regions, and a DNA ligase seals the nicks of the annealed and filled-in gaps.
 
-[Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning)[@Cermak2017]: Golden Gate cloning technology relies on Type IIS restriction enzymes, first discovered in 1996. Type IIS restriction enzymes are unique from "traditional" restriction enzymes in that they cleave outside of their recognition sequence, creating four base flanking overhangs. Since these overhangs are not part of the recognition sequence, they can be customized to direct assembly of DNA fragments. When designed correctly, the recognition sites do not appear in the final construct, allowing for precise, scarless cloning. The clonning system is designed on several plasmids, the backbone plasmid plus few modules. Each module can be assembled with different insert to create a modular clonning system. A 4 module system is consists of backbone and module A, B, C and D. By assembling the same module with different inserts, it is possible to assemble complex cassette with combination genes.  
+[**Golden-Gate cloning**](https://blog.addgene.org/plasmids-101-golden-gate-cloning)[@Cermak2017]: Golden Gate cloning technology relies on Type IIS restriction enzymes, first discovered in 1996. Type IIS restriction enzymes are unique from "traditional" restriction enzymes in that they cleave outside of their recognition sequence, creating four base flanking overhangs. Since these overhangs are not part of the recognition sequence, they can be customized to direct assembly of DNA fragments. When designed correctly, the recognition sites do not appear in the final construct, allowing for precise, scarless cloning. The clonning system is designed on several plasmids, the backbone plasmid plus few modules. Each module can be assembled with different insert to create a modular clonning system. A 4 module system is consists of backbone and module A, B, C and D. By assembling the same module with different inserts, it is possible to assemble complex cassette with combination genes.  
 
-Gel agarose for DNA electrophoresis[@Lee2012].
+[**Gel agarose for DNA electrophoresis**](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf) [@Lee2012].
 
-E.coli Heat-shock competent preperation and [transformation](https://www.addgene.org/protocols/bacterial-transformation/) was performed in the common method[@Chang2017].
+Introduction:   
 
-Plasmid DNA extraction and purification was preformed with [Presto™ Mini Plasmid Kit](https://www.hylabs.co.il/products/presto-mini-plasmid-kit/).
+Preperation protocol of gel agarose for DNA electrophoresis.  
 
-DNA extraction from plant tissue was performed by the common CTAB method[@Porebski1997].
+Materials:  
 
-RNA extraction from plant tissue was performed by the common TRI reagent® protocol [@Chomczynski1993].
+* Tray + Comb (With enough places for samples + ladder)
+* LE multi-purpose agarose (Usually 1-2%)
+* TAE * 1 Buffer (volume depend on Container)
+* Ethidium bromide solution (1 drop for every 50 ml of gel)
+* loading dye (1 µL loading dye per 5 µL sample) *Taq ready mix already contain dye.
+
+Procedure:  
+
+Gel mixture, loading and running
+
+1. Measure agarose by weight.
+2. Dissolves in TAE buffer.
+3. Microwave until fully dissolved.
+4. Add ethidium bromide.
+5. Pour into tray + comb.
+6. Wait until the gel polymerizes.
+7. Carefully remove the comb to expose the sample wells.
+8. Place the gel into the tank.
+9. Pour TAE buffer into the tank high enough to cover the gel.
+10. Add loading dye (if necessary).
+11. load DNA sample.
+12. Connect the tank to the power supply.
+13. Set the voltage at ~110 V for 30 minutes *The passage of current will produce bubbles at the electrodes.
+
+
+**E.coli Heat-shock competent preperation and** [**transformation**](https://www.addgene.org/protocols/bacterial-transformation/) was performed in the common method[@Chang2017].
+
+Preperation
+
+Introduction:  
+
+Preperation of E.coli competent for Heat shock transformation.  
+
+Materials:  
+
+* Liquid nitrogen
+* ice
+* LB with sutable antibiotics
+* 20 mM $CaCl_2$ + 15% glycerol sterile
+
+Procedure:  
+
+Pre-Culture  
+
+1. Pick single colony into a 4 ml LB (antibiotick if needed)
+2. Grow at $37^oC$, 150 rpm overnight culture
+
+Culture  
+
+3. Add 0.5 ml of pre-culture to 50 ml LB, and Incubate untill $OD_{600}$ 0.5-1.
+4. Chill culture on ice for 5-10 min.
+5. transfer maximum 30 ml of the colture to a 50 ml tube.
+6. Centrifuge for 10 min at 5000 rpm in $4^oC$.
+7. Discard the supernated and let the tube to dry inverted for 1 min.
+8. Add 0.5 ml ice cold 20 mM $CaCl_2$ + 15% glycerol.
+9. Aliquot 100 $\mu l$ and freeze directly in liquid nitrogen.
+
+Transformation  
+
+Introduction:   
+
+Heat shock plasmid transformation to competent E.coli  
+
+Materials:  
+
+* Competent E.coli cells
+* 50 $\mu l$ For each DNA construct / 100 $\mu l$ For ligation
+* 50 ng of circular DNA
+* Ice
+* Water bath at $42^oC$
+* 1.5 ml tube per sample (Eppendorf or similar)
+* 1 ml of LB per sample (with no antibiotic added)
+* LB + antibiotics plates 2 or 3 per sample for dilutions
+* Drigalski spatula
+
+Procedure:  
+
+Heat shock  
+
+1. Take competent E.coli cells from $-80^oC$ freezer. Use Top10 cells in most cases.
+2. Turn on water bath to $42^oC$.
+3. Put competent cells in a 1.5 ml tube (Eppendorf or similar). For transforming a DNA construct, use 50 $\mu l$ of competent cells. For transforming a ligation, use 100 $\mu l$ of competent cells. You may need more or less cells, depending how competent they are.
+4. Keep tubes on ice.
+5. Add 50 ng of circular DNA into E.coli cells. Incubate on ice for 20 min. to thaw competent cells.
+6. Put tubes with DNA and E.coli into water bath at $42^oC$ for 1.5 min.
+7. Put tubes back on ice for 5 minutes to reduce damage to the E.coli cells.
+8. Add 1 ml of LB (with no antibiotic added). Incubate tubes for 1 hour at $37^oC$. (Can incubate tubes for 30 minutes, unless trying to grow DNA for ligation which is more sensitive. For ligation, leave tubes for 1 hour).
+9. Spread about 100 $\mu l$ of the resulting culture on LB plates (with appropriate antibiotic added). Grow overnight.
+10. Pick colonies about 12-16 hours later.
+
+
+**Plasmid DNA extraction and purification** was preformed with [Presto™ Mini Plasmid Kit](https://www.hylabs.co.il/products/presto-mini-plasmid-kit/).
+
+**DNA extraction** from plant tissue was performed by the common CTAB method[@Porebski1997].
+
+Introduction:   
+
+CTAB protocol for the isolating of DNA from plant tissues
+
+Materials:  
+
+* Liquid nitrogen
+* Ice
+* Pestles
+* Stirer
+* $65^oC$ Bath
+* Centrifuge
+* CTAB buffer
+* 2% cetyl trimethylammonium bromide, 1% polyvinyl pyrrolidone,100 mM Tris-HCl, 1.4 M NaCl, 20 mM EDTA
+* 2-Mercaptoethanol
+* Chloroform octanol (1:24)
+* Sodium acetate (NaOAc)
+* 100% Ethanol
+* 70% Ethanol
+
+Procedure:  
+
+1. Grind ~200 mg of plant tissue to a fine paste.
+2. Add 700 $\mu l$ CTAB buffer pre-heated to $65^oC$ + 7$\mu l$ 2-Mercaptoethanol.
+3. Vortex.
+4. Incubation at $65^oC$ for 30 min (Vortex few times).
+5. Chill on ice.
+6. Add 700ul Chloroform octanol (1:24).
+7. Vortex.
+8. Centrifuge 5 min 14,000 rpm.
+9. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~550-600 $\mu l$).
+10. Add 400 $\mu l$ Chloroform octanol (1:24).
+11. Centrifuge 5 min 14,000 rpm.
+12. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~350 $\mu l$).
+13. Add 35 $\mu l$ Sodium acetate (NaOAc), (X0.1 of sample volume).
+14. Add 875 $\mu l$ 100% Ethanol, (X2.5 sample volume).
+15. Incubate at $-80^oC$ for Hour/over night.
+16. Centrifuge 10 min 10,000 rpm.
+17. Remove the supernatant.
+18. Add 1 ml 70% Ethanol.
+19. Centrifuge 10 min 10,000 rpm.
+20. Remove the supernatant.
+21. Air dry the pellet, invert on paper towel.
+22. Resuspend the DNA in 50 $\mu l$ sterile DNase free water.
+
+
+**RNA extraction** from plant tissue was performed by the common TRI reagent® protocol [@Chomczynski1993].
+
+Introduction:   
+
+TRI Reagent® solution (also sold as TRIzol) is a mixture of a mixture of guanidine thiocyanate and phenol in a monophase solution that is used for the isolation of DNA, RNA and protein from biological samples of human, animal, plant, yeast, bacteria, and virus. It inhibits RNase activity. TRI Reagent® is used to homogenize the biological sample from which RNA, DNA or proteins are extracted.
+
+Materials:  
+
+* Liquid nitrogen
+* Pestles
+* Centrifuge
+* TRI Reagent®
+* Chloroform
+* 75% Ethanol
+
+
+Procedure:  
+
+1. Grind plant tissue to a fine paste with TRI Reagent (1 ml per 50-100 mg of tissue).
+2. Incubation 5 minutes at room temperature.
+3. Add 200 $\mu l$ chloroform per ml of TRI Reagent used.
+4. Vortex.
+5. Incubation 2-15 minutes at room temperature.
+6. Centrifuge the resulting mixture at 12,000 g for 15 minutes at $2-8^oC$.
+7. Transfer the aqueous phase to a fresh tube.
+8. Add 0.5 ml of 2-propanol per ml of TRI Reagent used.
+9. Mix gently.
+10. Incubation for 5-10 minutes at room temperature.
+11. Centrifuge at 12,000 g for 10 minutes at $2-8^oC$.
+12. Discard the supernatant.
+13. Add 1 ml of 75% ethanol per 1 ml of TRI Reagent used.
+14. Vortex.
+15. Centrifuge at 7,500 g for 5 minutes at $2-8^oC$.
+16. Discard the supernatant.
+17. Air dry the RNA pellet for 5-10 minutes.
+18. Resuspend the RNA pellet with ~30 $\mu l$ of RNase free water.
+
+
+**Plantlets transformation**
+
+Introduction: 
+
+This is the protocol used for on apple plantles that produce the most de-novo shoot regeneration frequency.
+
+Materials:  
+
+* Transformation medium: 1/2$ MS, 1 % sucrose and 200 $\mu M$ acetosyringone.
+* 3 ml syringe.
+* 21 - 30 G needle.
+* Sizers / Scalple.
+* 1.5 ml tube (Eppendorf or similar)
+
+Procedure:  
+1. Grow EHA-105 agrobacterium with T-DNA on petri-dish for 4 days.  
+2. Pick the whole plate with a Drigalski spatula into a new tube.  
+3. Elute in transformation medium 2 $\mu l$ per mg bacteria.  
+4. Take a 3-4 weeks old apple plantles.  
+5. Cut the stem above the first new leafs (as far as posible from the axillary buds).   
+6. Inject the bacteria into the stem cut.  
+7. Cover with parafilm for 1-2 weeks.  
 
 
 # Experimants scheme
@@ -462,13 +662,13 @@ kable(primers, caption = "All primers" ,booktabs = TRUE, linesep = sep) %>%
 
 The gene _WOX11_ from _Populus trichocarpa_ was synthesized into pUC57 by [GenScript](https://www.genscript.com/)(New Jersey, USA) and were assembled into pMOD-C backbone using [Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) protocol[@Gibson2009] (Table \ref{tab:Primers}).
 
-The final plasmids contained pTRANS as a backbone using [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning) for the construction [@Cermak2017] (Table \ref{tab:AllConstracts}).
+The final plasmids contained pTRANS as a backbone using [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning) for the construction [@Cermak2017] (Table \ref{tab:AllConstructs}).
 
 Transformation of Top10 bacteria with constructs for replication was preformed using [heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) and were grown on petri-dish containing Lysogeny broth medium with 1.1 % Agar 50 mg/L Ampicillin, at $37^oC$ over-night. Constructs were evaluated using colony PCR  (Table \ref{tab:Primers}). Positive colonies were grown in LB+amp liquid-medium, 200 rpm, over-night at $37^oC$. Constructs were purified using miniplsmid putification kit.
 
 EHA-105 agrobacterium was Transformed using electroporation MicroPulser Electroporator and were grown on petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 2 days. Positive colonies were validated again using colony PCR. 
 
-Cultures of each positive EHA-105 agrobacterium were spread on new petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 4 days. At the day of transformation, bacteria from a whole plate were collected. The transferred colonies were eluted in 2 $\mu l$ per mg Liquid medium containing $1/2$ MS, 1 % sucrose and 200 $\mu M$ acetosyringone.
+Cultures of each positive EHA-105 agrobacterium were spread on a new petri-dish containing LB-agar medium with 50 mg/L Ampicillin and 50 mg/L Rifampicin at $28^oC$ for 4 days. On the day of transformation, bacteria from a whole plate were collected. The transferred colonies were eluted in 2 $\mu l$ per mg Liquid medium containing $1/2$ MS, 1 % sucrose and 200 $\mu M$ acetosyringone.
 
 ### Infection methods experiment
 
@@ -626,14 +826,14 @@ Following the improvement in GFP expression, we designed an experiment to check 
 For the implementation of de-novo meristem induction and transformation, I examined new plants and new DRs, therefore I did not begin by expressing the genes in tissue culture since I didn't reasoned that as my final goal was in-planta transformation and because, it is well documented that one cannot deduce from tissue culture results to an in-planta experiment in a straightforward manner. Hence, the experiment scheme starts with in-planta experiments. 
 
 ### Construction of plasmids containing DRs, Cas9 and sgRNAs
-21 plasmids were constructed to provide a range of DR combinations for both poplar and apple (Table \ref{tab:AllConstracts}). pTRANS_221 as a transformation backbone, containing T-DNA, 35S::nptII and BeYDV viral replicon. Module A containing either Cas9 or GFP with 35S promotor. Module B containing an array of sgRNAs targeting either S-RNase in apple or PDS in poplar. Modules C and D containing the DRs with the following promotors, 35S, Pnos and YLCV. 
+21 plasmids were constructed to provide a range of DR combinations for both poplar and apple (Table \ref{tab:AllConstructs}). pTRANS_221 as a transformation backbone, containing T-DNA, 35S::nptII and BeYDV viral replicon. Module A containing either Cas9 or GFP with 35S promotor. Module B containing an array of sgRNAs targeting either S-RNase in apple or PDS in poplar. Modules C and D containing the DRs with the following promotors, 35S, Pnos and YLCV. 
 
-```{r AllConstracts, echo=FALSE}
-AllConstracts <- read.csv("Tables/AllConstracts.csv")
+```{r AllConstructs, echo=FALSE}
+AllConstructs <- read.csv("Tables/AllConstructs.csv")
 
 sep <- c()
-for (row in 1:(nrow(AllConstracts)-1)) {
-  if (AllConstracts[row+1,"Target"] == ""){
+for (row in 1:(nrow(AllConstructs)-1)) {
+  if (AllConstructs[row+1,"Target"] == ""){
     sep <- append(sep,'')
   }
   else{
@@ -641,12 +841,12 @@ for (row in 1:(nrow(AllConstracts)-1)) {
   }
 }
 
-kable(AllConstracts, caption = "De-novo meristem induction constracts" ,booktabs = TRUE, linesep = sep) %>%
+kable(AllConstructs, caption = "De-novo meristem induction constructs" ,booktabs = TRUE, linesep = sep) %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 
 ### Infection methods experiment
-I began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Assessment of infection methods for the infiltration and infection of apple plants by agrobacterium, was performed by 3 methods (Figure \ref{fig:Agro-infection methods}). Infection method A is based on a well-established protocol for Nicotiana benthamiana where the agrobacterium is driven by pressure into the intercellular spaces in the leaf via the stoma [@Zhang2020]. It should be noted that in contrast to Nicotiana benthamiana, apple leaves are stiff and their ability to absorb liquid is lower and therefore this method may not be as suitable for them. In Infection method B, the agrobacterium is injected into the leaf veins since in tissue culture those cells are the first to regenerate. In method C, the shoot tip was sniped off and agrobacterium was injected into the exposed vascular tissue. This method mimics in a way the natural growth of the shoot tip and therefore theoretically increases the possibility of shoot regeneration similarly to the occurrence in grafting. In each infection methods all 11 apple constructs were used (Table \ref{tab:AllConstracts}). Methods A and B were preformed 4 and 3 biological replicates respectively and Method C was performed only once per construct. In infection methods A and B, even after a month no phenotype was observed. However, in contrast in infection method C, 2 newly formed shoots were observed from the stem cut site two weeks post infection. Those plants were infected with the constructs that included genes *WOX11*-*STM* and *WUS2*-*STM* (Figure \ref{fig:wox-stm transformant}). In one of the cases, a cotyledon like tissue emerged from the cut beneath the shoot.
+I began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Assessment of infection methods for the infiltration and infection of apple plants by agrobacterium, was performed by 3 methods (Figure \ref{fig:Agro-infection methods}). Infection method A is based on a well-established protocol for Nicotiana benthamiana where the agrobacterium is driven by pressure into the intercellular spaces in the leaf via the stoma [@Zhang2020]. It should be noted that in contrast to Nicotiana benthamiana, apple leaves are stiff and their ability to absorb liquid is lower and therefore this method may not be as suitable for them. In Infection method B, the agrobacterium is injected into the leaf veins since in tissue culture those cells are the first to regenerate. In method C, the shoot tip was sniped off and agrobacterium was injected into the exposed vascular tissue. This method mimics in a way the natural growth of the shoot tip and therefore theoretically increases the possibility of shoot regeneration similarly to the occurrence in grafting. In each infection methods all 11 apple constructs were used (Table \ref{tab:AllConstructs}). Methods A and B were preformed 4 and 3 biological replicates respectively and Method C was performed only once per construct. In infection methods A and B, even after a month no phenotype was observed. However, in contrast in infection method C, 2 newly formed shoots were observed from the stem cut site two weeks post infection. Those plants were infected with the constructs that included genes *WOX11*-*STM* and *WUS2*-*STM* (Figure \ref{fig:wox-stm transformant}). In one of the cases, a cotyledon like tissue emerged from the cut beneath the shoot.
 
 ```{r wox-stm transformant, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Injection of A.tumefaciens into a stem cut of apple plantlets from Pink-lady variety. \\newline{} \\textbf{A.} A cotyledon like that emerged from a stem cut, two weeks post infection \\textbf{B.} A shoot grow, three weeks post infection."}
 include_graphics("wox-stm transformant3.png") 
@@ -657,10 +857,10 @@ DNA was extracted from an old leaf in the base of the plant and a new leaf in th
 ```{r Cas9 gene in transformant, out.width = "80%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Analysis of the presence of Cas9 in DNA extracted from 'New' and 'Old' leaves of a transformed apple. \\newline{} \\textbf{A.} T-DNA cassette validation with Cas9 primers \\textbf{B.} Control for the presence of DNA in the reactions presented in A, PCR was performed with primers for the actin gene."}
 include_graphics("WOX-STM transformant Cas9+Actin3.jpg") 
 ```
-All the apple constructs consist of sgRNA targeting the S-RNse gene (Table \ref{tab:AllConstracts}) and all the apple varieties used carry this gene. Both alleles of the S-RNase gene (S2 and S3) were amplified and sequenced but no alteration in sequence was observed.  
+All the apple constructs consist of sgRNA targeting the S-RNse gene (Table \ref{tab:AllConstructs}) and all the apple varieties used carry this gene. Both alleles of the S-RNase gene (S2 and S3) were amplified and sequenced but no alteration in sequence was observed.  
 
 ### DRs experiment  
-I examined the influence of different combinations of DRs on the plant development. Assessment of DRs for shoot induction in apple plants was performed with all 11 constructs (Table \ref{tab:S-RNase Constracts}), on 4 apple varieties: Starking, Pink Lady, Golden Delicious and Granny Smith and with 11 repeats per construct (Figure \ref{fig:Agro-injection}). Out of the 352 plants infected, 4 de-novo shoot regeneration were observed, 3 of them were of the Pink-lady and the $4^{th}$ was of Starking. The shoot regeneration was observed already after 1 week. (Figure \ref{fig:New transformant}).
+I examined the influence of different combinations of DRs on the plant development. Assessment of DRs for shoot induction in apple plants was performed with all 11 constructs (Table \ref{tab:S-RNase Constructs}), on 4 apple varieties: Starking, Pink Lady, Golden Delicious and Granny Smith and with 11 repeats per construct (Figure \ref{fig:Agro-injection}). Out of the 352 plants infected, 4 de-novo shoot regeneration were observed, 3 of them were of the Pink-lady and the $4^{th}$ was of Starking. The shoot regeneration was observed already after 1 week. (Figure \ref{fig:New transformant}).
 
 ```{r New transformant, out.width = "80%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Pink lady shoot regeneration. \\newline{} \\textbf{A.} and \\textbf{B.} grafting and cotyledone like appearance"}
 include_graphics("Transformant2 results.png") 
@@ -744,243 +944,58 @@ Food security is one of the major challenges facing humanity in the 21st century
 
 In-planta transformation, without involving cell culture, is an extremely desired goal. Zhang et al.(2017) developed a transformation method in pomelo that mimics tissue culture in-planta by creating a micro environment on an inner tissue section of the plant. A stem of a young plant was cut and subjected to liquid growth medium. However apart from this modification the process was utelizing the common agrobacterium-mediated transformation procedures (Figure \ref{fig:Pommelo}).
 
-
 I worked on two species, Poplar from vegetative reproduction in tissue culture and apples plantlets from seeds. Poplar was used since it is a model plant and could serve for the best-case scenario for gene editing in trees. I used PopAT that were propagated in tissue culture, since it is susceptible to agroinfiltration and the plantlets are identical. However in apple obtaining plantlets from tissue culture is difficult, therefor a plantlets were grown from seeds and since apples are self-incompatible, the seedlings are diverse in their genetic makeup.
 
 ## VIGE experiments
 
-The VIGE approach aims to enable systemic gene editing. In order to achieve VIGE, two main requirements must be obtained: The first is the generation of Cas9-OE plant for the availability of the Cas9 protein in the cells and the second is the assembly of suitable viral vector harboring sgRNA targeting the gene of interest. Since I did not obtain poplar containing Cas9_OE many attempts were made but unfortunately with no success. However I applied the plasmids I constracted on  apples expressing Cas9 that were constracted by the Flaishman's lab. Two types of viral vectors were used, BSMV and TRV, targeting apple's PDS endogen, and the T-DNA cassette (for deleting it). Out of 18 transformed plantlets one target, LB2, at one of the plantlets showed partial editing, showed as a double chromatogram in the sanger sequencing results (Figure \ref{fig:Double_chromotogram}). Analyzing of the alternative chromatogram predicts a deletion of 30 bps and an insertion of a single A (Figure \ref{fig:LB2mutation}). To determine the frequency of cells mutated, further cloning and sequencing is required.
-
-additional sequencing is required to determine the frequency of this mutation and to search for additional low frequencies InDels 
+The VIGE approach aims to enable systemic gene editing. In order to achieve VIGE, two main requirements must be obtained: The first is the generation of Cas9-OE plant for the availability of the Cas9 protein in the cells and the second is the assembly of suitable viral vector harboring sgRNA targeting the gene of interest. Since I did not obtain poplar containing Cas9-OE many attempts were made but unfortunately with no success. However I applied the plasmids I constructed on  apples expressing Cas9 that were developed by the Flaishman's lab. Two types of viral vectors were used, BSMV and TRV, targeting apple's PDS endogen, and the T-DNA cassette (for deleting it). Out of 18 transformed plantlets one target, LB2, at one of the plantlets showed partial editing, shown as a double chromatogram in the sanger sequencing results (Figure \ref{fig:Double_chromotogram}). Analyzing the alternative chromatogram predicts a deletion of 30 bps and an insertion of a single A (Figure \ref{fig:LB2mutation}). Additional sequencing is required to determine the frequency of this mutation and to search for additional low frequencies InDels. The VIGE approach has the potential to generate large amounts of targeted mutations. With that, there are few major hurdles to the system's wide adoption: The first is the need for a stable Cas9-OE plant, which in most cases means going through tissue culture. The second is the virulence of the vector which affects plants differently and can be fatal to the plant as seen in the case of the apple plantlets.
 
 
 ## DRs based tree transformation experiments 
 
-Maher et al.(2020) developed a novel method for plant gene editing by introducing a defined combination of DRs into the cell as well as CRISPR/Cas9 and sgRNA, with the use of agrobacterium on soil-grown plants. As a result a de-novo shoot induction is obtained as well as editing in the gene of interest without using tissue culture. The experiment was performed on annual plants (tobacco, tomato) and one Perennial plant, grapevine. It should be noted that in most cases deformations occurred as a result of the over expression of the DRs. 
+Maher et al.(2020) developed a novel method for plant gene editing by introducing a defined combination of DRs into the cell as well as CRISPR/Cas9 and sgRNA, with the use of agrobacterium on soil-grown plants. As a result, a de-novo shoot induction is obtained as well as editing in the gene of interest without using tissue culture. The experiment was performed on annual plants (tobacco, tomato) and one perennial plant, grapevine. It should be noted that in most cases deformations occurred as a result of the over expression of the DRs. 
 
-In this work I attempted to implement this novel transformation method on trees, on poplar as a model system and on apple as one of the most economically important fruit trees. The potential of this method is sound and in trees it is even more striking when compared with traditional methods because all the reason discussed in the genetic editing bottleneck section. The target in poplar was PDS because it is a well-established reporter gene for the verification of gene knockout (mutating the gene results in disruption of green pigmentation and the plant turns white). The target gene in apple was the S-RNase gene which regulates the self-incompatibility fertilization system (mutating the gene results in self-fertilization ability) [@DelDuca2019]. If this editing will succeed this will be a major step towards the construction of self-compatible apple cultivar which up to date do not exist. 
+In this work I attempted to implement this novel transformation method on trees, on poplar as a model system and on apple as one of the most economically important fruit trees. The potential of this method is sound and in trees it is even more striking when compared with traditional methods because of all the reasons discussed in the genetic editing bottleneck section. The target in poplar was PDS because it is a well-established reporter gene for the verification of gene knockout (mutating the gene results in disruption of green pigmentation and the plant turns white). The target gene in apple was the S-RNase gene which regulates the self-incompatibility fertilization system (mutating the gene results in self-fertilization ability) [@DelDuca2019]. If this editing will succeed this will be a major step towards the construction of self-compatible apple cultivars which up to date do not exist. 
 
-Maher et al.(2020) aimed to show de-novo shoot induction as a proof of concept, hence their DNA introduction strategy was to surgically remove axillary buds and inject the agrobacterium to the cuts. Since my target gene in apples wasn't going to produce visual clues for gene editing, I was concerned for not beeing able to properly insure total removal of the axillary bud, and in order to avoid false positives for the regeneration as much as possible, I decided not to imitate their research on that regard. Hence, I examined three different strategies for introducing DNA into the plant using agrobacterium: pressure injection to the leaf surface, injection to the leaf veins and injection to a stem cut. Our result was in favor of the latter, which is a similar method to the one described by Zhang et al.(2017) (Figure \ref{fig:Pommelo}).
+Maher et al.(2020) aimed to show de-novo shoot induction as a proof of concept, hence their DNA introduction strategy was to surgically remove axillary buds and inject the agrobacterium to the cuts (Figure \ref{fig:Bud_Excision}). Since my target gene in apples wasn't going to produce visual clues for gene editing, I was concerned about not being able to properly ensure total removal of the axillary bud, and in order to avoid false positives for the regeneration as much as possible, I decided not to imitate their research in that regard. Hence, I examined three different strategies for introducing DNA into the plant using agrobacterium: pressure injection to the leaf surface, injection to the leaf veins and injection to a stem cut. Our result was in favor of the latter, which is a similar method to the one described by Zhang et al.(2017) (Figure \ref{fig:Pommelo}).
 
-In comparison to Maher et al.(2020) that describe the work on _Nicotiana benthamiana_ and also mentioned work on tomato, potato and grape, we attempted to implement the method on poplar and apple trees. Another difference in comparison to their work appeared in the results. The new shoot formed on the top of the stem was not deformed (Figure \ref{fig:Deform_benthamiana}), possibly as a result of the nature of the growth, mimicking the natural shoot apical meristem, and the apical control with all its hormone flux involve in the process.
+```{r Bud_Excision, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Surgical removal of the axillary bud and injection of vector for de-novo shoot induction (Maher et al. 2020)"}
+include_graphics("Bud excision.png") 
+```
 
-I began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Next, I examined the influence of different combinations of DRs on the plant development. Finally, I scaled up the best results from the last two experiments for statistical analysis. In parallel I tried to examine the natural expression of genes in different tissues and especially in the shoot-tip by analyzing tissue specific transcriptomes of PopAT.
+```{r Pommelo, out.width = "80%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Agrobacterium-mediated in-planta transformation for Citrus maxima. \\textbf{a.} Three to four week old C. maxima seedlings. \\textbf{b.} Decapitated C. maxima seedlings. \\textbf{c.} Agrobacterium infection. \\textbf{d.} Agrobacterium infected seedlings with wounds wrapped with Parafilm. \\textbf{e.} Dark incubation during co-culture. \\textbf{f.} sprouted bud from newly formed callus. \\textbf{g.} sprouted buds from xylem. \\textbf{h.} regenerated shoots four weeks after transformation. \\textbf{i.} regenerated shoots three months after transformation. (Zhang et al. 2017)"}
+include_graphics("Pommelo transformation.png") 
+```
 
-The infection methods were examined at first as a preliminary experiment only on one plant with each of the plasmids, resulted in regenerative plants when the plasmids harbored the DR combinations _WOX11_-_STM_ and _WUS_-_STM_. The construct contained also the CRISPR system with a gRNA targeting the S-RNase gene however editing was not identified in the sequence of the S-RNase genes. For further verification a larger experiment was performed with the same plasmids (DRs experiment). 352 plants were infected. 44 of them with _WOX11_-_STM_, and 4 of them regenerated new shoot from the cut site. Other then the scale, DRs experiment was different compared to the preliminary one in that the cut site was covered with parafilm for better moister maintenance [@Zhang2017]. With strong corelation to our results of regeneration with the combination of genes _WOX11_-_STM_ and _WUS2_-_STM_, It has been shown that in the regulation of SAM, STM and WUS act in parallel, and they are necessary for the normal expression of each other [@Tvorogova2021]. This insight can also explain the non-deformed shoot formation I observe in contrast to Maher et al's.[@Maher2020] findings. _WOX11_ is known as a regulator of callus formation, development of adventitious roots, shoot regeneration and somatic embryogenesis [@Liu2018a].  
+In comparison to Maher et al.(2020) that describe the work on _Nicotiana benthamiana_ and also on tomato, potato and grape, we attempted to implement the method on poplar and apple trees. Another difference in comparison to their work appeared in the results. The new shoot formed on the top of the stem was not deformed (Figure \ref{fig:Deform_benthamiana}), possibly as a result of the nature of growth, mimicking the natural shoot apical meristem, and the apical control with all its hormone flux involve in the process.
+
+```{r Deform_benthamiana, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Abnormal shoot regeneration formation as a result of DR over-expression (Maher et al. 2020)"}
+include_graphics("Deform benthamiana PDS.png") 
+```
+
+I began by assessing the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Next, I examined the influence of different combinations of DRs on plant development. Finally, I scaled up the best results from the last two experiments for statistical analysis. In parallel I tried to examine the natural expression of genes in different tissues and especially in the shoot-tip by analyzing tissue specific transcriptomes of PopAT.
+
+The infection methods were examined at first as a preliminary experiment only on one plant with each of the plasmids, resulting in regenerative plants when the plasmids harbored the DR combinations _WOX11_-_STM_ and _WUS_-_STM_. The construct also contained the CRISPR system with a gRNA targeting the S-RNase gene however editing was not identified in the sequence of the S-RNase genes. For further verification a larger experiment was performed with the same plasmids (DRs experiment). 352 plants were infected. 44 of them with _WOX11_-_STM_, and 4 of them regenerated new shoot from the cut site. Apart from the scale, DRs experiment was different compared to the preliminary one since the cut site was covered with parafilm for better moisture maintenance [@Zhang2017]. With strong correlation to my results of regeneration with the combination of genes _WOX11_-_STM_ and _WUS2_-_STM_, It has been shown that in the regulation of SAM, STM and WUS act in parallel, and they are necessary for the normal expression of each other [@Tvorogova2021]. This insight can also explain the non-deformed shoot formation I observe in contrast to Maher et al's.[@Maher2020] findings. _WOX11_ is known as a regulator of callus formation, development of adventitious roots, shoot regeneration and somatic embryogenesis [@Liu2018a].  
 
 
-In the scale-up experiment, both parafilm and aluminum foil was used to cover the stem cut for kipping dark and moist environment. The Dark environment is crucial in the first 48 hours for the agrobacterium infection. Unfortunately, as a result of disease spread, no phenotype was observed. 
+In the scale-up experiment, both parafilm and aluminum foil was used to cover the stem cut for kipping a dark and moist environment. The Dark environment is crucial in the first 48 hours for the agrobacterium infection. Unfortunately, as a result of disease spread, no phenotype was observed. 
 
 In another experiment, to increase the possibility of infection success, the seeds were grown under aseptic conditions, on soil and were kept in a high humidity environment. However, this strategy did not help and no shoot regeneration was not formed.
 
-Although in some experiments had some technical problems I think that from the results that were obtained one may suggest that it is important to use plants at an exact growth stage that may be more potent to regeneration or susceptible to transformation with agrobacterium. Possibly seedlings are preferable than cuttings and probably an early stage of the seedling development - immediately after developing the first two leaves. Hence, I suggest that for future experiment to utilize this property of seedlings and all the other advantages of PopAT, it would be wise to experiment on PopAT seedlings.
+From the results that were obtained one may suggest that it is important to use plants at an exact growth stage that may be more potent to regeneration or susceptible to transformation with agrobacterium. Possibly seedlings are preferable than cuttings and probably an early stage of the seedling development - immediately after developing the first two leaves. Hence, I suggest that future experiments use PopAT seedlings due to the advantages of PopAT.
 
 ## _WOX1_ as a potential epical meristem transcription factor for DR induced transformation
 
-To further increase the frequency of de-novo shoot formation, I pursue the identification of new transcription factors that are development regulators in trees and perhaps, under the right conditions, would act as a master regulators. Fortunately, in 2017 the [**DOE Joint Genome Institute**](https://genome.jgi.doe.gov/portal/PoptreSequencing_FD/PoptreSequencing_FD.info.html) [@Grigoriev2012] sequenced the _Populus tremula x alba_ INRA717-IB4 transcriptome. I analyzed the transcription profile per tissue, and identified genes that are strongly correlated to shoot development. In this analysis, it appeared that out of the WUSCHEL-related homeobox (WOX) gene family, _WOX1_ had the strongest correlation to shoot formation. This finding corresponds to the work of Tvorogova et al.(2021), where _WOX1_ was found to regulate auxin response. This makes sense, since many of the genes whose expression is affected by WOX1 are involved in signaling pathways, transport, and synthesis of auxin. Furthermore, after narrowing the results to genes that are at least an order of magnitude shoot specific over all tissues, WOX1 came in $7^{th}$ place out of 157. 
+To further increase the frequency of de-novo shoot formation, I pursue the identification of new transcription factors that are development regulators in trees and perhaps, under the right conditions, would act as master regulators. Fortunately, in 2017 the [**DOE Joint Genome Institute**](https://genome.jgi.doe.gov/portal/PoptreSequencing_FD/PoptreSequencing_FD.info.html) [@Grigoriev2012] sequenced the _Populus tremula x alba_ INRA717-IB4 transcriptome. I analyzed the transcription profile per tissue, and identified genes that are strongly correlated to shoot development. In this analysis, it appeared that out of the WUSCHEL-related homeobox (WOX) gene family, _WOX1_ had the strongest correlation to shoot formation. This finding corresponds to the work of Tvorogova et al.(2021), where _WOX1_ was found to regulate auxin response. This makes sense, since many of the genes whose expression is affected by WOX1 are involved in signaling pathways, transport, and synthesis of auxin. Furthermore, after narrowing the results to genes that are at least an order of magnitude shoot specific over all tissues, WOX1 came in $7^{th}$ place out of 157. 
 
-To validate our RNA-seq analysis, I extracted total RNA from similar tissues as the DOE's dataset (excluding callus, since it does not occur in natural growth). Then I run RT-qPCR analysis on the expression of _WOX1_ with various normalizer genes. Since the expression profile of the different tissues vary massively, it's difficult to find an appropriate normalizer gene with a similar expression level between the tissues. Despite that, I could still see the overall trend in which it does seemed that as the coefficient of variation (CV) got smaller, the results of the RT-qPCR become more similar to the RNA-seq results (Figure \ref{fig:qPCR}). When sorting the tissues by the expression of the gene _WOX1_ in the RT-qPCR results and in the RNA-seq analysis, the only tissue that shifted was shoot tip. The tissue is not well defined since is a combination of SAM, stem and leaves among other tissues and it is hard to isolate. Hence, the larg variability in the results can be explained by the resolution of the isolation of the tissue. 
+To validate our RNA-seq analysis, I extracted total RNA from similar tissues as the DOE's dataset (excluding callus, since it does not occur in natural growth). Then I run RT-qPCR analysis on the expression of _WOX1_ with various normalizer genes. Since the expression profile of the different tissues vary massively, it's difficult to find an appropriate normalizer gene with a similar expression level between the tissues. Despite that, I could still see the overall trend in which it seemed that the coefficient of variation (CV) got smaller and the results of the RT-qPCR became more similar to the RNA-seq results (Figure \ref{fig:qPCR}). When sorting the tissues by the expression of the gene _WOX1_ in the RT-qPCR and in the RNA-seq analysis, the only tissue that shifted was the shoot tip. Shoot tip tissue is not well defined since it is a combination of SAM, stem and leaves among other tissues and it is hard to isolate. Hence, the large variability in the results can be explained by the resolution of the isolation of the tissue. 
 
-In summary: the quest to achieve an in-planta transformation in trees is a huge challenge. In this work although I did not reach the final milestone of in-planta tree gene editing, still I hope that the work has closed part of the gap and will contribute to evoke de-novo shoot regeneration on a soil grown tree.  
+In summary, the quest to achieve an in-planta transformation in trees is a huge challenge. In this work, although I did not reach the final milestone of in-planta tree gene editing, I hope that the work has closed part of the gap and will contribute to evoke de-novo shoot regeneration on a soil grown tree.  
 
 # Acknowledgements
 
 # Supplementary information
 
 [Analysis code link.](https://htmlpreview.github.io/?https://github.com/BenSiv/PopAT-expression-analysis/blob/main/PopAT_Expression.html)
-
-```{r Bud_Excision, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Surgical removal of the axillary bud and injection of vector for de-novo shoot induction (Maher et al. 2020)"}
-include_graphics("Bud excision.png") 
-```
-```{r Deform_benthamiana, out.width = "100%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Abnormal shoot regeneration formation as a result of DR over-expression (Maher et al. 2020)"}
-include_graphics("Deform benthamiana PDS.png") 
-```
-```{r Pommelo, out.width = "80%", fig.align="center", echo=FALSE, fig.pos= "H", fig.cap="Agrobacterium-mediated in-planta transformation for Citrus maxima. \\textbf{a.} Three to four week old C. maxima seedlings. \\textbf{b.} Decapitated C. maxima seedlings. \\textbf{c.} Agrobacterium infection. \\textbf{d.} Agrobacterium infected seedlings with wounds wrapped with Parafilm. \\textbf{e.} Dark incubation during co-culture. \\textbf{f.} sprouted bud from newly formed callus. \\textbf{g.} sprouted buds from xylem. \\textbf{h.} regenerated shoots four weeks after transformation. \\textbf{i.} regenerated shoots three months after transformation. (Zhang et al. 2017)"}
-include_graphics("Pommelo transformation.png") 
-```
-****
-## Protocols
-
-### [Gel agarose for DNA electrophoresis](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf)
-
-Introduction:   
-
-Preperation protocol of gel agarose for DNA electrophoresis.  
-
-Materials:  
-
-* Tray + Comb (With enough places for samples + ladder)
-* LE multi-purpose agarose (Usually 1-2%)
-* TAE * 1 Buffer (volume depend on Container)
-* Ethidium bromide solution (1 drop for every 50 ml of gel)
-* loading dye (1 µL loading dye per 5 µL sample) *Taq ready mix already contain dye.
-
-Procedure:  
-
-**Gel mixture, loading and running**  
-
-1. Measure agarose by weight.
-2. Dissolves in TAE buffer.
-3. Microwave until fully dissolved.
-4. Add ethidium bromide.
-5. Pour into tray + comb.
-6. Wait until the gel polymerizes.
-7. Carefully remove the comb to expose the sample wells.
-8. Place the gel into the tank.
-9. Pour TAE buffer into the tank high enough to cover the gel.
-10. Add loading dye (if necessary).
-11. load DNA sample.
-12. Connect the tank to the power supply.
-13. Set the voltage at ~110 V for 30 minutes *The passage of current will produce bubbles at the electrodes.
-
-
-### E.coli Heat-shock competent preperation [@Chang2017]  
-
-Introduction:  
-
-Preperation of E.coli competent for Heat shock transformation.  
-
-Materials:  
-
-* Liquid nitrogen
-* ice
-* LB with sutable antibiotics
-* 20 mM $CaCl_2$ + 15% glycerol sterile
-
-Procedure:  
-
-**Pre-Culture**  
-
-1. Pick single colony into a 4 ml LB (antibiotick if needed)
-2. Grow at $37^oC$, 150 rpm overnight culture
-
-**Culture**  
-
-3. Add 0.5 ml of pre-culture to 50 ml LB, and Incubate untill $OD_{600}$ 0.5-1.
-4. Chill culture on ice for 5-10 min.
-5. transfer maximum 30 ml of the colture to a 50 ml tube.
-6. Centrifuge for 10 min at 5000 rpm in $4^oC$.
-7. Discard the supernated and let the tube to dry inverted for 1 min.
-8. Add 0.5 ml ice cold 20 mM $CaCl_2$ + 15% glycerol.
-9. Aliquot 100 $\mu l$ and freeze directly in liquid nitrogen.
-
-
-### [E.coli heat-shock transformation](https://www.addgene.org/protocols/bacterial-transformation/) [@Chang2017]  
-
-Introduction:   
-
-Heat shock plasmid transformation to competent E.coli  
-
-Materials:  
-
-* Competent E.coli cells
-* 50 $\mu l$ For each DNA construct / 100 $\mu l$ For ligation
-* 50 ng of circular DNA
-* Ice
-* Water bath at $42^oC$
-* 1.5 ml tube per sample (Eppendorf or similar)
-* 1 ml of LB per sample (with no antibiotic added)
-* LB + antibiotics plates 2 or 3 per sample for dilutions
-* Drigalski spatula
-
-Procedure:  
-
-**Heat shock**  
-
-1. Take competent E.coli cells from $-80^oC$ freezer. Use Top10 cells in most cases.
-2. Turn on water bath to $42^oC$.
-3. Put competent cells in a 1.5 ml tube (Eppendorf or similar). For transforming a DNA construct, use 50 $\mu l$ of competent cells. For transforming a ligation, use 100 $\mu l$ of competent cells. You may need more or less cells, depending how competent they are.
-4. Keep tubes on ice.
-5. Add 50 ng of circular DNA into E.coli cells. Incubate on ice for 20 min. to thaw competent cells.
-6. Put tubes with DNA and E.coli into water bath at $42^oC$ for 1.5 min.
-7. Put tubes back on ice for 5 minutes to reduce damage to the E.coli cells.
-8. Add 1 ml of LB (with no antibiotic added). Incubate tubes for 1 hour at $37^oC$. (Can incubate tubes for 30 minutes, unless trying to grow DNA for ligation which is more sensitive. For ligation, leave tubes for 1 hour).
-9. Spread about 100 $\mu l$ of the resulting culture on LB plates (with appropriate antibiotic added). Grow overnight.
-10. Pick colonies about 12-16 hours later.
-
-
-### CTAB protocol [@Porebski1997]  
-
-Introduction:   
-
-CTAB protocol for the isolating of DNA from plant tissues
-
-Materials:  
-
-* Liquid nitrogen
-* Ice
-* Pestles
-* Stirer
-* $65^oC$ Bath
-* Centrifuge
-* CTAB buffer
-* 2% cetyl trimethylammonium bromide, 1% polyvinyl pyrrolidone,100 mM Tris-HCl, 1.4 M NaCl, 20 mM EDTA
-* 2-Mercaptoethanol
-* Chloroform octanol (1:24)
-* Sodium acetate (NaOAc)
-* 100% Ethanol
-* 70% Ethanol
-
-Procedure:  
-
-1. Grind ~200 mg of plant tissue to a fine paste.
-2. Add 700 $\mu l$ CTAB buffer pre-heated to $65^oC$ + 7$\mu l$ 2-Mercaptoethanol.
-3. Vortex.
-4. Incubation at $65^oC$ for 30 min (Vortex few times).
-5. Chill on ice.
-6. Add 700ul Chloroform octanol (1:24).
-7. Vortex.
-8. Centrifuge 5 min 14,000 rpm.
-9. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~550-600 $\mu l$).
-10. Add 400 $\mu l$ Chloroform octanol (1:24).
-11. Centrifuge 5 min 14,000 rpm.
-12. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~350 $\mu l$).
-13. Add 35 $\mu l$ Sodium acetate (NaOAc), (X0.1 of sample volume).
-14. Add 875 $\mu l$ 100% Ethanol, (X2.5 sample volume).
-15. Incubate at $-80^oC$ for Hour/over night.
-16. Centrifuge 10 min 10,000 rpm.
-17. Remove the supernatant.
-18. Add 1 ml 70% Ethanol.
-19. Centrifuge 10 min 10,000 rpm.
-20. Remove the supernatant.
-21. Air dry the pellet, invert on paper towel.
-22. Resuspend the DNA in 50 $\mu l$ sterile DNase free water.
-
-### TRI Reagent® Protocol 
-
-Introduction:   
-
-TRI Reagent® solution (also sold as TRIzol) is a mixture of a mixture of guanidine thiocyanate and phenol in a monophase solution that is used for the isolation of DNA, RNA and protein from biological samples of human, animal, plant, yeast, bacteria, and virus. It inhibits RNase activity. TRI Reagent® is used to homogenize the biological sample from which RNA, DNA or proteins are extracted.
-
-Materials:  
-
-* Liquid nitrogen
-* Pestles
-* Centrifuge
-* TRI Reagent®
-* Chloroform
-* 75% Ethanol
-
-
-Procedure:  
-
-1. Grind plant tissue to a fine paste with TRI Reagent (1 ml per 50-100 mg of tissue).
-2. Incubation 5 minutes at room temperature.
-3. Add 200 $\mu l$ chloroform per ml of TRI Reagent used.
-4. Vortex.
-5. Incubation 2-15 minutes at room temperature.
-6. Centrifuge the resulting mixture at 12,000 g for 15 minutes at $2-8^oC$.
-7. Transfer the aqueous phase to a fresh tube.
-8. Add 0.5 ml of 2-propanol per ml of TRI Reagent used.
-9. Mix gently.
-10. Incubation for 5-10 minutes at room temperature.
-11. Centrifuge at 12,000 g for 10 minutes at $2-8^oC$.
-12. Discard the supernatant.
-13. Add 1 ml of 75% ethanol per 1 ml of TRI Reagent used.
-14. Vortex.
-15. Centrifuge at 7,500 g for 5 minutes at $2-8^oC$.
-16. Discard the supernatant.
-17. Air dry the RNA pellet for 5-10 minutes.
-18. Resuspend the RNA pellet with ~30 $\mu l$ of RNase free water.
 
 # References
