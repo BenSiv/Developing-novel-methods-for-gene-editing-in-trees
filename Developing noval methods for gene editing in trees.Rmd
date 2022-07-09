@@ -75,7 +75,7 @@ Signature of student:_______________Date:____/____/_______ \hfill \break \newlin
 \newpage
 
 # Acknowledgements
-I wish to thank MIGAL research instetude for the welcoming work environment. To Prof. Rachel Amir as the head of the masterser's program for the guidance in the writing  proccess. To the Flaishman's group for their collaboration in the research. To all the Lab members, who helped me in my journey. Greate appriciation to my supervisors Prof. Martin Goldway and Dr. Amir Raz for all their support, advice and over all creative freedom to make this work trully my own. Last but not list, to my wife Neta, for her understanding even through pregnancy and labor.
+I wish to thank MIGAL research instetute for the welcoming work environment. To Prof. Rachel Amir as the head of the master program for the guidance in the writing process. To the Flaishman's group for their collaboration in the research. To all the Lab members, who helped me in my journey. Great appreciation to my supervisors Prof. Martin Goldway and Dr. Amir Raz for all their support, advice and over all creative freedom to make this work truly my own. Last but not list, to my wife Neta, for her understanding even through pregnancy and labor.
 
 \newpage
 
@@ -106,26 +106,25 @@ library(latex2exp)
 
 # Abstract
 
-Global environmental change undermines food security. In comparison to most crops, trees are resilient to temperature fluctuations and
-consequently offer vital insurance against famine. Crop improvement with available methods reaches a glass ceiling and genetic modification can contribute substantially to break through the barrier. Tissue culture is a required step in most genetic modification methods. Yet, tissue culture has its issues and the process is far from routine in most laboratories. In trees, because of long generation time, tissue culture issues become much more pronounced. In this work we are attempting to implement a novel gene editing method that doesn't require tissue culture such as de-novo meristem induction and transformation, on trees. In this work we used _Agrobacterium tumefaciens_ as the vector for in-planta transformation. We used apples as a commercial fruit tree crop and poplar as a model system for trees. We experimented with a wide range of development regulators, and a few agroinfiltration strategis. Additionally we analyse tissue specific transcriptome to further understand gene expression patterns in tissue development, and scan for better normalizer genes for real-time quantitative PCR. In this work We have shown that over expression of the gene combination _WUS2-STM_ and _WOX11-STM_ were successful in invoking de-novo shoot regeneration in a young apple plants, in-planta. Further we found ,based on the tissue specific transcriptome, that in poplar the most shoot tip specific transcription factor from the WUSCHEL family is WOX1. 
+Global environmental changes challenge food security. In comparison to most crops, trees are resilient to temperature fluctuations and consequently offer some protection for sufficient and nutritious food. Crop improvement with available methods reaches an acknowledged barriers and genetic modification can contribute substantially to breakthroughs. Tissue culture is a required step in most genetic modification methods. Yet, it is far from being routine in most laboratories. In trees, because of long generation time, tissue culture issues become much more pronounced. In this project we are attempting to implement a novel gene editing method for trees that combines eather de-novo meristem induction or systemic gRNA propagation through viral infection, hence will not require tissue culture transformation. In this work we used _Agrobacterium tumefaciens_ as the vector for in-planta transformation. I used apples as a commercial fruit tree crop and poplar as a model system for trees. I applied a few development regulators, and a different agroinfiltration strategis. In addition I analyzed tissue specific transcriptome to further understand gene expression patterns in tissue development, and scan for better normalizer genes for real-time quantitative PCR. I showed that over expression of the gene combination _WUS2-STM_ and _WOX11-STM_ were successful in invoking de-novo shoot regeneration in a young apple plants, in-planta and found, based on the tissue specific transcriptome, that in poplar the transcription factor WOX1 from the WUSCHEL family is most specific to shoot. 
 
 # Introduction
 
 ## Trees and their vital role as source for food security
 
-Food security is a fundamental necessity that challenged mankind from the beginning of time. Many researchers today estimate that Food security is under threat as a result of global environmental changes through land degradation, loss of biodiversity, changes in hydrology, and changes in climate patterns[@Ericksen2009]. Moreover population growth is around 100 million per year. Since the early 1990s, the number of extreme weather-related disasters has doubled[@FAO2020a]. Higher temperatures, water scarcity, extreme events like droughts and floods have already begun to impact staple crops around the world[@Linden2015] and have reduced the yields of major crops like maize and wheat[@Rosenzweig2001]. According to the Food and Agriculture Organization of the United Nations, the climate variability has an impact of at least 80% to the unpredictable reduction in yield of cereal crops in semi-arid regions of the world such as the Sahel region of Africa[@Shiferaw2014].
+Food security is a fundamental necessity that challenged mankind throughout its history. Many researchers estimate that food security is under threat as a result of global environmental changes through land degradation, loss of biodiversity, changes in hydrology, and changes in climate patterns[@Ericksen2009]. Moreover population growth is around 100 million per year. Since the early 1990s, the number of extreme weather-related disasters has doubled[@FAO2020a]. Higher temperatures, water scarcity, extreme events like droughts and floods have already begun to impact staple crops around the world[@Linden2015] and have reduced the yields of major crops like maize and wheat[@Rosenzweig2001]. According to the Food and Agriculture Organization of the United Nations, the climate variability has an impact of at least 80% to the unpredictable reduction in yield of cereal crops in semi-arid regions of the world such as the Sahel region of Africa[@Shiferaw2014].
 
-Fruit trees contribute in many ways to improving diets and combating hunger around the world[@Vinceti2013]. Trees are much more resilient to extreme weather-related disasters in comparison to most crops, and consequently they can offer vital insurance against famine during times of seasonal food shortages due to droughts, floods and heat/cold waves. This is the main reason behind the evergreen agriculture approach[@Garrity2010]. Trees resilient is due to their being perennial woody plants, which allows them to grow strong, with durable trunk and long roots. In addition, fruit trees are able to produce large yield on a given area resulting from  their vertical growth. However, tree research has a drawback since they have a long generation period.
+Fruit trees contribute in many ways to improving diets and combating hunger around the world[@Vinceti2013]. Trees are much more resilient to extreme weather-related disasters in comparison to most crops, and consequently they can offer some insurance for sufficient and nutritious food during times of seasonal food shortages due to droughts, floods and hot or cold waves. This is the main reason behind the evergreen agriculture approach[@Garrity2010]. Trees resilient is due to their being perennial woody plants, which allows them to grow strong, with durable trunk and long roots. In addition, fruit trees are able to produce large yield on a given area resulting from  their vertical growth. However, tree research has a drawback among them a long generation period of a few years.
 
 ## Classical plant improvement methods for trees on a human time scale
 
-Since mankind developed the ability to grow plants for food, methods were developed to improve yield. The most ancient method is the selection and propagation of plants with preferred traits such as larger seeds. This method creates an artificial selection pressure for desirable trait. However, this process is dependent on random mutations, making it slow. Furthermore, undesirable additional traits may appear.
+Since mankind developed the ability to grow plants for food, methods were developed to improve yield. The most ancient method is the selection and propagation of plants with preferred traits such as larger seeds. This method creates an artificial selection pressure for desirable trait. However, this process is dependent on random mutations, making it slow.
 
-The second method that man has developed for improving the crop is breeding. Breeding at its core is based on the idea of merging traits from different lines to a single cultivar through crossbreeding. Although this method is faster, this process takes many generations and even in annual plants takes a few years. Moreover, in trees breeding is much slower and therefore new varieties are the outcome of a single generation of select. Still, impressive results have been obtained that have changed the fate of the human race to extremes.
+Towards the end of the 19th century plant breeding was established. Breeding at its core is based on the idea of merging traits from different lines to a single cultivar through crossbreeding. Although this method is faster, this process takes many generations and even in annual plants takes a few years. Moreover, in trees breeding is much slower and therefore new varieties are the outcome of a single generation of selection. Still, impressive results have been obtained that have contributed significantly to human's diet.
 
 ## Genetic modification as a viable solution for trees improvement
 
-With the understanding that the inherited genetic material is DNA, the ability was developed to utilize the acceleration of random mutations as a way of gaining genetic diversity and selecting based on the phynotypic outcome. By exposing seeds to chemicals or radiation the frequency of mutation events is increased with some of them providing desirable traits.  
+With the understanding that the inherited genetic material is DNA, the ability was developed to utilize the acceleration of random mutations as a way of gaining genetic diversity and selecting based on the phenotypic outcome. By exposing seeds to chemicals or radiation the frequency of mutation events is increased with some of them providing desirable traits.  
 
 As a result of the genetic revolution, many genetic modification technologies were developed, some of them relevant for plants too. Those methods are more direct in their approach to manipulate DNA for an expected outcome. They can be divided into two groups, exogenous DNA delivery methods and site-specific endonucleases. 
 
@@ -135,11 +134,11 @@ Techniques developed for the introduction of foreign DNA genes (exogenous) into 
 
 ### Biolistic particle delivery system or Gene gun  
 
-Gene gun or biolistic particle delivery system is a device used to deliver exogenous DNA (transgenes), RNA, or protein to cells. By coating particles of a heavy metal with a gene of interest and firing these micro-projectiles into cells using mechanical force, an integration of desired genetic information can be induced into cells[@OBrien2011]. Thus the DNA may be transformed into whatever genomes are present in the cell, either nuclear, mitochondrial, plasmid or any others, in any combination, though proper construct design may mitigate this. The delivery and integration of multiple templates of the DNA construct is a distinct possibility, resulting in potential variable expression levels and copy numbers of the inserted gene[@Shewry2008149].
+Gene gun or biolistic particle delivery system is a device used to deliver exogenous DNA (transgenes), RNA, or protein to cells. By coating particles of a heavy metal with a gene of interest and firing these micro-projectiles into cells using mechanical force, an integration of desired genetic information can be induced into cells[@OBrien2011]. Thus the DNA may be transformed into whatever genomes are present in the cell, either nuclear, mitochondrial, plasmid or any others, in any combination. Targeting the specific DNA requires particular construct design. The integration of multiple templates of the DNA construct may occur, resulting in variable copy numbers of the iserted gene and variable expression levels[@Shewry2008149].
 
 ### Protoplast transformation  
   
-Protoplast refers to the entire cell excluding the cell wall. Protoplasts can be generated by stripping the cell wall from plant, bacterial, or fungal cells by mechanical, chemical or enzymatic means[@davey2005plant]. The advantages of using protoplast in comparison to a whole cell is the direct access to the cells membrane which result in increase uptake of DNA and increase transformation frequency. Treatment of protoplast-plasmid mixtures with PEG and/or electroporation is the approach normally exploited to induce DNA into protoplasts. However, transformation frequencies typically remain low (ca. one in 104 protoplasts giving stably transformed tissues)[@davey2005plant]. Heat shock treatment and irradiation of recipient protoplasts enhance transformation frequency, probably by increasing the recombination of genomic DNA with incoming foreign DNA, or the initiation of repair mechanisms that favour DNA integration. Carrier DNA and the nature of the plant genome also affect transformation[@davey2005plant]. DNA uptake into protoplasts has been especially important in transforming plants that are not amenable to other methods of gene delivery, particularly agrobacterium-mediated transformation. Many of such studies focused on cereals, particularly rice, once protoplast-to-plant systems became available for these crops[@Rakoczy-Trojanowska2002]. However, protoplast regeneration into mature plants is hard to achieve in most plants, which is the major holdback of this approach.
+Protoplast refers to the entire cell excluding the cell wall. Protoplasts can be generated by stripping the cell wall from plant, bacterial, or fungal cells by mechanical, chemical or enzymatic means[@davey2005plant]. The advantages of using protoplast in comparison to a whole cell is the direct access to the cells membrane which result in increase uptake of DNA and increase transformation frequency. Treatment of protoplast-plasmid mixtures with PEG and/or electroporation is the approach normally exploited to induce DNA into protoplasts. However, transformation frequencies typically remain low (ca. one in 104 protoplasts giving stably transformed tissues)[@davey2005plant]. Heat shock treatment and irradiation of recipient protoplasts enhance transformation frequency, probably by increasing the recombination of genomic DNA with incoming foreign DNA, or the initiation of repair mechanisms that favor DNA integration. Carrier DNA and the nature of the plant genome also affect transformation[@davey2005plant]. DNA uptake into protoplasts has been especially important in transforming plants that are not amenable to other methods of gene delivery, particularly agrobacterium-mediated transformation. Many of such studies focused on cereals, particularly rice, once protoplast-to-plant systems became available for these crops[@Rakoczy-Trojanowska2002]. However, protoplast regeneration into mature plants is hard to achieve in most plants, which is the major holdback of this approach.
 
 ### Agrobacterium-mediated transformation  
   
@@ -151,7 +150,7 @@ Virus mediated gene delivery utilizes the ability of a virus to inject their gen
 
 ### Virus-Induced Gene Silencing (VIGS)
 
-Virus-induced gene silencing is one of the reverse genetics tools for analysis of gene function that uses viral vectors carrying a target gene fragment to reduce double-strand RNA (dsRNA) which trigger RNA mediated gene silencing. Small interfering RNAs (siRNAs) which are 21-25 nucleotide long, guides specific cleavage or suppression of target messenger RNA (mRNA) at posttranscriptional level. The process takes place as follows, siRNAs which are processed from long double-stranded RNAs (dsRNA) by DICER, an RNAse-like enzyme, are then incorporated into RNA-induced silencing complex (RISC). This complex with siRNA targets specific mRNA transcripts having sequence complementarity with the specific siRNA. In other words, the antisense strand of the siRNA associates with the RNAi silencing complex (RISC) to target homologous RNA for degradation. Some virus species were previously modified and used for silencing the gene of interest[@Jiang2014]. Tobacco mosaic virus (TMV) is the first modified virus for application of VIGS methods to plants. TMV was used for effective pds gene silencing in Nicotiana benthamiana plants[@Harries2008]. Tobacco rattle virus (TRV) was also modified to be a tool for gene silencing in plants. TRV has a bipartite genome, consisting of two positive-sense single-stranded RNAs, designated RNA1 and RNA2. The significant advantage of TRV-based VIGS in Solanaceous species is the ease of introduction of the VIGS vector into plants. The VIGS vector is placed between Rigth Border (RB) and Left Border (LB) sites of T-DNA and inserted into Agrobacterium tumefaciens. Another property of TRV is the more vigorous spreading all over the entire plant including meristem, and infection symptoms of TRV are mild[@Ratcliff2001]. Lately barley stripe mosaic virus (BSMV) was developed for efficient silencing of pds gene in barley. This system was then used for silencing of wheat genes. BSMV is a positive sense RNA virus containing a tripartite ($\alpha$,$\beta$,$\gamma$) genome. The modified $\gamma$ of BSMV genome allows simple cloning of silencing DNA fragment from the gene of interest. $\beta$ genome has been deleted for viral coat protein production defect[@fire1998potent].
+Virus-induced gene silencing is one of the reverse genetics tools for analysis of gene function that uses viral vectors carrying a target gene fragment to reduce double-strand RNA (dsRNA) which trigger RNA mediated gene silencing. Small interfering RNAs (siRNAs) which are 21-25 nucleotide long, guides specific cleavage or suppression of target messenger RNA (mRNA) at posttranscriptional level. The process takes place as follows, siRNAs which are processed from long double-stranded RNAs (dsRNA) by DICER, an RNAse-like enzyme, are then incorporated into RNA-induced silencing complex (RISC). This complex with siRNA targets specific mRNA transcripts having sequence complementarity with the specific siRNA. In other words, the antisense strand of the siRNA associates with the RNAi silencing complex (RISC) to target homologous RNA for degradation. Some virus species were previously modified and used for silencing the gene of interest[@Jiang2014]. Tobacco mosaic virus (TMV) is the first modified virus for application of VIGS methods to plants. TMV was used for effective PDS gene silencing in **Nicotiana benthamiana** plants[@Harries2008]. Tobacco rattle virus (TRV) was also modified to be a tool for gene silencing in plants and lately barley stripe mosaic virus (BSMV) was developed for efficient silencing of pds gene in barley[@fire1998potent].
 
 ## Site-specific endonucleases
 
@@ -171,7 +170,7 @@ CRISPR systems are part of the adaptive immune system of bacteria and archaea, p
 
 ## Genetic Editing bottleneck
 
-Bottlenecks need to be overcome before the full potential of this technology may be achived in plants. Plants distinguish themselves from most complex eukaryotes in the totipotency of their tissues[@Indra1972]. This has allowed researchers to convert explant into a whole plant, with the use aseptic tissue culture growth medium. This somatic-germinal conversion (or regeneration) is the foundation of most plant transformation approaches. Transgenes are delivered to isolated somatic tissue followed by selection for the transgene and regeneration of the modified tissue into a whole, transgenic plant[@Rasmussen2017]. Despite many of these protocols being developed over decades, the process is far from routine in most laboratories. Further,success is often genotype dependent because specific growth medium need to be tuned for each new plant and the regenerated plants can have changes to their genome and epigenome[@Kaeppler2000]. In trees, because of long generation time, the issues of maintaining aseptic environment and assessing growth medium suitability in real time become much more pronounced.
+Bottlenecks need to be overcome before the full potential of this technology may be achieved in plants. Plants are distinguished from most complex eukaryotes in the totipotency of their tissues[@Indra1972]. This has allowed researchers to convert explant into a whole plant, with the use aseptic tissue culture growth medium. This somatic-germinal conversion (or regeneration) is the foundation of most plant transformation approaches. Transgenes are delivered to isolated somatic tissue followed by selection for the transgene and regeneration of the modified tissue into a whole, transgenic plant[@Rasmussen2017]. Success is often genotype dependent because specific growth medium need to be tuned for each new plant and the regenerated plants can have changes to their genome and epigenome[@Kaeppler2000]. In trees, because of long generation time, the issues of maintaining aseptic environment and assessing growth medium suitability become much more pronounced.
 
 Crop production globally is improving, but this trend seems to approach a plateau (Figure \ref{fig:agricultural area per capita}). Hence substantial changes in methods for agronomic processes and crop improvement are required[@TesterMarkandLangridge2010]. 
 
@@ -187,7 +186,7 @@ agricultural_area_per_capita_summary_fig
 
 ## Advance genetic Editing technologies
 
-Most of the advanced methods of genetic editing are designed to help solve problems arising from the use of tissue culture, or to completely spare the need to use it. Tissue culture is designed to allow for the capture of rare cell-transformed events. This is done by providing a supportive environment for the explant, so that it expose as much as possible inner cells of the plant to the genetic manipulation and later allow for regeneration and differentiation to a new plant. For the most part, the regeneration begins with differentiation to a shoot meristem, and later to a full shoot. The route from shoot to a full plant through the induction of roots is much more approachable. The common way to induce the explant for meristem differentiation and shoot formation is with the use of plant hormones. Hormones can effect a vast array of genetic pathways, with the right hormone concentration balance at the right time it is possible to direct the tissue to any differentiation path we desire. The drawback of using hormones is the precise application needed and the broad spectrum of effects it have on the tissue such as epigenetic changes. In order to mitigate those drawbacks, researchers tried to induce regeneration with a less milder effects on the plant by switching on specific genetic pathways with the use of transcription factors. Those transcription factors are referred to as developmental regulators (DRs). It has been shown that by over expressing of some of the DRs in the cell it was possible to differentiate the cells in a more precise manner, similar to the work on induced pluripotent stem cells in humans[@Sang2018]. Other works have mitigate other drawbacks of tissue culture like precise growth medium and aseptic environment by utilizing the plant own environment to create a controlled micro environment in-planta. Lately Zhang et al. shown promising work on pomelo, in which they intruduced a hybrid method of in-planta and tissue culture, where the transformation took place in a close environment around incision on soil grown plant, with the use of antibiotics as selection and hormones for development induction[@Zhang2017]. This method is revolutionary since the transformed tissue is attached to the plant, hence it is much less susceptible to contaminations and most of its micronutrients can come from the neighboring tissues.
+Tissue culture in the context of plant transformation is designed to allow the capture of rare cell-transformed events. This is done by providing a supportive environment for the explant, so that it exposes as much as possible inner cells of the plant to the genetic manipulation and later allow for regeneration and differentiation to a new plant. For the most part, the regeneration begins with differentiation to a shoot meristem, and then to a full shoot. The common way to induce the explant for meristem differentiation and shoot formation is with the use of plant hormones. The drawback of using hormones is the precise application needed and the broad spectrum of effects it have on the tissue such as epigenetic changes. In order to mitigate those drawbacks, researchers tried to induce regeneration by switching on specific genetic pathways with induced developmental regulators (DRs) transcription factors. It has been shown that by over expressing of some of the DRs in the cell it was possible to differentiate the cells in a more precise manner, similar to the work on induced pluripotent stem cells in humans[@Sang2018]. Other works have mitigated other drawbacks of tissue culture like precise growth medium and aseptic environment by utilizing the plant own environment to create a controlled micro environment in-planta. Lately Zhang et al. showed in pomelo, where the transformation took place in a close environment around an incision on soil grown plant, with the use of antibiotics as selection and hormones for development induction[@Zhang2017]. This method is revolutionary since the transformed tissue is attached to the plant, hence it is much less susceptible to contaminations and most of its micronutrients can come from the neighboring tissues.
 
 ### De-novo meristem induction and transformation
 
@@ -224,6 +223,10 @@ Apple (_Malus domestica_) trees are one of the most widely grown fruit tree in t
 
 2. By infecting Cas9-OE plants with viral vector bearing sgRNA targeting endogenous gene, a tissue containing a knocked-out targeted gene will be obtained.
 
+## Goal
+
+* To develop a new method for in-planta tree transformation and gene editing.
+
 ## Milstones
 
 ### Meristem induction and transformation 
@@ -246,13 +249,10 @@ Apple (_Malus domestica_) trees are one of the most widely grown fruit tree in t
 
 * Observation of mutations at the target sequence.
 
-## Goal
-
-* To develop a new method for in-planta tree transformation and gene editing.
 
 #  Materials and methods
 
-## Plant metirial 
+## Plant matirial 
 
 _Populus Alba-Tremula_ (PopAT) cultivar, which were reproduced by vegetative reproduction in tissue culture (Table \ref{tab:Poplar mediums}).   
 _Malus domestica_ (apple) cultivars, and apple seeds that were extracted from fruits.
@@ -309,215 +309,18 @@ kable(mediums, caption = "Composition of media for cultivation, tranformation, s
 
 [**Golden-Gate cloning**](https://blog.addgene.org/plasmids-101-golden-gate-cloning)[@Cermak2017]: Golden Gate cloning technology relies on Type IIS restriction enzymes, first discovered in 1996. Type IIS restriction enzymes are unique from "traditional" restriction enzymes in that they cleave outside of their recognition sequence, creating four base flanking overhangs. Since these overhangs are not part of the recognition sequence, they can be customized to direct assembly of DNA fragments. When designed correctly, the recognition sites do not appear in the final construct, allowing for precise, scarless cloning. The clonning system is designed on several plasmids, the backbone plasmid plus few modules. Each module can be assembled with different insert to create a modular clonning system. A 4 module system is consists of backbone and module A, B, C and D. By assembling the same module with different inserts, it is possible to assemble complex cassette with combination genes.  
 
-[**Gel agarose for DNA electrophoresis**](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf) [@Lee2012].
+[**Gel agarose for DNA electrophoresis**](http://schepartzlab.yale.edu/intranet/protocols/AgaroseGelElectrophores.pdf) [@Lee2012]: Seperation of DNA fragments based on size through the migration in agarose gel powered by electric field. LE multi-purpose agarose is dissolved into a TAE Buffer, Usually 1-2%, than added Ethidium bromide solution for DNA detection under UV light and pured into a gel mold (Tray + Comb). After the gel polymerizes, the comb can be removed, and the Samples are loaded to the created wells including DNA ladder. Setting the voltage at ~110 V for 30 minutes or untill sufficient seperation is obtained. Image the gel under UV light for fragment analysis.
 
-Introduction:   
-
-Preperation protocol of gel agarose for DNA electrophoresis.  
-
-Materials:  
-
-* Tray + Comb (With enough places for samples + ladder)
-* LE multi-purpose agarose (Usually 1-2%)
-* TAE * 1 Buffer (volume depend on Container)
-* Ethidium bromide solution (1 drop for every 50 ml of gel)
-* loading dye (1 µL loading dye per 5 µL sample) *Taq ready mix already contain dye.
-
-Procedure:  
-
-Gel mixture, loading and running
-
-1. Measure agarose by weight.
-2. Dissolves in TAE buffer.
-3. Microwave until fully dissolved.
-4. Add ethidium bromide.
-5. Pour into tray + comb.
-6. Wait until the gel polymerizes.
-7. Carefully remove the comb to expose the sample wells.
-8. Place the gel into the tank.
-9. Pour TAE buffer into the tank high enough to cover the gel.
-10. Add loading dye (if necessary).
-11. load DNA sample.
-12. Connect the tank to the power supply.
-13. Set the voltage at ~110 V for 30 minutes *The passage of current will produce bubbles at the electrodes.
-
-
-**E.coli Heat-shock competent preperation and** [**transformation**](https://www.addgene.org/protocols/bacterial-transformation/) was performed in the common method[@Chang2017].
-
-Preperation
-
-Introduction:  
-
-Preperation of E.coli competent for Heat shock transformation.  
-
-Materials:  
-
-* Liquid nitrogen
-* ice
-* LB with sutable antibiotics
-* 20 mM $CaCl_2$ + 15% glycerol sterile
-
-Procedure:  
-
-Pre-Culture  
-
-1. Pick single colony into a 4 ml LB (antibiotick if needed)
-2. Grow at $37^oC$, 150 rpm overnight culture
-
-Culture  
-
-3. Add 0.5 ml of pre-culture to 50 ml LB, and Incubate untill $OD_{600}$ 0.5-1.
-4. Chill culture on ice for 5-10 min.
-5. transfer maximum 30 ml of the colture to a 50 ml tube.
-6. Centrifuge for 10 min at 5000 rpm in $4^oC$.
-7. Discard the supernated and let the tube to dry inverted for 1 min.
-8. Add 0.5 ml ice cold 20 mM $CaCl_2$ + 15% glycerol.
-9. Aliquot 100 $\mu l$ and freeze directly in liquid nitrogen.
-
-Transformation  
-
-Introduction:   
-
-Heat shock plasmid transformation to competent E.coli  
-
-Materials:  
-
-* Competent E.coli cells
-* 50 $\mu l$ For each DNA construct / 100 $\mu l$ For ligation
-* 50 ng of circular DNA
-* Ice
-* Water bath at $42^oC$
-* 1.5 ml tube per sample (Eppendorf or similar)
-* 1 ml of LB per sample (with no antibiotic added)
-* LB + antibiotics plates 2 or 3 per sample for dilutions
-* Drigalski spatula
-
-Procedure:  
-
-Heat shock  
-
-1. Take competent E.coli cells from $-80^oC$ freezer. Use Top10 cells in most cases.
-2. Turn on water bath to $42^oC$.
-3. Put competent cells in a 1.5 ml tube (Eppendorf or similar). For transforming a DNA construct, use 50 $\mu l$ of competent cells. For transforming a ligation, use 100 $\mu l$ of competent cells. You may need more or less cells, depending how competent they are.
-4. Keep tubes on ice.
-5. Add 50 ng of circular DNA into E.coli cells. Incubate on ice for 20 min. to thaw competent cells.
-6. Put tubes with DNA and E.coli into water bath at $42^oC$ for 1.5 min.
-7. Put tubes back on ice for 5 minutes to reduce damage to the E.coli cells.
-8. Add 1 ml of LB (with no antibiotic added). Incubate tubes for 1 hour at $37^oC$. (Can incubate tubes for 30 minutes, unless trying to grow DNA for ligation which is more sensitive. For ligation, leave tubes for 1 hour).
-9. Spread about 100 $\mu l$ of the resulting culture on LB plates (with appropriate antibiotic added). Grow overnight.
-10. Pick colonies about 12-16 hours later.
-
+**E.coli Heat-shock competent preperation and** [**transformation**](https://www.addgene.org/protocols/bacterial-transformation/)[@Chang2017]: E.Coli bacteria is prepered for heat shock transformation by growing a 50 ml starter to 0.5-1 $OD_{600}$ and then palleting the cells by centrifuge for 10 min at 5000 rmp in $4^oC$. Next the supernated is disarded and the cell are resuspended in 0.5 ml ice cold 20 mM $CaCl_2$ + 15% glycerol. 100 $\mu l$ aliquot are then frozen directly in liquid nitrogen and stored in $-80^oC$ freezer. For transformation, the cells are thaw on ice and then added 50 ng of circular DNA. Incubate on ice for 20 min. Put tubes water bath at $42^oC$ for 1.5 min and then return them back to the ice for 5 minutes to reduce damage to the E.coli cells. Add 1 ml of LB (with no antibiotic added). Incubate tubes for 1 hour at $37^oC$. (Can incubate tubes for 30 minutes, unless trying to grow DNA for ligation which is more sensitive. For ligation, leave tubes for 1 hour). Spread about 100 $\mu l$ of the resulting culture on LB plates (with appropriate antibiotic added) and Grow overnight. Pick colonies about 12-16 hours later.
 
 **Plasmid DNA extraction and purification** was preformed with [Presto™ Mini Plasmid Kit](https://www.hylabs.co.il/products/presto-mini-plasmid-kit/).
 
-**DNA extraction** from plant tissue was performed by the common CTAB method[@Porebski1997].
+**DNA extraction** from plant tissue was performed by the common CTAB method[@Porebski1997]: Grind ~200 mg of plant tissue to a fine paste and add 700 $\mu l$ CTAB buffer pre-heated to $65^oC$ + 7$\mu l$ 2-Mercaptoethanol. Incubation at $65^oC$ for 30 min and Vortex few times. Chill on ice and add 700ul Chloroform octanol (1:24). Vortex and centrifuge 5 min 14,000 rpm. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~550-600 $\mu l$). Add 400 $\mu l$ Chloroform octanol (1:24) and centrifuge 5 min 14,000 rpm. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~350 $\mu l$) and add 35 $\mu l$ Sodium acetate (NaOAc) or 10% of sample volume and 875 $\mu l$ 100% Ethanol (X2.5 sample volume). Incubate at $-80^oC$ for Hour/over night. Centrifuge 10 min 10,000 rpm and remove the supernatant. Add 1 ml 70% Ethanol and centrifuge 10 min 10,000 rpm. Remove the supernatant air dry the pellet, invert on paper towel. Resuspend the DNA in 50 $\mu l$ sterile DNase free water
 
-Introduction:   
+**RNA extraction** from plant tissue was performed by the common TRI reagent® protocol [@Chomczynski1993]: Grind plant tissue to a fine paste with TRI Reagent (1 ml per 50-100 mg of tissue) and incubation 5 minutes at room temperature. Next add 200 $\mu l$ chloroform per ml of TRI Reagent. Vortex and Incubation 2-15 minutes at room temperature. Centrifuge the resulting mixture at 12,000 g for 15 minutes at $2-8^oC$ and transfer the aqueous phase to a fresh tube. Add 0.5 ml of 2-propanol per ml of TRI Reagent and mix gently. Incubation for 5-10 minutes at room temperature. Centrifuge at 12,000 g for 10 minutes at $2-8^oC$ and discard the supernatant. Add 1 ml of 75% ethanol per 1 ml of TRI Reagent. Vortex and centrifuge at 7,500 g for 5 minutes at $2-8^oC$. Discard the supernatant air dry the RNA pellet for 5-10 minutes. Last, resuspend the RNA pellet with ~30 $\mu l$ of RNase free water.
 
-CTAB protocol for the isolating of DNA from plant tissues
-
-Materials:  
-
-* Liquid nitrogen
-* Ice
-* Pestles
-* Stirer
-* $65^oC$ Bath
-* Centrifuge
-* CTAB buffer
-* 2% cetyl trimethylammonium bromide, 1% polyvinyl pyrrolidone,100 mM Tris-HCl, 1.4 M NaCl, 20 mM EDTA
-* 2-Mercaptoethanol
-* Chloroform octanol (1:24)
-* Sodium acetate (NaOAc)
-* 100% Ethanol
-* 70% Ethanol
-
-Procedure:  
-
-1. Grind ~200 mg of plant tissue to a fine paste.
-2. Add 700 $\mu l$ CTAB buffer pre-heated to $65^oC$ + 7$\mu l$ 2-Mercaptoethanol.
-3. Vortex.
-4. Incubation at $65^oC$ for 30 min (Vortex few times).
-5. Chill on ice.
-6. Add 700ul Chloroform octanol (1:24).
-7. Vortex.
-8. Centrifuge 5 min 14,000 rpm.
-9. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~550-600 $\mu l$).
-10. Add 400 $\mu l$ Chloroform octanol (1:24).
-11. Centrifuge 5 min 14,000 rpm.
-12. Transfer the upper aqueous phase only (contains the DNA) to a clean tube (~350 $\mu l$).
-13. Add 35 $\mu l$ Sodium acetate (NaOAc), (X0.1 of sample volume).
-14. Add 875 $\mu l$ 100% Ethanol, (X2.5 sample volume).
-15. Incubate at $-80^oC$ for Hour/over night.
-16. Centrifuge 10 min 10,000 rpm.
-17. Remove the supernatant.
-18. Add 1 ml 70% Ethanol.
-19. Centrifuge 10 min 10,000 rpm.
-20. Remove the supernatant.
-21. Air dry the pellet, invert on paper towel.
-22. Resuspend the DNA in 50 $\mu l$ sterile DNase free water.
-
-
-**RNA extraction** from plant tissue was performed by the common TRI reagent® protocol [@Chomczynski1993].
-
-Introduction:   
-
-TRI Reagent® solution (also sold as TRIzol) is a mixture of a mixture of guanidine thiocyanate and phenol in a monophase solution that is used for the isolation of DNA, RNA and protein from biological samples of human, animal, plant, yeast, bacteria, and virus. It inhibits RNase activity. TRI Reagent® is used to homogenize the biological sample from which RNA, DNA or proteins are extracted.
-
-Materials:  
-
-* Liquid nitrogen
-* Pestles
-* Centrifuge
-* TRI Reagent®
-* Chloroform
-* 75% Ethanol
-
-
-Procedure:  
-
-1. Grind plant tissue to a fine paste with TRI Reagent (1 ml per 50-100 mg of tissue).
-2. Incubation 5 minutes at room temperature.
-3. Add 200 $\mu l$ chloroform per ml of TRI Reagent used.
-4. Vortex.
-5. Incubation 2-15 minutes at room temperature.
-6. Centrifuge the resulting mixture at 12,000 g for 15 minutes at $2-8^oC$.
-7. Transfer the aqueous phase to a fresh tube.
-8. Add 0.5 ml of 2-propanol per ml of TRI Reagent used.
-9. Mix gently.
-10. Incubation for 5-10 minutes at room temperature.
-11. Centrifuge at 12,000 g for 10 minutes at $2-8^oC$.
-12. Discard the supernatant.
-13. Add 1 ml of 75% ethanol per 1 ml of TRI Reagent used.
-14. Vortex.
-15. Centrifuge at 7,500 g for 5 minutes at $2-8^oC$.
-16. Discard the supernatant.
-17. Air dry the RNA pellet for 5-10 minutes.
-18. Resuspend the RNA pellet with ~30 $\mu l$ of RNase free water.
-
-
-**Plantlets transformation**
-
-Introduction: 
-
-This is the protocol used for on apple plantles that produce the most de-novo shoot regeneration frequency.
-
-Materials:  
-
-* Transformation medium: 1/2$ MS, 1 % sucrose and 200 $\mu M$ acetosyringone.
-* 3 ml syringe.
-* 21 - 30 G needle.
-* Sizers / Scalple.
-* 1.5 ml tube (Eppendorf or similar)
-
-Procedure:  
-1. Grow EHA-105 agrobacterium with T-DNA on petri-dish for 4 days.  
-2. Pick the whole plate with a Drigalski spatula into a new tube.  
-3. Elute in transformation medium 2 $\mu l$ per mg bacteria.  
-4. Take a 3-4 weeks old apple plantles.  
-5. Cut the stem above the first new leafs (as far as posible from the axillary buds).   
-6. Inject the bacteria into the stem cut.  
-7. Cover with parafilm for 1-2 weeks.  
+**Plantlets transformation**: This is the protocol used for on apple plantles that produce the most de-novo shoot regeneration frequency.   
+Grow EHA-105 agrobacterium with T-DNA on petri-dish for 4 days. Pick the whole plate with a Drigalski spatula into a new tube and Elute in transformation medium 2 $\mu l$ per mg bacteria. Take a 3-4 weeks old apple plantles and Cut the stem above the first new leafs (as far as posible from the axillary buds). Inject the bacteria into the stem cut and cover with parafilm for 1-2 weeks.
 
 
 # Experimants scheme
@@ -623,8 +426,6 @@ Infiltrated leaves from positive plants were collected and immediately transferr
 
 ### Construction of plasmids containing DRs, Cas9 and sgRNAs
 
-Constructing plasmids with combinations of DRs for de-novo meristem induction for novel transformation protocol.
-
 The construction of the plasmid was planned with the golden gate assembly protocol. This assembly method is based on the compatibility of a backbone and 4 modules. Each module can either include or not include a functional insert. The combination of the different building blocks provides the diverse array of plasmids. All the plasmid building blocks for the final vectors were purchased from [Addgene](https://www.addgene.org/) (Table \ref{tab:Building blocks}), except for pMOD-B with S-RNase sgRNA array and pMOD-C with WOX11 from _Populus trichocarpa_ which I assembled.
 
 ```{r Building blocks, echo=FALSE}
@@ -665,7 +466,7 @@ kable(primers, caption = "All primers" ,booktabs = TRUE, linesep = sep) %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 
-The gene _WOX11_ from _Populus trichocarpa_ was synthesized into pUC57 by [GenScript](https://www.genscript.com/)(New Jersey, USA) and were assembled into pMOD-C backbone using [Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) protocol[@Gibson2009] (Table \ref{tab:Primers}).
+The gene _WOX11_ from _Populus trichocarpa_ was synthesized into pUC57 by [GenScript](https://www.genscript.com/)(New Jersey, USA) and was assembled into pMOD-C backbone using [Gibson Assembly Cloning](https://www.addgene.org/protocols/gibson-assembly/) protocol[@Gibson2009] (Table \ref{tab:Primers}).
 
 The final plasmids contained pTRANS as a backbone using [Golden-Gate cloning](https://blog.addgene.org/plasmids-101-golden-gate-cloning) for the construction [@Cermak2017] (Table \ref{tab:AllConstructs}).
 
@@ -677,9 +478,9 @@ Cultures of each positive EHA-105 agrobacterium were spread on a new petri-dish 
 
 ### Infection methods experiment
 
-In the first experiment the effectivity of three infection methods on the agro-infection was assessed. Seeds were extracted from 'Pink-lady' apples, that were stored in $4^oC$ for three months and grown in a germination tray (11X17 cells) for 1 month.
+In the first experiment the effectivity of three agro-infection approaches were assessed. Seeds were extracted from 'Pink-lady' apples, that were stored in $4^oC$ for three months and grown in a germination tray (11X17 cells) for 1 month.
 
-The three methods were: 1) Infiltration was applied to the leaves by pressure using needleless syringe. 2) Micro-stabs of concentrated bacteria culture that were injected into the leaf veins. 3) Injection of concentrated bacteria culture into a vertical cut of the stem that was applied as further as possible from proximate  axillary bud (Figure \ref{fig:Agro-infection methods}). Method A was repeated in four plants, method B in three and method C was applied to one plant.
+The approaches were: A) Infiltration to the leaves by pressure using needleless syringe. B) Micro-stabs of concentrated bacteria culture that were injected into the leaf veins. C) Injection of concentrated bacteria culture into a vertical cut of the stem that was applied as remote as possible from proximate axillary bud (Figure \ref{fig:Agro-infection methods}). Method A was repeated in four plants, method B in three and method C was applied to one plant.
 
 ```{r Agro-infection methods, out.width = "100%", fig.align="center", echo=FALSE, fig.cap="Infection of Apple seedlings with A.tumefaciens. \\newline{} \\textbf{A.} Method 1, needleless syringe \\textbf{B.} Method 2, injection to the leaf veins \\textbf{C.} Method 3, injection to the stem cut"}
 include_graphics("apple_injection3.png") 
