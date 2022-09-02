@@ -1,0 +1,24 @@
+---
+title: Developing novel methods for gene editing in trees
+author: 
+- Ben Sivan
+-    Under the supervision
+        Dr. Amir Raz
+      Prof. Martin Goldway
+bibliography: library2.bib
+csl: Taylor & Francis - Council of Science Editors.csl
+output: powerpoint_presentation
+---
+
+
+# Abstract
+
+Global environmental changes challenge food security. In comparison to most crops, trees are resilient to temperature fluctuations and consequently offer some security for sufficient and nutritious food. Crop improvement with available methods has reached acknowledged barriers. however, genetic modification can contribute substantially to breakthroughs. Tissue culture is a required step in most genetic modification methods. Yet, it is far from being routine in most laboratories. In trees, because of their long generation time, tissue culture issues become much more pronounced. In this project I attempted to implement a novel gene editing method for trees that combines de-novo meristem induction or systemic gRNA propagation through viral infection, hence will not require tissue culture transformation. _Agrobacterium tumefaciens_ was the vector for in-planta transformation, poplar as a model system for trees and apples as a commercial fruit tree crop. I applied a few development regulators, and several agroinfiltration strategies. In addition I analyzed tissue-specific transcriptomes to further understand gene expression patterns in tissue development, and scanned for better normalizer genes for real-time quantitative PCR. I showed that overexpression of the gene combinations _WUS2_-_STM_ and _WOX11_-_STM_ were successful in invoking de-novo shoot regeneration in young apple plants, in-planta. In addition I found, based on the tissue-specific transcriptome, that in poplar the transcription factor _WOX1_ from the WUSCHEL family is most specific to shoot. 
+
+# Introduction
+
+## Trees and their vital role as a source for food security
+
+Food security is a fundamental necessity that challenged mankind throughout its history. Many researchers estimate that food security is under threat as a result of global environmental changes through land degradation, loss of biodiversity, changes in hydrology, and changes in climate patterns[@Ericksen2009]. Moreover population growth is around 100 million per year. Since the early 1990s, the number of extreme weather-related disasters has doubled[@FAO2020a]. Higher temperatures, water scarcity, extreme events like droughts and floods have already begun to impact staple crops around the world[@Linden2015] and have reduced the yields of major crops like maize and wheat[@Rosenzweig2001]. According to the Food and Agriculture Organization of the United Nations, the climate variability has an impact of at least 80% to the unpredictable reduction in yield of cereal crops in semi-arid regions of the world such as the Sahel region of Africa[@Shiferaw2014].
+
+Fruit trees contribute in many ways to improving diets and combating hunger around the world[@Vinceti2013]. Trees are much more resilient to extreme weather-related disasters in comparison to most crops, and consequently they can offer some insurance for sufficient and nutritious food during times of seasonal food shortages due to droughts, floods and hot or cold waves. This is the main reason behind the evergreen agriculture approach[@Garrity2010]. Trees resilient is due to their being perennial woody plants, which allows them to grow strong, with durable trunk and long roots. In addition, fruit trees can produce large yields on a given area resulting from  their vertical growth. However, tree research has a drawback among them a long generation period of a few years.
