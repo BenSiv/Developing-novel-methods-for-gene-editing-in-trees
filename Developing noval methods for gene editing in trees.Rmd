@@ -4,13 +4,11 @@ header-includes:
 - \usepackage{float}
 - \usepackage{booktabs}
 - \usepackage{fancyhdr}
-- \pagestyle{fancyplain} % use fancy for all pages except chapter start
-- \lhead{\includegraphics[height=1.2cm]{telhai logo.jpg}} % left logo
-- \rhead{\includegraphics[height=1.2cm]{MigalLogo.png}} % right logo
+# - \pagestyle{fancyplain} % use fancy for all pages except chapter start
 - \renewcommand{\headrulewidth}{0pt} % remove rule below header
 - \cfoot{\thepage}
 author: "Ben Sivan"
-date: "april 2021"
+date: "August 2022"
 output: 
     pdf_document:
       number_sections: true
@@ -35,41 +33,46 @@ nocite: |
 
 \vspace{\fill}
 
-Signature of student:_______________Date:____/____/_______ \hfill \break \newline Signature of supervisor:_______________Date:____/____/_______\hfill \break \newline Signature of supervisor:_______________Date:____/____/_______ \hfill \break \newline Signature of chairperson for graduate studies:_______________Date:____/____/_______
+Signature of student: Ben Sivan \includegraphics[height=0.5cm]{bensig.jpg} \hfill Date: 31/07/2022 \break \newline Signature of supervisor: Prof. Martin Goldway \includegraphics[height=0.5cm]{martinsig.jpg} \hfill Date: 31/07/2022 \break \newline Signature of supervisor: Dr. Amir Raz \includegraphics[height=0.5cm]{amirsig.jpg} \hfill Date: 31/07/2022 \break \newline Signature of chairperson for graduate studies:_______________Date:____/____/_______
 
 \begin{titlepage}
+
    \begin{center}
-       
-        \includegraphics[width=0.5\textwidth]{telhai logo.jpg}
+
+      \includegraphics[height=2cm]{TelHaiLogo.jpg}
+      \hfill
+      \includegraphics[height=2cm]{MigalLogo.png}
         
-        \vspace{0.5cm}
+      \vspace{0.5cm}
 
-       \textbf{\Huge THE FACULTY OF SCIENCES\\ MASTER IN BIOTECHNOLOGY}
+      \textbf{\huge THE FACULTY OF SCIENCES}
+      \vspace{0.1cm}
+      \textbf{\huge MASTER IN BIOTECHNOLOGY}
 
-       \vspace{2cm}
-       \textbf{\huge Developing novel methods for gene editing in trees}
-            
-       \vspace{3cm}
+      \vspace{2cm}
+      \textbf{\huge Developing novel methods for gene editing in trees}
+          
+      \vspace{3cm}
 
-       \textbf{\Large Ben Sivan}
-       
-        \vspace{1cm}
+      \textbf{\Large Ben Sivan}
+      
+      \vspace{1cm}
 
-       \textbf{\large Under the supervision of\\
-       Dr. Amir Raz\\
-       Prof. Martin Goldway}
-       
-       \vspace{1cm}
+      \textbf{\large Under the supervision of\\
+      Dr. Amir Raz\\
+      Prof. Martin Goldway}
+      
+      \vspace{1cm}
 
-       \textbf{\large Thesis submitted in partial fulfillment of the requirements for the master of science degree in biotechnology}
-       
-       \vfill
-     
-       Department of Biotechnology\\
-       Tel-Hai collage\\
-       Israel\\
-       October 2021
-            
+      \textbf{\large Thesis submitted in partial fulfillment of the requirements for the master of science degree in biotechnology}
+      
+      \vfill
+    
+      Department of Biotechnology\\
+      Tel-Hai collage\\
+      Israel\\
+      August 2022
+          
    \end{center}
 \end{titlepage}
 
@@ -127,8 +130,8 @@ Towards the end of the $19^{th}$ century plant breeding was established. Breedin
 
 With the understanding that the inherited genetic material is DNA, the ability was developed to utilize the acceleration of random mutations as a way of gaining genetic diversity and selecting based on the phenotypic outcome. By exposing seeds to chemicals or radiation the frequency of mutation events is increased with some of them providing desirable traits.  
 
-As a result of the development of the molecular genetic field, many genetic modification technologies were innovated, some of them applicable or specific to plants. Those methods are more direct in their approach to manipulate DNA for an expected outcome and can be include under the broad term genomic engineering. An important distiction need to be make here, between the terms genome engineering and genome editing. Although, the broad term genome engineering refers to any purposeful change to the genetic makeup of an organism for an expected outcome, over time the term got more specific meaning in the regulatory context. In the regulatory context, genome engineering refers to the integration of foreign DNA in the genome, more specificaly foreign from another organism. Whereas the term genome editing in the regulatory context, refers to the act of changing the expression patterns in the cell, eather directrly by deactivating a gene with the introduction of delibarate mutation (most commanly known as knockout), or indirectly by changing the expression patterns of regulatory elements. Even more precise definition of genome editing, refers to stable changes in the genome, which excludes transient gene silencing. This work focuses on technics to achive the narrow term of genome editing, although in the process, there might be stages of the plant that can as well be charicturized as genome engineering, like integration of CRISPR Cas9 for the purpose of achiving gene knockout.
-The method innovated can be divided into two groups, exogenous DNA delivery methods and site-specific endonucleases. In most cases, scientist would use a combination of those two technologies for the purpose gene editing.
+As a result of the development of the molecular genetic field, many genetic modification technologies were innovated, some of them applicable or specific to plants. Those methods are more direct in their approach to manipulating DNA for an expected outcome and can be included under the broad term genomic engineering. Genome engineering is commonly referred to as the integration of foreign DNA into the genome. Whereas the term genome editing in the regulatory context, refers to the act of changing the expression patterns in the cell, either by deactivating a gene with the introduction of a deliberate mutation, or by changing the expression patterns of regulatory elements. This work focuses on technics to achieve genome editing, although in the process, there are stages of integration of CRISPR/Cas9 for the purpose of achieving gene mutation.
+The method is divided into two parts, exogenous DNA delivery methods and site-specific endonucleas mutating. 
 
 ## Exogenous DNA delivery methods  
   
@@ -773,7 +776,7 @@ include_graphics("Deform benthamiana PDS.png")
 
 I began by identifying the best approach to facilitate the infiltration of the agrobacterium by different mechanical interventions. Next, I examined the influence of different combinations of DRs on plant development. Finally, I scaled up the best results from the last two experiments for statistical analysis. In parallel analyzed the natural expression of genes in different tissues and especially in the shoot-tip by examining tissue specific transcriptomes of PopAT.
 
-The infection methods were tested at first as a preliminary experiment only on one plant with each of the plasmids, resulting in regenerative plants when the plasmids harbored the DR combinations _WOX11_-_STM_ and _WUS_-_STM_. The construct also contained the CRISPR system with a gRNA targeting the S-RNase gene however editing was not identified in the sequence of the S-RNase genes. For further verification a larger experiment was performed with the same plasmids (DRs experiment). 352 plants were infected. 44 of them with _WOX11_-_STM_, and 4 of them regenerated new shoot from the cut site. Apart from the scale, DRs experiment was different compared to the preliminary one since the cut site was covered with parafilm for better moisture maintenance [@Zhang2017]. Similarly to my results of regeneration with the combination of _WOX11_-_STM_ and _WUS2_-_STM_, Tvorogova et al.(2021), showed that in the regulation of SAM, _STM_ and _WUS_ act in parallel, and they are necessary for the normal expression of each other. This insight can also explain the non-deformed shoot formation I observe, because the regeneration in my experimants occured in the natural location of the SAM, whereas in Maher et al.(2020) experimants, the regeneration occured to the side of the main stem. _WOX11_ is known as a regulator of callus formation, development of adventitious roots, shoot regeneration and somatic embryogenesis which can also help to explain normal formation of shoot and furthermore the apearence of cotyledons-like leafs.[@Liu2018a].  
+The infection methods were tested at first as a preliminary experiment only on one plant with each of the plasmids, resulting in regenerative plants when the plasmids harbored the DR combinations _WOX11_-_STM_ and _WUS_-_STM_. The construct also contained the CRISPR system with a gRNA targeting the S-RNase gene however editing was not identified in the sequence of the S-RNase genes. For further verification a larger experiment was performed with the same plasmids (DRs experiment). 352 plants were infected. 44 of them with _WOX11_-_STM_, and 4 of them regenerated new shoot from the cut site. Apart from the scale, DRs experiment was different compared to the preliminary one since the cut site was covered with parafilm for better moisture maintenance [@Zhang2017]. Similarly to my results of regeneration with the combination of _WOX11_-_STM_ and _WUS2_-_STM_, Tvorogova et al.(2021), showed that in the regulation of SAM, _STM_ and _WUS_ act in parallel, and they are necessary for the normal expression of each other. This insight can also explain the non-deformed shoot formation I observed, because the regeneration in my experiments occurred in the natural location of the SAM, whereas in Maher et al.(2020) experiments, the regeneration occurred ar the periphery of the main stem. _WOX11_ is known as a regulator of callus formation, development of adventitious roots, shoot regeneration and somatic embryogenesis which can also help to explain normal formation of shoot and furthermore the appearance of cotyledons-like leafs.[@Liu2018a].  
 
 
 In the scale-up experiment, both parafilm and aluminum foil was used to cover the stem cut for keeping a dark and moist environment. The dark environment is crucial in the first 48 hours for the agrobacterium infection. Unfortunately, as a result of a disease, no phenotype was observed. 
